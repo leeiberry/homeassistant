@@ -1,0 +1,224 @@
+light.lightbulb_01:
+  name:
+  platform: wemo
+  unique_id: 94103EF6BF441F6F
+light.lightbulb_05:
+  name:
+  platform: wemo
+  unique_id: 94103EF6BF43DC63
+light.lightbulb_10:
+  name:
+  platform: wemo
+  unique_id: 94103EF6BF438C1D
+light.lightbulb_15:
+  name:
+  platform: wemo
+  unique_id: 94103EF6BF4365A2
+light.lightbulb_09:
+  name:
+  platform: wemo
+  unique_id: 94103EF6BF435872
+light.lightbulb_02:
+  name:
+  platform: wemo
+  unique_id: 94103EF6BF43867C
+light.lightbulb_06:
+  name:
+  platform: wemo
+  unique_id: 94103EF6BF440CB7
+light.lightbulb_11:
+  name:
+  platform: wemo
+  unique_id: 94103EF6BF43C07E
+light.lightbulb_07:
+  name:
+  platform: wemo
+  unique_id: 94103EF6BF43E6D2
+light.lightbulb_12:
+  name:
+  platform: wemo
+  unique_id: 94103EF6BF43ACE6
+light.lightbulb_08:
+  name:
+  platform: wemo
+  unique_id: 94103EF6BF43597E
+light.lightbulb_13:
+  name:
+  platform: wemo
+  unique_id: 94103EF6BF43B7CA
+light.lightbulb_03:
+  name:
+  platform: wemo
+  unique_id: 94103EF6BF44317F
+binary_sensor.motion_sensor_158d0001231c9b:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001231c9b
+binary_sensor.motion_sensor_158d00015e95e1:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00015e95e1
+binary_sensor.door_window_sensor_158d00014d20b8:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00014d20b8
+binary_sensor.motion_sensor_158d00016be379:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00016be379
+binary_sensor.motion_sensor_158d00015a8b14:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00015a8b14
+binary_sensor.motion_sensor_158d00015da5fd:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00015da5fd
+binary_sensor.motion_sensor_158d00016d5813:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00016d5813
+binary_sensor.door_window_sensor_158d00016cdcad:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00016cdcad
+binary_sensor.switch_158d00019de727:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00019de727
+binary_sensor.switch_158d00018b37f8:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00018b37f8
+binary_sensor.motion_sensor_158d000171cce3:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d000171cce3
+binary_sensor.motion_sensor_158d0001db087a:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001db087a
+binary_sensor.motion_sensor_158d000171cc81:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d000171cc81
+sensor.humidity_158d000170d531:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d000170d531
+sensor.temperature_158d0001a2de84:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001a2de84
+sensor.humidity_158d0001a2c316:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001a2c316
+sensor.humidity_158d0001a2de84:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001a2de84
+sensor.illumination_286c07fa38f0:
+  name:
+  platform: xiaomi_aqara
+  unique_id: illumination286c07fa38f0
+sensor.temperature_158d000170b5c3:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d000170b5c3
+sensor.temperature_158d0001a2c316:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001a2c316
+sensor.humidity_158d000170b5c3:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d000170b5c3
+sensor.temperature_158d000170d531:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d000170d531
+switch.plug_158d000163bd78:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d000163bd78
+light.gateway_light_286c07fa38f0:
+  name:
+  platform: xiaomi_aqara
+  unique_id: rgb286c07fa38f0
+media_player.theater:
+  name:
+  platform: cast
+  unique_id: f5c18233-2aab-36b7-80bd-58178afcda60
+media_player.lounge:
+  name:
+  platform: cast
+  unique_id: e418ba08-4fde-3b29-9215-d3e1fd4ad37d
+media_player.theater_bar:
+  name:
+  platform: cast
+  unique_id: 1d74f684-0521-1836-653e-be961eeb0f41
+media_player.master:
+  name:
+  platform: cast
+  unique_id: ba61994d-9f56-b0f6-7ec9-b31be693edd2
+media_player.family_room_speaker:
+  name:
+  platform: cast
+  unique_id: 8ae2a8d1-b22a-633c-f950-8c25143a675e
+media_player.bedroom_speaker:
+  name:
+  platform: cast
+  unique_id: 67e026e0-ce2c-c701-d12a-04ad83226cfc
+media_player.galaxy_s6_edge:
+  name:
+  platform: plex
+  unique_id: 6aa6ff6f1c6f07c-com-plexapp-android
+media_player.galaxy_tab_s2_97:
+  name:
+  platform: plex
+  unique_id: c2d0c6d806f63207-com-plexapp-android
+media_player.unnamed_device:
+  name:
+  platform: plex
+  unique_id: ohetrd49oc
+media_player.galaxy_tab_s2_97_2:
+  name:
+  platform: plex
+  unique_id: 603ad8bf333c32bb-com-plexapp-android
+media_player.chrome:
+  name:
+  platform: plex
+  unique_id: usg32fsqbzdm878x4700vcpt
+media_player.chrome_2:
+  name:
+  platform: plex
+  unique_id: cijp3qe4j0btfd6y4gdji7e3
+media_player.soundbar:
+  name:
+  platform: cast
+  unique_id: eb303031-5884-d00d-afd9-2fa9076552b1
+media_player.house_sound_:
+  name:
+  platform: cast
+  unique_id: a0842907-0fe3-4eef-bbc4-8e5879b24b90
+media_player.chrome_3:
+  name:
+  platform: plex
+  unique_id: rs8kycbkhjak93y59ri1egbc
+media_player.unnamed_device_2:
+  name:
+  platform: plex
+  unique_id: 342dio54otysc3di2evptooq
+media_player.chrome_4:
+  name:
+  platform: plex
+  unique_id: 4pg6tjdkpc52lihgh69otqml
+light.lightbulb_14:
+  name:
+  platform: wemo
+  unique_id: 94103EF6BF43E677
+media_player.kitts_speaker:
+  name:
+  platform: cast
+  unique_id: e2eed3f4-8e2b-7d8b-4b7d-1d5f29fbfece

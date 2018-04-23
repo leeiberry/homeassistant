@@ -1,0 +1,31 @@
+flashGateWaylight:
+    alias: Flash Gateway Light
+    sequence:
+      - alias: Gateway light On
+        service: homeassistant.turn_on
+        data:
+          entity_id: light.gateway_light_286c07fa38f0
+      - delay:
+          # time for flash light on
+          seconds: 1
+      - alias: Gateway light Off
+        service: homeassistant.turn_off
+        data:
+          entity_id: light.gateway_light_286c07fa38f0
+      - delay:
+          # time for flash light off
+          seconds: 1
+      - alias: Gateway light On
+        service: homeassistant.turn_on
+        data:
+          entity_id: light.gateway_light_286c07fa38f0
+      - delay:
+          # time for flash light on
+          seconds: 1
+      - alias: Gateway light Off
+        service: homeassistant.turn_off
+        data:
+          entity_id: light.gateway_light_286c07fa38f0
+      - delay:
+          # time for flash light off
+          seconds: 1

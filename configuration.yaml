@@ -1,0 +1,187 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret HomeLat
+  longitude: !secret HomeLong
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 180
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Australia/Perth
+  customize: !include_dir_merge_named customized
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  api_password: !secret http_password
+  base_url: !secret Baseurl
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook: !include logbook.yaml
+
+# Track the sun
+sun:
+
+
+# recorder
+recorder:
+  purge_keep_days: 7
+  db_url: !secret dbURL
+  exclude:
+#    entities:
+#      - sun
+    domains:
+      - automation
+      - Motion
+
+# Text to speech
+tts:
+  - platform: google
+    cache: true
+    cache_dir: /tmp/tts
+    time_memory: 300
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+switch: !include switch.yaml
+notify: !include_dir_list notify
+zone: !include zones.yaml
+#input_select: !include input_select.yaml
+#device_tracker:  !include nmap.yaml
+
+input_select:
+  alarm_mode:
+    name: Alarm Mode
+    options:
+      - "off"
+      - "on"
+    icon: mdi:alarm-light
+
+device_tracker:
+  - platform: nmap_tracker
+    hosts:
+      10.0.0.100
+      10.0.0.101
+      10.0.0.102
+      10.0.0.103
+      10.0.0.104
+      10.0.0.105
+      10.0.0.106
+      10.0.0.107
+      10.0.0.108
+      10.0.0.200
+      10.0.0.201
+      10.0.0.210
+      10.0.0.220
+      10.0.0.222
+      10.0.0.170
+
+    # Minutes nmap will not scan a device, assuming it is home
+    home_interval: 10
+    # Seconds between each scan for new devices (default: 12)
+    interval_seconds: 60
+    # Seconds to wait till marking someone as not home after not being seen (default: 180)
+    consider_home: 240
+    track_new_devices: yes
+
+sensor: !include_dir_list sensor
+wemo:
+
+light:
+  - platform: yeelight
+    devices:
+      10.0.0.130:
+        name: Theater Room
+        transition: 1000
+  - platform: group
+    name: Master lights
+    entities:
+      - light.lightbulb_10
+      - light.lightbulb_06
+      - light.lightbulb_07
+
+
+
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
+  client_id: home-assistant-1
+  username: !secret MQuser
+  password: !secret MQpass
+
+binary_sensor:
+  - platform: mqtt
+    name: Request to open garage door
+    state_topic: "homeassistant/binary_sensor/CarPresence/state"
+
+media_player:
+  - platform: webostv
+    host: 10.0.0.222
+    mac: 38:8c:50:94:64:c8
+    name: LG TV
+    timeout: 5
+    filename: webostv.conf
+    customize:
+      sources:
+        - Live TV
+        - Plex
+        - netflix
+    turn_on_action:
+      service: wake_on_lan.send_magic_packet
+      data:
+        mac: 38:8c:50:94:64:c8
+
+google_assistant:
+  project_id: !secret GAprojectID
+  client_id: !secret GAclientID
+  access_token: !secret GAaccesstoken
+  expose_domains:
+    - switch
+    - light
+    - group
+
+#telbot:
+#  - platform: polling
+#    api_key : 587160014:AAHgvRsGw7Rn69BvFrdiDwKgOyVky4rvZko
+#    allowed_chat_ids:
+#      - Chat_ID_1
+
+
+#media_player:
+#  - platform: bluetooth_speaker
+#    name: Speaker
+#    address: 28:6C:07:FA:38:F0
+#    volume: 0.50
+
+xiaomi_aqara:
+  discovery_retry: 10
+  gateways:
+    - mac:
+      key: fyi1nxb0z1zwfs4u

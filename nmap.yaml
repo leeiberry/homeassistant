@@ -1,0 +1,25 @@
+- platform: nmap_tracker
+  hosts:
+    10.0.0.100
+    10.0.0.101
+    10.0.0.102
+    10.0.0.103
+    10.0.0.104
+    10.0.0.105
+    10.0.0.106
+    10.0.0.107
+    10.0.0.108 
+    10.0.0.109
+    10.0.0.200
+    10.0.0.201
+    10.0.0.170
+
+  # Minutes nmap will not scan a device, assuming it is home
+  home_interval: 10
+  # Seconds between each scan for new devices (default: 12)
+  interval_seconds: 60
+  # Seconds to wait till marking someone as not home after not being seen (default: 180)
+  consider_home: 240
+  track_new_devices: yes
+- platform: owntracks
+  max_gps_accuracy : 200

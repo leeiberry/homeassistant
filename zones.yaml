@@ -1,0 +1,20 @@
+- name : Home
+  latitude: -32.116198
+  longitude: 115.921776
+  radius: 35
+  icon: mdi:home-variant
+- name : High School
+  latitude: -32.223350
+  longitude: 116.002254
+  radius: 215
+  icon: mdi:school
+- name : Coles
+  latitude: -32.219818
+  longitude: 116.006670
+  radius: 120
+  icon: mdi:shopping
+- name : IGA
+  latitude: -32.220928
+  longitude: 116.008398
+  radius: 40
+  icon: mdi:shopping

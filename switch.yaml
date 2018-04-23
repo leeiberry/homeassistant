@@ -1,0 +1,49 @@
+- platform: orvibo
+  discovery : false
+  switches:
+  - host: 10.0.0.160
+    mac: ac:cf:23:99:76:f6
+    name: "Cabinet Light"
+  - host: 10.0.0.161
+    mac: ac:cf:23:9c:de:0c
+    name: "Wire Light"
+- platform: mqtt
+  state_topic: "devices/Lamp01/motion/AutoSelf"
+  command_topic: "devices/Lamp01/motion/AutoSelf/set"
+  name: "Auto Light"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+- platform : mqtt
+  state_topic: "devices/Garage/switch/on"
+  command_topic: "devices/Garage/switch/on/set"
+  name: Garage Door Control
+  payload_on: "Yes"
+  payload_off: "No"
+- platform : mqtt
+  state_topic: "stat/Grdwater/POWER"
+  command_topic: "cmnd/Grdwater/power"
+  name: Fountain
+  payload_on: "ON"
+  payload_off: "OFF"
+- platform : mqtt
+  state_topic: "stat/Grdlight/POWER"
+  command_topic: "cmnd/Grdlight/power"
+  name: Garden Lights
+  payload_on: "ON"
+  payload_off: "OFF"
+- platform : mqtt
+  state_topic: "stat/Grdfire/POWER"
+  command_topic: "cmnd/Grdfire/power"
+  name: Garden Fire
+  payload_on: "ON"
+  payload_off: "OFF"
+- platform: broadlink
+  host: 10.0.0.210
+  mac: b4:43:0d:dc:8e:a8
+  timeout: 15
+  switches:
+    panasonic:
+      friendly_name : "Lounge TV"
+      command_on: 'JgAyAXM4EA0QKRANEAwRDBANEA0QDBANEA0QDBEMEA0QKRANEA0QDBANEA0QDBEMEA0QDBEpEA0QDBANEA0QDBEMEA0QDBEpEA0QKRApESkQKRANEA0QKRANECkQKREpECkQDRApEQAJjHQ3EQwQKhAMEA0QDRAMEQwQDRAMEQwQDRANEAwQKhAMEA0QDRAMEQwQDRANEAwQDRApEA0QDRAMEQwQDRANEAwQDRApEA0QKREpECkQKhAMEA0QKREMECoQKRApECoQDBAqEAAJjXM4EA0QKRANEAwRDBANEA0QDBANEA0QDBEMEA0QKRANEA0QDBANEA0QDBANEA0QDBEpEA0QDBANEA0QDBEMEA0QDBEpEAwRKRApESkQKRANEA0QKRANECkQKREpECkQDRApEAANBQAAAAAAAA=='
+#      command_off: 'JgDMAHQ3EA0QKRANEA0QDBEMEA0QDBEMEA0QDBEMEA0QKREMEA0QDBEMEA0QDBEMEA0QDRApEA0QDBEMEA0QDBEMEA0QDRAMEA0QKREMECkRKRANEAwRDBANECkQDRApECoQDBAqEAAJiXQ4EA0QKRANEAwRDBANEA0QDBANEA0QDBEMEA0QKRANEA0QDBANEA0QDBANEA0QDBEpEA0QDBANEA0QDBANEA0QDBEMEA0QKRANECkQKhAMEQwQDRANECkQDRApECkRDBApEQANBQAAAAAAAAAAAAAAAA=='

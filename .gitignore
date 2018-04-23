@@ -1,0 +1,12 @@
+*
+!*.yaml
+!scenes
+!automation
+!customized
+!notify
+!script
+!sensor
+!tts
+!.gitignore
+secrets.yaml
+known_devices.yaml

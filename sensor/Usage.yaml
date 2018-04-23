@@ -1,0 +1,5 @@
+platform: rest
+resource: http://10.0.0.106/solar_api/v1/GetPowerFlowRealtimeData.fcgi
+name: "Grid power"
+value_template: '{{ value_json.Body.Data.Site.P_PV.Value /1000 | int }}'
+unit_of_measurement: “kWh”

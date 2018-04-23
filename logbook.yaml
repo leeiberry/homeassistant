@@ -1,0 +1,11 @@
+exclude:
+  entities:
+    - device_tracker.blakeiphone
+    - device_tracker.aimeeiphone
+    - device_tracker.carolinephone
+    - device_tracker.LeePhone
+    - binary_sensor.motion_sensor_158d00015e95e1
+    - binary_sensor.motion_sensor_158d00016d5813
+    - group.familyroom
+    - group.Study_lamp
+    - device_tracker.jaydenipad

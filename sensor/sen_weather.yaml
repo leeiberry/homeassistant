@@ -1,0 +1,10 @@
+platform: darksky
+api_key: f3be3c12c3b92cad6514f909afccd640
+monitored_conditions:
+  - temperature
+  - humidity
+  - wind_speed
+  - wind_bearing
+  - temperature_max
+  - summary
+  - temperature_min

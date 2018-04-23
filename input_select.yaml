@@ -1,0 +1,6 @@
+alarm_mode:
+  name: Alarm Mode
+  options:
+    - "off"
+    - "on"
+  icon: mdi:alarm-light

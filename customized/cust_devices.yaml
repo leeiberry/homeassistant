@@ -1,0 +1,178 @@
+cover.garage_door:
+  device_class: garage
+#  assumed_state: false
+sensor.dark_sky_summary:
+  friendly_name: Weather Summary
+sensor.dark_sky_temperature:
+  friendly_name: Temperature
+sensor.dark_sky_humidity:
+  friendly_name: Humidity
+sensor.dark_sky_wind_speed:
+  friendly_name: Wind Speed
+media_player.soundbar:
+  icon: mdi:speaker
+#pixel c
+device_tracker.80a589aeccf7:
+  icon: mdi:tablet
+switch.xmas_tree:
+  icon: mdi:pine-tree
+# note ii
+device_tracker.LeePhone:
+  icon: mdi:cellphone-android
+device_tracker.JaydenPhone:
+  icon: mdi:cellphone-android
+device_tracker.carolinephone:
+  icon: mdi:cellphone-android
+device_tracker.AimeeiPhone:
+  icon: mdi:cellphone-iphone
+device_tracker.BlakeiPhone:
+  icon: mdi:cellphone-iphone
+device_tracker.carolineIPad:
+  icon: mdi:tablet-ipad
+device_tracker.ps4:
+  icon: mdi:playstation
+sensor.ps4:
+  icon: mdi:playstation
+#printer
+device_tracker.canon:
+  icon: mdi:printer
+  hidden: true
+device_tracker.xbox:
+  icon: mdi:lamp
+device_tracker.PCSaturn:
+  hidden: true
+sensor.Canon:
+  icon: mdi:printer
+sensor.saturn:
+  icon: mdi:desktop-tower
+sensor.mercury:
+  icon: mdi:desktop-tower
+sensor.pixelc:
+  icon: mdi:tablet-android
+sensor.kodi:
+  icon: mdi:kodi
+sensor.xbox:
+  icon: mdi:xbox
+sensor.lounge_temperature:
+  friendly_name: Lounge Temperature
+  icon: mdi:temperature-celsius
+sensor.master_bedroom_temperature:
+  friendly_name: Master Bedroom Temperature
+  icon: mdi:temperature-celsius
+sensor.study_temperature:
+  friendly_name: Study Temperature
+  icon: mdi:temperature-celsius
+sensor.weather_wind_speed:
+  icon: mdi:weather-windy
+switch.bedside_lamps:
+  icon: mdi:lightbulb
+light.lightbulb_01:
+  friendly_name: Globe
+  google_assistant: true
+  google_assistant_name: Globle Light
+light.lightbulb_02:
+  friendly_name: Lamp
+  icon: mdi:floor-lamp
+light.lightbulb_03:
+  friendly_name: Ceiling
+  icon: mdi:ceiling-light
+light.lightbulb_04:
+  friendly_name: Ceiling
+  icon: mdi:ceiling-light
+light.lightbulb_05:
+  friendly_name: Panty
+  icon: mdi:ceiling-light
+light.lightbulb_06:
+  friendly_name: Lee's Lamp
+  icon: mdi:lamp
+light.lightbulb_07:
+  friendly_name: Caroline's Lamp
+  icon: mdi:lamp
+light.lightbulb_08:
+  friendly_name: Ceiling
+  icon: mdi:ceiling-light
+light.lightbulb_09:
+  friendly_name: Toilet
+  icon: mdi:ceiling-light
+# master ceiling
+light.lightbulb_10:
+  friendly_name: Ceiling
+  icon: mdi:ceiling-light
+light.lightbulb_11:
+  friendly_name: Walk in
+  icon: mdi:ceiling-light
+light.lightbulb_12:
+  friendly_name: Front Door
+light.lightbulb_15:
+  friendly_name: Living Room Ceiling
+  icon: mdi:ceiling-light
+light.lightbulb_13:
+  friendly_name: Garage Light
+  icon: mdi:ceiling-light
+sensor.studymove:
+  friendly_name: Study Movement
+  icon: mdi:run
+sensor.loungemove:
+  friendly_name: Family Room Movement
+  icon: mdi:run
+switch.wire_light:
+  icon: mdi:lightbulb
+switch.cabinet_light:
+  icon: mdi:lightbulb
+light.yeelight_white_34ce00880a33:
+  friendly_name: Theater Light
+light.gateway_light_286c07fa38f0:
+  friendly_name: Study light 2
+binary_sensor.motion_sensor_158d00016d5813:
+  friendly_name: Study
+binary_sensor.motion_sensor_158d00015e95e1:
+  friendly_name: Family
+binary_sensor.motion_sensor_158d000171cce3:
+  friendly_name: Family (TV)
+binary_sensor.switch_158d00018b37f8:
+  friendly_name: Door Bell
+  icon: mdi:bell-ring
+sensor.temperature_158d0001a2c316:
+  friendly_name: Lounge Temp
+sensor.humidity_158d0001a2c316:
+  friendly_name: Lounge Humid
+sensor.temperature_158d0001a2de84:
+  friendly_name: Master Temp
+sensor.temperature_158d000170d531:
+  friendly_name: Blake Temp
+sensor.humidity_158d0001a2de84:
+  fiendly_name: Master Humid
+sensor.temperature_158d000170b5c3:
+  friendly_name: Activity Temp
+binary_sensor.door_window_sensor_158d00014d20b8:
+  friendly_name: Front Door
+  icon: mdi:glassdoor
+binary_sensor.door_window_sensor_158d00016cdcad:
+  friendly_name: Garage Door
+  icon: mdi:garage
+binary_sensor.switch_158d00019de727:
+  friendly_name: Garage Door Opener 1
+input_boolean.alarm_mode:
+  friendly_name: 'House Alarm'
+  icon: mdi:secuirty
+binary_sensor.motion_sensor_158d00015da5fd:
+  friendly_name: Walk In
+binary_sensor.motion_sensor_158d00015a8b14:
+  friendly_name: Panty
+binary_sensor.motion_sensor_158d0001231c9b:
+  friendly_name : Garage
+binary_sensor.motion_sensor_158d00016be379:
+  friendly_name : Hallway
+binary_sensor.motion_sensor_158d000171cc81:
+  friendly_name: Porch
+binary_sensor.motion_sensor_158d0001db087a:
+  friendly_name: Activity Room
+switch.plug_158d000163bd78:
+    friendly_name: Study Lamp
+    icon: mdi:lamp
+switch.fountain:
+    icon: mdi:cup-water
+switch.garden_lights:
+    icon: mdi:spotlight-beam
+switch.garden_fire:
+  icon: mdi:fire

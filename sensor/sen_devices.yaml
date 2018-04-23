@@ -1,0 +1,14 @@
+platform: template
+sensors:
+  saturn:
+    value_template: '{% if is_state("device_tracker.PCSaturn", "home") %}online{% else %}offline{% endif %}'
+    friendly_name: 'Saturn'
+  mercury:
+    value_template: '{% if is_state("device_tracker.PCMercury", "home") %}online{% else %}offline{% endif %}'
+    friendly_name: 'Mercury'
+  xbox:
+    value_template: '{% if is_state("device_tracker.Xbox", "home") %}online{% else %}offline{% endif %}'
+    friendly_name: 'Xbox'
+  ps4:
+    value_template: '{% if is_state("device_tracker.PS4", "home") %}online{% else %}offline{% endif %}'
+    friendly_name: 'PS4'

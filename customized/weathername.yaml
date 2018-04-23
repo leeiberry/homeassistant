@@ -1,0 +1,6 @@
+sensor.weather_temperature:
+  friendly_name: Temperature Current
+sensor.weather_temperature_2:
+  friendly_name: Temperature Min
+sensor.weather_temperature_3:
+  friendly_name: Temperature Max

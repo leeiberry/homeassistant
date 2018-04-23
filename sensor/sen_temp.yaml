@@ -1,0 +1,9 @@
+platform: mqtt
+state_topic: "devices/lounge2/temperature/degrees"
+name: "Temp"
+sensor:
+  state_topic: "devices/lounge2/movement/Detected"
+  name: "Movement1"
+binary_sensor:
+  name: "test"
+  state_topic: "devices/Garage/switch/Door"
