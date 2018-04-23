@@ -520,7 +520,7 @@
       entity_id: light.lightbulb_13
 
 - id: '7007'
-  alias: Garage light auto on
+  alias: Garage light auto on #
   trigger:
     platform: state
     entity_id: binary_sensor.motion_sensor_158d0001231c9b
