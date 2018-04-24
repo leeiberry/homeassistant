@@ -43,7 +43,7 @@
     - service: homeassistant.turn_off
       entity_id: switch.fountain
 
-#### smas lights !
+#### xmas lights !
 - id: '2001'
   alias: Turn family room lights on just before sunset
   trigger:
