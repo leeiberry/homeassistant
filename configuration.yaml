@@ -15,7 +15,11 @@ homeassistant:
 # Enables the frontend #
 frontend:
 
+<<<<<<< HEAD
 # Enables configuration UI #csaczcxz
+=======
+# Enables configuration UI #
+>>>>>>> 45431ed3bdc2eba74913d03419b4fe91dbc2d2e6
 config:
 
 http:
