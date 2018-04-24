@@ -15,7 +15,7 @@ homeassistant:
 # Enables the frontend #
 frontend:
 
-# Enables configuration UI #
+# Enables configuration UI #csaczcxz
 config:
 
 http:
@@ -140,6 +140,16 @@ binary_sensor:
   - platform: mqtt
     name: Request to open garage door
     state_topic: "homeassistant/binary_sensor/CarPresence/state"
+
+media_player:
+  - platform: plex
+    include_non_clients: true
+    scan_intertval: 5
+    show_all_controls: true
+    use_custom_entity_ids: true
+    use_episode_art: true
+    remove_unavailable_clients: true
+    client_remove_interval: 600
 
 media_player:
   - platform: webostv

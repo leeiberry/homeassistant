@@ -1,5 +1,0 @@
-platform: rest
-resource: http://10.0.0.106/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData
-name: "Day Total"
-value_template: '{{ value_json.Body.Data.DAY_ENERGY.Value /1000 | int }}'
-unit_of_measurement: “kWh”
