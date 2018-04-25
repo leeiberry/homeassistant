@@ -9,3 +9,10 @@ exclude:
     - group.familyroom
     - group.Study_lamp
     - device_tracker.jaydenipad
+    - media_player.jaydens_room_speaker
+    - media_player.kitts_speaker
+    - media_player.master
+    - media_player.theater
+    - media_player.theater_bar
+    - media_player.lg_tv
+    - media_player.bedroom_speaker

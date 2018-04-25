@@ -175,3 +175,7 @@ WeatherMain:
   view: yes
   entities:
     - group.weatherreport
+
+otherrooms:
+  name: Other Rooms
+  view: yes 
