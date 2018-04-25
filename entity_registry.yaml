@@ -222,3 +222,7 @@ media_player.kitts_speaker:
   name:
   platform: cast
   unique_id: e2eed3f4-8e2b-7d8b-4b7d-1d5f29fbfece
+media_player.jaydens_room_speaker:
+  name:
+  platform: cast
+  unique_id: cf34f38d-df83-297e-aba1-70c99fda1009

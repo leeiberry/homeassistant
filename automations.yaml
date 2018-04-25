@@ -545,20 +545,19 @@
 - id: '8001'
   alias: Front door bell
   trigger:
-    platform: event
-    event_type: click
-    event_data:
-      entity_id: binary_sensor.switch_158d00018b37f8
-      click_type: single
+    platform: state
+    entity_id: binary_sensor.switch_158d00018b37f8
+    to: 'on'
   condition:
       condition: time
       after: '07:00:00'
       before: '21:00:00'
   action:
-   - service: notify.HASSpushbullet
-     data_template:
-       title: "FRONT DOOR"
-       message:  ">>> DOOR BELL <<<"
+    service: tts.google_say
+    entity_id: media_player.family_room_speaker
+    data_template:
+      message: >
+        Someone is at the front door
 
 - id: '8010'
   alias: someone near the front door
