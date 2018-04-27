@@ -168,14 +168,17 @@ media_player:
       data:
         mac: 38:8c:50:94:64:c8
 
-google_assistant:
-  project_id: !secret GAprojectID
-  client_id: !secret GAclientID
-  access_token: !secret GAaccesstoken
-  expose_domains:
-    - switch
-    - light
-    - group
+cloud:
+
+
+#google_assistant:
+#  project_id: !secret GAprojectID
+#  client_id: !secret GAclientID
+#  access_token: !secret GAaccesstoken
+#  expose_domains:
+#    - switch
+#    - light
+#   - group
 
 #telbot:
 #  - platform: polling
