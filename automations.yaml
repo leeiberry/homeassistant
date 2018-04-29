@@ -63,6 +63,9 @@
     entity_id: switch.garden_lights
   - service: homeassistant.turn_on
     entity_id : switch.wire_light
+  - service: homeassistant.turn_on
+    entity_id: switch.cupboard_light
+
 
 
 - id: '2002'
@@ -90,6 +93,8 @@
     entity_id: switch.wire_light
   - service: homeassistant.turn_off
     entity_id: switch.garden_lights
+  - service: homeassistant.turn_off
+    entity_id: switch.cupboard_light
 
 
 - id: '2003'
@@ -116,7 +121,8 @@
     entity_id : switch.wire_light
   - service: homeassistant.turn_off
     entity_id: switch.garden_lights
-
+  - service: homeassistant.turn_off
+    entity_id: switch.cupboard_light
 
 
 - id: '2004'

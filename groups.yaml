@@ -39,8 +39,7 @@ LoungeLamps:
     - light.lightbulb_01
     - light.lightbulb_02
     - switch.wire_light
-    - switch.cabinet_light
-
+    - switch.cupboard_light
 
 Kitchen:
    name: Kitchen
