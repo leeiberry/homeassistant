@@ -226,3 +226,15 @@ media_player.jaydens_room_speaker:
   name:
   platform: cast
   unique_id: cf34f38d-df83-297e-aba1-70c99fda1009
+media_player.chrome_5:
+  name:
+  platform: plex
+  unique_id: o7yb3f9ueetcog0n9a990to7
+media_player.chrome_6:
+  name:
+  platform: plex
+  unique_id: dhnsider8wv85fon9a3qmwg3
+media_player.aimees_room_speaker:
+  name:
+  platform: cast
+  unique_id: 245eec21-99ba-d91c-4ab8-392de60325b7

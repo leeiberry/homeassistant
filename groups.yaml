@@ -154,12 +154,7 @@ Theater:
     - media_player.theater
     - media_player.lg_tv
     - media_player.theater_bar
-GarageDoor:
-  name: Garage Door
-  view: yes
-  entities:
-   - switch.garage_door_control
-   - binary_sensor.door_window_sensor_158d00016cdcad
+
 
 weatherreport:
   name: Weather Conditions
@@ -179,3 +174,7 @@ WeatherMain:
 otherrooms:
   name: Other Rooms
   view: yes 
+  entities:
+    - media_player.kitts_speaker
+    - light.lightbulb_14
+    - media_player.jaydens_room_speaker

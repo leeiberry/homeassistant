@@ -150,8 +150,6 @@ media_player:
     use_episode_art: true
     remove_unavailable_clients: true
     client_remove_interval: 600
-
-media_player:
   - platform: webostv
     host: 10.0.0.222
     mac: 38:8c:50:94:64:c8
@@ -171,14 +169,14 @@ media_player:
 cloud:
 
 
-#google_assistant:
-#  project_id: !secret GAprojectID
-#  client_id: !secret GAclientID
-#  access_token: !secret GAaccesstoken
-#  expose_domains:
-#    - switch
-#    - light
-#   - group
+google_assistant:
+  project_id: !secret GAprojectID
+  client_id: !secret GAclientID
+  access_token: !secret GAaccesstoken
+  expose_domains:
+    - switch
+    - light
+    - group
 
 #telbot:
 #  - platform: polling
