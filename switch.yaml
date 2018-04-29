@@ -38,6 +38,13 @@
   name: Garden Fire
   payload_on: "ON"
   payload_off: "OFF"
+- platform : mqtt
+  state_topic: "stat/Cupboard/POWER"
+  command_topic: "cmnd/Cupboard/power"
+  name: Cupboard Light
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:lightbulb
 - platform: broadlink
   host: 10.0.0.210
   mac: b4:43:0d:dc:8e:a8
