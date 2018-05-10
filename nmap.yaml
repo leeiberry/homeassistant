@@ -18,7 +18,7 @@
     10.0.0.53
     10.0.0.54
     10.0.0.55
-
+    10.0.0.70
 
   # Minutes nmap will not scan a device, assuming it is home
   home_interval: 10

@@ -78,7 +78,7 @@ masterbed:
     - light.lightbulb_06
     - switch.lee_blanket
     - light.lightbulb_07
-    - switch.caroline_blanket
+    - switch.carolines_blanket
     - sensor.master_bedroom_temperature
     - binary_sensor.motion_sensor_158d00015da5fd
     - media_player.bedroom_speaker
@@ -177,3 +177,4 @@ otherrooms:
     - media_player.kitts_speaker
     - light.lightbulb_14
     - media_player.jaydens_room_speaker
+    - light.aimees_light

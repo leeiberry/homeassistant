@@ -238,3 +238,11 @@ media_player.aimees_room_speaker:
   name:
   platform: cast
   unique_id: 245eec21-99ba-d91c-4ab8-392de60325b7
+media_player.jaydens_room_speaker_2:
+  name:
+  platform: cast
+  unique_id: 1fb01715-c114-2f1b-75fb-8e9f4ca0cc5c
+media_player.unnamed_device_3:
+  name:
+  platform: plex
+  unique_id: gz2vq5evzoa1n26xklpg6an4

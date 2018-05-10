@@ -120,6 +120,11 @@ light:
       10.0.0.130:
         name: Theater Room
         transition: 1000
+      10.0.0.70:
+        name: colour light 1
+      10.0.0.71:
+        name: Aimee's Light
+
   - platform: group
     name: Master lights
     entities:

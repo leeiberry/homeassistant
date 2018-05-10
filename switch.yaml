@@ -45,6 +45,13 @@
   payload_on: "ON"
   payload_off: "OFF"
   icon: mdi:lightbulb
+- platform : mqtt
+  state_topic: "stat/BlanketCC/POWER"
+  command_topic: "cmnd/Cupboard/power"
+  name: Carolines Blanket
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:hotel
 - platform: broadlink
   host: 10.0.0.210
   mac: b4:43:0d:dc:8e:a8
