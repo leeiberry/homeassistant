@@ -373,11 +373,11 @@
     at: 09:30:00
   condition:
     condition: state
-    entity_id: switch.caroline_blanket
+    entity_id: switch.carolines_blanket
     state: 'on'
   action:
   - service: switch.turn_off
-    entity_id: switch.caroline_blanket
+    entity_id: switch.carolines_blanket
   - service: switch.turn_off
     entity_id: switch.lee_blanket
 

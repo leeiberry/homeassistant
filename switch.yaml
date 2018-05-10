@@ -47,7 +47,7 @@
   icon: mdi:lightbulb
 - platform : mqtt
   state_topic: "stat/BlanketCC/POWER"
-  command_topic: "cmnd/Cupboard/power"
+  command_topic: "cmnd/BlanketCC/power"
   name: Carolines Blanket
   payload_on: "ON"
   payload_off: "OFF"
