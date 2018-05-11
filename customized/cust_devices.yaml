@@ -9,6 +9,8 @@ sensor.dark_sky_humidity:
   friendly_name: Humidity
 sensor.dark_sky_wind_speed:
   friendly_name: Wind Speed
+sensor.dark_sky_daily_low_temperature:
+  friendly_name: Today's Min Temperature
 media_player.soundbar:
   icon: mdi:speaker
 #pixel c
