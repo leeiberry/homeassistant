@@ -102,6 +102,9 @@ device_tracker:
       10.0.0.220
       10.0.0.222
       10.0.0.170
+      10.0.0.130
+      10.0.0.70
+      10.0.0.71
 
     # Minutes nmap will not scan a device, assuming it is home
     home_interval: 10
