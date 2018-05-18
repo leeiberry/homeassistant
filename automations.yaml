@@ -25,23 +25,23 @@
     - service: homeassistant.turn_on
       entity_id: light.lightbulb_05
 ###  fountain
-- id: '5060'
-  alias: Turn fountain on at 11am
-  trigger:
-        platform: time
-        at: '11:00:00'
-  action:
-    - service: homeassistant.turn_on
-      entity_id: switch.fountain
+#- id: '5060'
+#  alias: Turn fountain on at 11am
+#  trigger:
+#        platform: time
+#        at: '11:00:00'
+#  action:
+#    - service: homeassistant.turn_on
+#      entity_id: switch.fountain
 
-- id: '5062'
-  alias: Turn fountain off at 2 pm
-  trigger:
-        platform: time
-        at: '14:00:00'
-  action:
-    - service: homeassistant.turn_off
-      entity_id: switch.fountain
+#- id: '5062'
+#  alias: Turn fountain off at 2 pm
+#  trigger:
+#        platform: time
+#        at: '14:00:00'
+#  action:
+#    - service: homeassistant.turn_off
+#      entity_id: switch.fountain
 
 #### xmas lights !
 - id: '2001'

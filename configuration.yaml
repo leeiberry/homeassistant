@@ -135,7 +135,11 @@ light:
       - light.lightbulb_06
       - light.lightbulb_07
 
-
+panel_iframe:
+  nodered:
+    title: 'Node-Red'
+    icon: 'mdi:shuffle-variant'
+    url: 'https://10.0.0.155:1880/'
 
 mqtt:
   broker: 127.0.0.1
