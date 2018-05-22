@@ -44,57 +44,57 @@
 #      entity_id: switch.fountain
 
 #### xmas lights !
-- id: '2001'
-  alias: Turn family room lights on just before sunset
-  trigger:
-    platform: sun
-    event: sunset
-    offset: -00:15:00
-  action:
-  - service: homeassistant.turn_on
-    entity_id: light.lightbulb_01
-    data:
-      brightness: '180'
-  - service: homeassistant.turn_on
-    entity_id: light.lightbulb_02
-    data:
-      brightness: '180'
-  - service: homeassistant.turn_on
-    entity_id: switch.garden_lights
-  - service: homeassistant.turn_on
-    entity_id : switch.wire_light
-  - service: homeassistant.turn_on
-    entity_id: switch.cupboard_light
+#- id: '2001'
+#  alias: Turn family room lights on just before sunset
+#  trigger:
+#    platform: sun
+#    event: sunset
+ #   offset: -00:15:00
+ # action:
+#  - service: homeassistant.turn_on
+#    entity_id: light.lightbulb_01
+#    data:
+#      brightness: '180'
+#  - service: homeassistant.turn_on
+#    entity_id: light.lightbulb_02
+#    data:
+#      brightness: '180'
+#  - service: homeassistant.turn_on
+#    entity_id: switch.garden_lights
+#  - service: homeassistant.turn_on
+#    entity_id : switch.wire_light
+#  - service: homeassistant.turn_on
+#    entity_id: switch.cupboard_light
 
 
 
-- id: '2002'
-  alias: Turn family room lights off at 22:30 on mon - thu
-  trigger:
-    platform: time
-    at: '22:30:00'
-  condition:
-  - condition: time
-    weekday:
-    - mon
-    - tue
-    - wed
-    - thu
-  action:
-  - service: homeassistant.turn_off
-    entity_id: light.lightbulb_01
-    data:
-      transition: 300
-  - service: homeassistant.turn_off
-    entity_id: light.lightbulb_02
-    data:
-      transition: 300
-  - service: homeassistant.turn_off
-    entity_id: switch.wire_light
-  - service: homeassistant.turn_off
-    entity_id: switch.garden_lights
-  - service: homeassistant.turn_off
-    entity_id: switch.cupboard_light
+#- id: '2002'
+#  alias: Turn family room lights off at 22:30 on mon - thu
+#  trigger:
+#    platform: time
+#    at: '22:30:00'
+#  condition:
+#  - condition: time
+#    weekday:
+#    - mon
+#    - tue
+#    - wed
+#    - thu
+#  action:
+#  - service: homeassistant.turn_off
+#    entity_id: light.lightbulb_01
+#    data:
+#      transition: 300
+#  - service: homeassistant.turn_off
+#    entity_id: light.lightbulb_02
+#    data:
+#      transition: 300
+#  - service: homeassistant.turn_off
+#    entity_id: switch.wire_light
+#  - service: homeassistant.turn_off
+#    entity_id: switch.garden_lights
+#  - service: homeassistant.turn_off
+#    entity_id: switch.cupboard_light
 
 
 - id: '2003'
@@ -425,22 +425,22 @@
   - service: homeassistant.turn_off
     entity_id: light.lightbulb_03
 
-- id: '4010'
-  alias: Turn Study Lamp on , detection and after sun set
-  trigger:
-    platform: state
-    entity_id: binary_sensor.motion_sensor_158d00016d5813
-    to: 'on'
-  condition:
-  - condition: state
-    entity_id:  switch.plug_158d000163bd78
-    state: 'off'
-  - condition: sun
-    after: sunset
-    after_offset: "-00:30:00"
-  action:
-    - service: homeassistant.turn_on
-      entity_id: switch.plug_158d000163bd78
+#- id: '4010'
+#  alias: Turn Study Lamp on , detection and after sun set
+#  trigger:
+#    platform: state
+#    entity_id: binary_sensor.motion_sensor_158d00016d5813
+#    to: 'on'
+#  condition:
+#  - condition: state
+#    entity_id:  switch.plug_158d000163bd78
+#    state: 'off'
+#  - condition: sun
+#    after: sunset
+#    after_offset: "-00:30:00"
+#  action:
+#    - service: homeassistant.turn_on
+#      entity_id: switch.plug_158d000163bd78
 
 
 

@@ -246,3 +246,7 @@ media_player.unnamed_device_3:
   name:
   platform: plex
   unique_id: gz2vq5evzoa1n26xklpg6an4
+binary_sensor.motion_sensor_158d00016bff3e:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00016bff3e

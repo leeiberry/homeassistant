@@ -131,6 +131,8 @@ binary_sensor.motion_sensor_158d00015e95e1:
   friendly_name: Family
 binary_sensor.motion_sensor_158d000171cce3:
   friendly_name: Family (TV)
+binary_sensor.motion_sensor_158d00016bff3e:
+  friendly_name: Dinning
 binary_sensor.switch_158d00018b37f8:
   friendly_name: Door Bell
   icon: mdi:bell-ring

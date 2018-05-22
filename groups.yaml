@@ -109,6 +109,7 @@ motionpanel:
     - binary_sensor.motion_sensor_158d00016be379
     - binary_sensor.motion_sensor_158d000171cce3
     - binary_sensor.motion_sensor_158d0001db087a
+    - binary_sensor.motion_sensor_158d00016bff3e
 GardenVW:
   view: yes
   name: Garden
