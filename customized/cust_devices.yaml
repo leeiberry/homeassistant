@@ -114,6 +114,9 @@ light.lightbulb_13:
 sensor.studymove:
   friendly_name: Study Movement
   icon: mdi:run
+sensor.illumination_286c07fa38f0:
+  friendly_name: Light Reading
+  icon: mdi:white-balance-sunny
 sensor.loungemove:
   friendly_name: Family Room Movement
   icon: mdi:run

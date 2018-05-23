@@ -126,6 +126,7 @@ Study_devices:
   name: Study
   entities:
     - sensor.study_temperature
+    - sensor.illumination_286c07fa38f0
     - switch.plug_158d000163bd78
     - binary_sensor.motion_sensor_158d00016d5813
     - light.lightbulb_03
