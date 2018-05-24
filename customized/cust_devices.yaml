@@ -169,7 +169,7 @@ binary_sensor.motion_sensor_158d00015a8b14:
 binary_sensor.motion_sensor_158d0001231c9b:
   friendly_name : Garage
 binary_sensor.motion_sensor_158d00016be379:
-  friendly_name : Hallway
+  friendly_name : Theater
 binary_sensor.motion_sensor_158d000171cc81:
   friendly_name: Porch
 binary_sensor.motion_sensor_158d0001db087a:
