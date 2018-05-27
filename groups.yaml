@@ -131,6 +131,7 @@ Study_devices:
     - binary_sensor.motion_sensor_158d00016d5813
     - light.lightbulb_03
     - sensor.cpu_load_total
+    - sensor.grid_power
 Study_lamp:
   name: Study Desk Lamp Control
   entities:
@@ -150,6 +151,7 @@ Theater:
   view: yes
   name: Theater room
   entities:
+    - light.theater_rbg
     - light.yeelight_white_34ce00880a33
     - light.yeelight_white_34ce00880a33_2
     - media_player.theater
@@ -180,3 +182,4 @@ otherrooms:
     - light.lightbulb_14
     - media_player.jaydens_room_speaker
     - light.aimees_light
+    - media_player.aimees_room_speaker

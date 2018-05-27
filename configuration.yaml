@@ -142,6 +142,10 @@ panel_iframe:
     title: 'Node-Red'
     icon: 'mdi:shuffle-variant'
     url: 'https://10.0.0.155:1880/'
+  sonoff:
+    title: 'Sonoff'
+    icon: 'mdi:lightbulb'
+    url: 'http://10.0.0.155:9541/devices'
 
 mqtt:
   broker: 127.0.0.1

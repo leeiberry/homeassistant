@@ -250,3 +250,7 @@ binary_sensor.motion_sensor_158d00016bff3e:
   name:
   platform: xiaomi_aqara
   unique_id: status158d00016bff3e
+media_player.unnamed_device_4:
+  name:
+  platform: plex
+  unique_id: dpeyq2f2420rudipkyugjr5m
