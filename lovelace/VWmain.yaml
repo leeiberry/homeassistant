@@ -1,0 +1,23 @@
+title: Main
+panel: false
+visible: 
+      - user: 5c4082cf03ff4a4e943c4b4d7309044f #lee
+      - user: 97c47cbaa2ca46d8b4efca2ecc946c50 # caroline
+id: Main
+icon: mdi:home    
+  
+cards: 
+  - type: horizontal-stack
+    cards: 
+    - type: vertical-stack
+      cards:   
+          - !include /config/lovelace/includes/phones.yaml
+          - type: horizontal-stack              
+            cards: 
+            - !include /config/lovelace/includes/garage_button.yaml
+            - !include /config/lovelace/includes/power_button.yaml
+
+          - !include /config/lovelace/includes/weather_simple.yaml
+         # - !include /config/lovelace/includes/weather_full.yaml
+  
+          

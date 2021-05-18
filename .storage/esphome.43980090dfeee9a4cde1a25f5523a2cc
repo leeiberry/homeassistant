@@ -1,0 +1,64 @@
+{
+    "version": 1,
+    "key": "esphome.43980090dfeee9a4cde1a25f5523a2cc",
+    "data": {
+        "device_info": {
+            "uses_password": true,
+            "name": "garage_camera",
+            "mac_address": "24:0A:C4:F0:1D:40",
+            "compilation_time": "Mar 26 2021, 01:42:45",
+            "model": "Espressif ESP32 Dev Module",
+            "has_deep_sleep": false,
+            "esphome_version": "1.16.2"
+        },
+        "services": [],
+        "light": [
+            {
+                "object_id": "garage_camera_light",
+                "key": 3442281901,
+                "name": "garage_camera light",
+                "unique_id": "garage_cameralightgarage_camera_light",
+                "supports_brightness": false,
+                "supports_rgb": false,
+                "supports_white_value": false,
+                "supports_color_temperature": false,
+                "min_mireds": 0.0,
+                "max_mireds": 0.0,
+                "effects": []
+            }
+        ],
+        "sensor": [
+            {
+                "object_id": "garage_camera_wifi_signal",
+                "key": 103591947,
+                "name": "garage_camera wifi signal",
+                "unique_id": "240ac4f01d40-wifisignal",
+                "icon": "mdi:wifi",
+                "device_class": "",
+                "unit_of_measurement": "dB",
+                "accuracy_decimals": 0,
+                "force_update": false
+            },
+            {
+                "object_id": "garage_camera_uptime",
+                "key": 3953566331,
+                "name": "garage_camera uptime",
+                "unique_id": "240ac4f01d40-uptime",
+                "icon": "mdi:timer-outline",
+                "device_class": "",
+                "unit_of_measurement": "s",
+                "accuracy_decimals": 0,
+                "force_update": false
+            }
+        ],
+        "text_sensor": [],
+        "camera": [
+            {
+                "object_id": "garage_camera_cam",
+                "key": 2518532828,
+                "name": "garage_camera cam",
+                "unique_id": "garage_cameracameragarage_camera_cam"
+            }
+        ]
+    }
+}

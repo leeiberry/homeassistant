@@ -1,0 +1,22 @@
+web_server: yes
+
+schedules:
+  - tasks: '*'
+    interval:
+      minutes: 10
+
+tasks:
+  domain_delay:
+    showrss.info: 5 seconds
+  TVShows:
+    rss: http://showrss.info/user/19360.rss??magnets=true&namespaces=true&name=clean&quality=null&re=null
+    all_series: yes
+    download: /downloads/
+
+domain_delay:
+  showrss.info: 5 seconds
+
+retry_failed:
+    retry_time: 10 seconds
+    retry_time_multiplier: 1
+    max_retries: 4

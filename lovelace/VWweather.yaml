@@ -1,0 +1,31 @@
+title: Weather
+#panel: true
+icon: mdi:weather-sunny
+id: Weather
+# The cards to show on this view.
+cards:
+    # The filter card will filter entities for their state
+    - id: weather
+      type: vertical-stack
+                       
+      cards: 
+        - !include /config/lovelace/includes/weather_full.yaml
+        #- !include /config/lovelace/includes/weather_simple.yaml
+          
+        
+        #- type: entities
+        #  title: BOM Forecast
+        #  show_header_toggle: false
+        #  entities:
+        #    - sensor.bom_forecast_0
+        #    - sensor.bom_forecast_1
+        #    - sensor.bom_forecast_2
+        #    - sensor.bom_forecast_3
+        #    - sensor.bom_forecast_4
+        #    - sensor.bom_forecast_5
+        #    - sensor.bom_forecast_6
+        #- type: picture-glance
+        #  title: Weather     
+        #  entities: 
+        #    - sensor.dark_sky_apparent_temperature     
+        #  #camera_image: camera.perthradar

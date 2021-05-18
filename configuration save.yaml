@@ -1,0 +1,270 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets  
+  latitude: !secret HomeLat
+  longitude: !secret HomeLong
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 180
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Australia/Perth
+  # Customization file
+  customize: !include_dir_merge_named customized
+
+# Show links to resources in log and frontend
+introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+http:
+  api_password: !secret http_password
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook: !include logbook.yaml
+
+# Enables a map showing the location of tracked devices
+map:
+# recorder
+recorder:
+  purge_keep_days: 7
+  purge_interval: 3
+ # db_url: !secret dbURL
+
+
+mqtt:
+  broker: 10.0.0.180
+  port: 1883
+  client_id: home-assistant-1
+  username: !secret MQuser
+  password: !secret MQpass
+
+
+# Track the sun
+sun:
+
+
+# Text to speech
+tts:
+  - platform: google
+
+# Cloud
+cloud:
+
+device_tracker:
+  - platform: nmap_tracker
+    hosts:   -Pn 10.0.0.100-222
+     # Minutes nmap will not scan a device, assuming it is home#    home_interval: 10
+    # Seconds between each scan for new devices (default: 12)
+    interval_seconds: 60
+    # Seconds to wait till marking someone as not home after not being seen (default: 180)
+    consider_home: 240
+    track_new_devices: yes
+
+
+influxdb:
+  host: 10.0.0.180
+  port: 8086
+  include:
+    domains:
+    - sensor
+    - sun
+ # 
+  # 
+
+
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+#switch: !include switch.yaml
+sensor:  
+  - platform: darksky
+    api_key: f3be3c12c3b92cad6514f909afccd640
+    forecast:
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+    monitored_conditions:
+          - icon
+          - summary
+          - nearest_storm_distance
+          - nearest_storm_bearing
+          - humidity
+          - temperature
+          - temperature_high
+          - temperature_low
+          - apparent_temperature
+          - apparent_temperature_high
+          - apparent_temperature_low
+          - wind_speed
+          - wind_bearing
+          - precip_type
+          - precip_probability
+          - precip_accumulation
+          - precip_intensity
+          - precip_intensity_max
+          - uv_index
+          - daily_summary
+          - pressure
+          - visibility
+    update_interval:
+          minutes: 5
+  - platform: rest
+    resource: http://10.0.0.200/solar_api/v1/GetPowerFlowRealtimeData.fcgi
+    name: "PV"
+    value_template: >-
+      {% if value_json.Body.Data.Site.P_PV != null %}  {{value_json.Body.Data.Site.P_PV | multiply(0.001) | float(0) | round (2) }}
+      {% else %} 0
+      {% endif %}
+    unit_of_measurement: kWh
+  - platform: rest
+    resource: http://10.0.0.200/solar_api/v1/GetPowerFlowRealtimeData.fcgi
+    name: "Grid power"
+    value_template: '{{value_json.Body.Data.Site.P_Grid | multiply(-0.001) | float(2) | round (2) }} '
+    unit_of_measurement: kWh
+  - platform: plex
+    host: 10.0.0.180
+    token: "wMuxeQXmkGGN23pRbqdz"
+  - platform: rest
+    resource: http://10.0.0.200/solar_api/v1/GetPowerFlowRealtimeData.fcgi
+    name: "Load"
+    value_template: '{{value_json.Body.Data.Site.P_Load | multiply(0.001) | float(2) | round (2) }} '
+    unit_of_measurement: kWh
+
+switch:
+- platform: mqtt
+  state_topic: "devices/Lamp01/motion/AutoSelf"
+  command_topic: "devices/Lamp01/motion/AutoSelf/set"
+  name: "Auto Light"
+  qos: 0
+  payload_on: "on"
+  payload_off: "off"
+- platform : mqtt
+  state_topic: "devices/Garage/switch/on"
+  command_topic: "devices/Garage/switch/on/set"
+  name: Garage Door Control
+  payload_on: "Yes"
+  payload_off: "No"
+- platform : mqtt
+  state_topic: "stat/Grdwater/POWER"
+  command_topic: "cmnd/Grdwater/power"
+  name: Fountain
+  payload_on: "ON"
+  payload_off: "OFF"
+- platform : mqtt
+  state_topic: "stat/Grdlight/POWER"
+  command_topic: "cmnd/Grdlight/power"
+  name: Garden Lights
+  payload_on: "ON"
+  payload_off: "OFF"
+- platform : mqtt
+  state_topic: "stat/Grdfire/POWER"
+  command_topic: "cmnd/Grdfire/power"
+  name: Garden Fire
+  payload_on: "ON"
+  payload_off: "OFF"
+- platform : mqtt
+  state_topic: "stat/plug6/POWER"
+  command_topic: "cmnd/plug6/power"
+  name: Cupboard Light
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:lightbulb
+- platform : mqtt
+  state_topic: "stat/plug5/POWER"
+  command_topic: "cmnd/plug5/power"
+  name: Wire Light
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:lightbulb
+- platform : mqtt
+  state_topic: "stat/BlanketLB/POWER"
+  command_topic: "cmnd/BlanketLB/power"
+  name: Lee Blanket
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:hotel
+- platform : mqtt
+  state_topic: "stat/plug7/POWER"
+  command_topic: "cmnd/plug7/power"
+  name: Xmas Tree
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:hotel
+- platform : mqtt
+  state_topic: "stat/plug8/POWER"
+  command_topic: "cmnd/plug8/power"
+  name: Fan
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:fan
+- platform : mqtt
+  state_topic: "stat/Light1A/POWER"
+  command_topic: "cmnd/Light1A/power"
+  name: Wire Lamp
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:lava-lamp
+
+tuya:
+  username: leeiberry@gmail.com
+  password: light8944
+  country_code: 61
+
+
+
+
+panel_iframe:
+  nodered:
+    title: 'Node-Red'
+    icon: 'mdi:shuffle-variant'
+    url: 'http://10.0.0.180:1880'
+  sonweb:
+    title: SonWEB
+    icon: mdi:lightbulb-on
+    url: http://10.0.0.155:9541
+
+
+wemo:
+
+input_select:
+  alarm_mode:
+    name: Alarm Mode
+    options:
+      - "off"
+      - "on"
+    icon: mdi:alarm-light
+
+
+xiaomi_aqara:
+  discovery_retry: 10
+  gateways:
+    - mac:
+      key: fyi1nxb0z1zwfs4u

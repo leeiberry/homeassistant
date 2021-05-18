@@ -1,0 +1,26 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Jun  4 2019, 01:23:43",
+            "esphome_version": "1.13.3",
+            "has_deep_sleep": false,
+            "mac_address": "18:FE:34:D8:5E:FA",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "test1",
+            "uses_password": true
+        },
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 3766322586,
+                "name": "Living Room Dehumidifier",
+                "object_id": "living_room_dehumidifier",
+                "unique_id": "test1switchliving_room_dehumidifier"
+            }
+        ]
+    },
+    "key": "esphome.d074aa2e3d9d471c819de66f52093ff1",
+    "version": 1
+}

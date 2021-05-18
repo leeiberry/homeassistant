@@ -1,0 +1,127 @@
+title: Theater
+panel: false
+icon: mdi:theater
+id: theater
+theme: dark-mode
+# The cards to show on this view.
+cards:
+    # The filter card will filter entities for their state
+    - id: theater1
+      type:  vertical-stack
+      title: Theater
+      cards:
+        - type:  vertical-stack 
+          cards:
+          - type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.theater_room
+                name: Theater Ceiling  
+                icon: mdi:ceiling-light
+                state:
+                  - value: "unavailable"
+                    color: var(--state-icon-color)                  
+                
+              - type: 'custom:rgb-light-card'
+                entity: light.theater_room
+                justify: center
+                colors:
+                - color_name: blue
+                  brightness: 180
+                - color_name: white
+                  brightness: 255
+                - color_name: red
+                  brightness: 128
+                  icon_color: red 
+                - color_name: gold
+                  brightness: 128
+                  icon_color: gold                
+                
+       
+              
+
+# media_player.lg_tv
+
+
+              #color: grey
+              
+                  # - entity: binary_sensor.motion_sensor_158d00015da5fd
+                  #   secondary_info: last-changed
+              
+        
+
+          #- type: 'custom:lg-remote-control'
+          #  entity: media_player.lg_tv
+              
+          - type: custom:mini-media-player
+            entity: media_player.lg_tv_2
+            icon: mdi:television
+            artwork_border: true
+            show_source: true     
+
+          - type: custom:mini-media-player
+            entity: media_player.theater_tv
+            icon: mdi:cast
+            artwork: cover
+            show_source: true 
+            
+        
+          #- type: conditional
+          #  conditions:
+          #    - entity: media_player.lg_70uj657t_ta
+          #      state: "playing"
+          #  card:
+          #    type: custom:mini-media-player
+          #    entity:  media_player.lg_70uj657t_ta 
+          #    icon: mdi:television
+          #    power_color: true
+          #    artwork_border: true
+          #    show_source: true 
+
+
+          - type: custom:mini-media-player
+            entity:  media_player.galaxy_tab_s2_9_7_2
+            name: LG Plex
+            icon: mdi:cast
+            artwork: cover
+            # artwork_border: true
+            show_source: true 
+          #- type: horizontal-stack 
+          #  cards:
+         
+          - type: vertical-stack
+            cards:
+            - type: custom:upcoming-media-card
+              entity: sensor.sonarr_upcoming_media
+              title: Upcoming Shows
+              service: sonarr
+              image_style: fanart
+              all_shadows: off
+              
+            - type: custom:upcoming-media-card
+              entity: sensor.recently_added_tv
+              title: Recent Shows
+              service: plex
+              image_style: fanart
+              all_shadows: off
+    
+  
+        
+
+            #- type: entities
+            #  title: Bittorrent
+            #  entities:
+            #  - sensor.qbittorrent_up_speed
+            #  - sensor.qbittorrent_down_speed
+            #  - sensor.qbittorrent_status
+            #  show_header_toggle: false
+              
+
+
+
+
+           # - type: glance
+           #   show_name: false
+           #   entities:
+           #       - binary_sensor.motion_sensor_158d00015da5fd
+

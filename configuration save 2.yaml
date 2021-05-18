@@ -1,0 +1,227 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret HomeLat
+  longitude: !secret HomeLong
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 0
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Australia/Perth
+  # Customization file
+  customize: !include customize.yaml
+  auth_providers:
+   - type: legacy_api_password
+     api_password: !secret http_password
+
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+lovelace:
+  mode: yaml
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+ ignore:
+    - yeelight
+
+
+
+  
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook: !include logbook.yaml
+
+# recorder
+recorder:
+  purge_keep_days: 7
+  purge_interval: 3
+  db_url: !secret dbURL
+  include:
+    domains:
+      - sensor
+      - sun
+      - switch
+      - device_tracker
+      - light
+      - binary_sensor
+      
+
+influxdb:
+  host: 10.0.0.180
+  port: 8086
+  include:
+    domains:
+    - sensor
+    - sun
+
+
+mqtt:
+  broker: 10.0.0.180
+  port: 1883
+  client_id: home-assistant-1
+  username: !secret MQuser
+  password: !secret MQpass
+
+stream:
+
+system_health:
+# Track the sun
+sun:
+
+# Text to speech
+tts:
+  - platform: google_translate
+    service_name: google_say
+
+# Cloud
+cloud:
+
+#group: !include groups.yaml
+#automation: !include automations.yaml
+#script: !include scripts.yaml
+switch: !include switch.yaml
+sensor: !include sensor.yaml
+#group: !include groups.yaml
+
+
+
+panel_iframe:
+  nodered:
+    title: 'Node-Red'
+    icon: 'mdi:shuffle-variant'
+    url: 'http://10.0.0.180:1880'
+  sonweb:
+    title: SonWEB
+    icon: mdi:lightbulb-on
+    url: http://10.0.0.180:9541
+  powerweb:
+    title: Power
+    icon:  mdi:solar-power
+    url:  http://10.0.0.180:3003/dashboard/db/power-usage
+
+#media_player:
+#  - platform: webostv
+#    host: 10.0.0.202
+#    name: LG TV
+#    filename: webostv.conf
+#    timeout: 5
+#    turn_on_action:
+#     service: wake_on_lan.send_magic_packet
+#     data:
+#        mac: "38:8C:50:94:64:C8"
+#    customize:
+#      sources:
+#        - livetv
+#        - youtube
+#        - netflix
+- platform: plex
+    entity_namespace: 'plex'
+    show_all_controls: false
+    use_episode_art: true
+    remove_unavailable_clients: true
+    client_remove_interval: 600
+    
+#wemo:
+#  discovery: false
+#  static: 
+#    - 10.0.0.52
+
+light:
+  - platform: yeelight
+    devices:
+       10.0.0.190:
+         name: Aimee Light
+       10.0.0.192:
+         name: Jayden Light       
+       10.0.0.194:
+         name: Theater Room
+  - platform: group
+    name: Kitchen Lights
+    entities:
+      - light.6135078584f3eb0b3b30
+      - light.7808263084f3eb808d91
+  - platform: group
+    name: Dinning Lights
+    entities:
+      - light.6135078584f3eb0b3e0b
+      - light.7808263084f3eb8092bc
+  
+#speedtestdotnet:
+#  scan_interval:
+#    minutes: 15
+#  monitored_conditions:
+#    - ping
+#    - download
+#    - upload
+
+
+#tuya:
+#  username: leeiberry@gmail.com
+#  password: light8944
+#  country_code: 61
+
+input_select:
+  alarm_mode:
+    name: Alarm Mode
+    options:
+      - "off"
+      - "on"
+      - "away"
+    icon: mdi:alarm-light
+  auto_mode:
+    name: Auto Mode
+    options:
+      - "on"
+      - "off"
+      - "part"
+    icon: mdi:auto-fix
+
+#xiaomi_aqara:
+#  discovery_retry: 10
+#  gateways:
+#    - mac:
+#      key: fyi1nxb0z1zwfs4u
+
+camera:
+  - platform: mjpeg
+    name: Lounge 
+    mjpeg_url: http://10.0.0.152:8081
+    username: admin
+    password: light8944
+    #authentication: basic
+
+
+
+
+device_tracker:
+  - platform: nmap_tracker
+    hosts:   -Pn 10.0.0.100-222
+     #        -Pn 10.0.0.001-020
+    scan_options: " -Pn -p 5060 "
+     # Minutes nmap will not scan a device, assuming it is home#    home_interval: 10
+    # Seconds between each scan for new devices (default: 12)
+    interval_seconds: 60
+    # Seconds to wait till marking someone as not home after not being seen (default: 180)
+    consider_home: 240
+    track_new_devices: yes
+

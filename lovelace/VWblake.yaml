@@ -1,0 +1,44 @@
+title: Blake
+visible: 
+  - user: a8c8c1b139fc40d7b985cc5943a29477 #blake
+  - user: 5c4082cf03ff4a4e943c4b4d7309044f #lee
+path: blake
+icon: mdi:home    
+cards:
+  - type: horizontal-stack
+    title: Blake
+    cards: 
+    - type: vertical-stack
+      cards:   
+          - !include /config/lovelace/includes/phones.yaml
+          - type: horizontal-stack              
+            cards: 
+            - !include /config/lovelace/includes/garage_button.yaml
+            - !include /config/lovelace/includes/power_button.yaml
+              
+          - !include /config/lovelace/includes/weather_simple.yaml
+
+          # third row     
+          - type: horizontal-stack              
+            cards:
+              - type: conditional
+                conditions:
+                - entity:  light.35054083ecfabc1dd7eb 
+                  state_not: "unavailable"
+                card: 
+                  type: entities
+                  entities:
+                    - type: custom:slider-entity-row
+                      entity: light.35054083ecfabc1dd7eb 
+                      name: Blake Ceiling   
+                      icon: mdi:ceiling-light
+                    - type: "custom:button-card"
+                      entity: device_tracker.ps4wired
+                      template: phones   
+                    
+                               
+                    
+                    
+              
+
+  

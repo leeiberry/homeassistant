@@ -1,12 +1,3 @@
-- platform: orvibo
-  discovery : false
-  switches:
-  - host: 10.0.0.160
-    mac: ac:cf:23:99:76:f6
-    name: "Cabinet Light"
-  - host: 10.0.0.161
-    mac: ac:cf:23:9c:de:0c
-    name: "Wire Light"
 - platform: mqtt
   state_topic: "devices/Lamp01/motion/AutoSelf"
   command_topic: "devices/Lamp01/motion/AutoSelf/set"
@@ -14,6 +5,7 @@
   qos: 0
   payload_on: "on"
   payload_off: "off"
+
 - platform : mqtt
   state_topic: "devices/Garage/switch/on"
   command_topic: "devices/Garage/switch/on/set"
@@ -21,29 +13,198 @@
   payload_on: "Yes"
   payload_off: "No"
 - platform : mqtt
+
   state_topic: "stat/Grdwater/POWER"
   command_topic: "cmnd/Grdwater/power"
   name: Fountain
   payload_on: "ON"
   payload_off: "OFF"
+
 - platform : mqtt
   state_topic: "stat/Grdlight/POWER"
   command_topic: "cmnd/Grdlight/power"
   name: Garden Lights
   payload_on: "ON"
   payload_off: "OFF"
+
 - platform : mqtt
   state_topic: "stat/Grdfire/POWER"
   command_topic: "cmnd/Grdfire/power"
   name: Garden Fire
   payload_on: "ON"
   payload_off: "OFF"
-- platform: broadlink
-  host: 10.0.0.210
-  mac: b4:43:0d:dc:8e:a8
-  timeout: 15
+
+- platform : mqtt
+  state_topic: "stat/plug6/POWER"
+  command_topic: "cmnd/plug6/power"
+  name: Cupboard Light
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:lightbulb
+
+- platform : mqtt
+  state_topic: "stat/plug5/POWER"
+  command_topic: "cmnd/plug5/power"
+  name: Wire Light
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:lightbulb
+
+- platform : mqtt
+  state_topic: "stat/plug7/POWER"
+  command_topic: "cmnd/plug7/power"
+  name: Christmas Tree
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:pine-tree
+
+- platform : mqtt
+  state_topic: "stat/plug8/POWER"
+  command_topic: "cmnd/plug8/power"
+  name: TV Power
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:monitor
+
+
+- platform : mqtt
+  state_topic: "stat/DeskLights/POWER"
+  command_topic: "cmnd/DeskLights/power"
+  name: Desk Lights
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:desk-lamp
+  
+- platform : mqtt
+  state_topic: "stat/Light1A/POWER"
+  command_topic: "cmnd/Light1A/power"
+  name: Wire Lamp
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:lava-lamp
+
+- platform : mqtt
+  state_topic: "stat/plug8/POWER"
+  command_topic: "iotlink/berrys/mercury/commands/notify"
+  name: Mercury logoff
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:monitor
+
+- platform : mqtt
+  state_topic: "stat/koganp1/POWER"
+  command_topic: "cmnd/koganp1/POWER"
+  name: Tumble Dryer
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:tumble-dryer
+
+- platform : mqtt
+  state_topic: "stat/koganp2/POWER"
+  command_topic: "cmnd/koganp2/POWER"
+  name: Washing Machine 
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:washing-machine
+
+- platform : mqtt
+  state_topic: "stat/koganp3/POWER"
+  command_topic: "cmnd/koganp3/POWER"
+  name: Dish Washer
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:dishwasher
+
+- platform : mqtt
+  state_topic: "stat/koganp4/POWER"
+  command_topic: "cmnd/koganp4/POWER"
+  name: Kitt Lamp
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:lamp
+
+
+- platform : mqtt
+  state_topic: "stat/koganp5/POWER"
+  command_topic: "cmnd/koganp5/POWER"
+  name: Lee blanket
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:bed-empty
+
+
+- platform : mqtt
+  state_topic: "stat/koganp6/POWER"
+  command_topic: "cmnd/koganp6/POWER"
+  name: Caroline Blanket
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:bed-empty
+
+- platform : mqtt
+  state_topic: "stat/koganp7/POWER"
+  command_topic: "cmnd/koganp7/POWER"
+  name: Xmas Tree
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:power-plug
+
+- platform : mqtt
+  state_topic: "stat/koganp8/POWER"
+  command_topic: "cmnd/koganp8/POWER"
+  name: koganp8
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:power-plug
+
+
+- platform : mqtt
+  state_topic: "stat/BoardP1/POWER1"
+  command_topic: "cmnd/BoardP1/POWER1"
+  name: Power Board 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:power-plug
+
+- platform : mqtt
+  state_topic: "stat/BoardP1/POWER2"
+  command_topic: "cmnd/BoardP1/POWER2"
+  name: Power Board 2
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:power-plug
+
+- platform : mqtt
+  state_topic: "stat/BoardP1/POWER3"
+  command_topic: "cmnd/BoardP1/POWER3"
+  name: Power Board 3
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:power-plug
+
+- platform : mqtt
+  state_topic: "stat/BoardP1/POWER4"
+  command_topic: "cmnd/BoardP1/POWER4"
+  name: Power Board 4
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:power-plug
+
+- platform : mqtt
+  state_topic: "stat/BoardP1/POWER5"
+  command_topic: "cmnd/BoardP1/POWER5"
+  name: Power Board USB
+  payload_on: "ON"
+  payload_off: "OFF"
+  icon: mdi:usb-port 
+
+- platform: template
   switches:
-    panasonic:
-      friendly_name : "Lounge TV"
-      command_on: 'JgAyAXM4EA0QKRANEAwRDBANEA0QDBANEA0QDBEMEA0QKRANEA0QDBANEA0QDBEMEA0QDBEpEA0QDBANEA0QDBEMEA0QDBEpEA0QKRApESkQKRANEA0QKRANECkQKREpECkQDRApEQAJjHQ3EQwQKhAMEA0QDRAMEQwQDRAMEQwQDRANEAwQKhAMEA0QDRAMEQwQDRANEAwQDRApEA0QDRAMEQwQDRANEAwQDRApEA0QKREpECkQKhAMEA0QKREMECoQKRApECoQDBAqEAAJjXM4EA0QKRANEAwRDBANEA0QDBANEA0QDBEMEA0QKRANEA0QDBANEA0QDBANEA0QDBEpEA0QDBANEA0QDBEMEA0QDBEpEAwRKRApESkQKRANEA0QKRANECkQKREpECkQDRApEAANBQAAAAAAAA=='
-#      command_off: 'JgDMAHQ3EA0QKRANEA0QDBEMEA0QDBEMEA0QDBEMEA0QKREMEA0QDBEMEA0QDBEMEA0QDRApEA0QDBEMEA0QDBEMEA0QDRAMEA0QKREMECkRKRANEAwRDBANECkQDRApECoQDBAqEAAJiXQ4EA0QKRANEAwRDBANEA0QDBANEA0QDBEMEA0QKRANEA0QDBANEA0QDBANEA0QDBEpEA0QDBANEA0QDBANEA0QDBEMEA0QKRANECkQKhAMEQwQDRANECkQDRApECkRDBApEQANBQAAAAAAAAAAAAAAAA=='
+    mercuryshutdown:
+      friendly_name: "Mercury Shutdown"
+      value_template: "{{ is_state('binary_sensor.mercury', 'on') }}"
+      turn_on:
+   #     service: script.mercury_wake
+      turn_off:
+        service: script.mercury_shutdown
+      icon_template: mdi:laptop

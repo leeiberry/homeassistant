@@ -1,0 +1,8 @@
+platform: sonarr
+host: 10.0.0.180
+port: 8889
+image_style: fanart
+api_key: ffc71dadcd934565b0655c9a76bb2c31
+monitored_conditions:
+  - upcoming
+days: 2

@@ -1,0 +1,58 @@
+{
+    "version": "6",
+    "key": "hacs/145180996.hacs",
+    "data": {
+        "archived": false,
+        "authors": [
+            "@iantrich"
+        ],
+        "category": "integration",
+        "content_in_root": false,
+        "country": [],
+        "config_flow": false,
+        "default_branch": "master",
+        "description": "\ud83d\udcf0 RSS Feed Integration",
+        "domain": "feedparser",
+        "domains": [
+            "sensor"
+        ],
+        "downloads": 0,
+        "etag_repository": "W/\"4e8678fa250c1771c313c40f0dbf4265e8565ae149cb99ba90d3989f756ced0d\"",
+        "file_name": "",
+        "filename": "",
+        "first_install": false,
+        "fork": false,
+        "full_name": "custom-components/feedparser",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": "2021.4.0",
+        "id": "145180996",
+        "iot_class": null,
+        "installed": true,
+        "installed_commit": "83fc08c",
+        "installed_version": "0.1.5",
+        "open_issues": 5,
+        "last_commit": "83fc08c",
+        "last_version": "0.1.5",
+        "last_updated": "2021-04-08T23:27:17Z",
+        "manifest_name": "Feedparser",
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2021-04-08T23:27:17",
+        "releases": true,
+        "render_readme": true,
+        "published_tags": [
+            "0.1.5",
+            "0.1.4",
+            "0.1.2",
+            "0.1.1",
+            "0.1.0"
+        ],
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 47,
+        "topics": [],
+        "zip_release": false
+    }
+}

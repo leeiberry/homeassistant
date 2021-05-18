@@ -1,0 +1,1176 @@
+{
+    "version": 1,
+    "key": "mobile_app",
+    "data": {
+        "binary_sensor": {
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_is_charging": {
+                "added": true,
+                "attributes": {},
+                "device_class": "plug",
+                "icon": "mdi:power-plug-off",
+                "name": "Is Charging",
+                "state": false,
+                "type": "binary_sensor",
+                "unique_id": "is_charging",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5_is_charging": {
+                "added": true,
+                "attributes": {},
+                "device_class": "plug",
+                "icon": "mdi:power-plug",
+                "name": "Is Charging",
+                "state": true,
+                "type": "binary_sensor",
+                "unique_id": "is_charging",
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_music_active": {
+                "unique_id": "music_active",
+                "state": false,
+                "type": "binary_sensor",
+                "icon": "mdi:music-off",
+                "attributes": {},
+                "name": "Music Active",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889",
+                "added": true
+            }
+        },
+        "deleted_ids": [
+            "2f7ec24e66a8dbac51abec12abfb156dec450f547d02e0712969173f1292acf5",
+            "56827262d4fc2c0125419835d194d746f410ec814eac8e2934cba4fd58818a68",
+            "39ea78cb3d9fdd9cabd0fe0502cf5d0595f9fa2a6c0b6519eb53a73828173ba8",
+            "5ceae6ca2fedd39ff2be882e5fb0714c619011cb847819bd21655fa151184e4f"
+        ],
+        "sensor": {
+            "2f7ec24e66a8dbac51abec12abfb156dec450f547d02e0712969173f1292acf5_battery_level": {
+                "added": true,
+                "attributes": {
+                    "charger_type": "N/A",
+                    "is_charging": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-80",
+                "name": "Battery Level",
+                "state": 84,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "2f7ec24e66a8dbac51abec12abfb156dec450f547d02e0712969173f1292acf5"
+            },
+            "2f7ec24e66a8dbac51abec12abfb156dec450f547d02e0712969173f1292acf5_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "Western Australia",
+                    "Country": "Australia",
+                    "ISO Country Code": "AU",
+                    "Locality": "Harrisdale",
+                    "Location": [
+                        -32.1159819,
+                        115.92192279999999
+                    ],
+                    "Postal Code": "6112",
+                    "Sub Administrative Area": "City of Armadale",
+                    "Sub Locality": null,
+                    "Sub Thoroughfare": "18",
+                    "Thoroughfare": "Oakleigh Pass"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "18 Oakleigh Pass, Harrisdale WA 6112, Australia",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "2f7ec24e66a8dbac51abec12abfb156dec450f547d02e0712969173f1292acf5"
+            },
+            "2f7ec24e66a8dbac51abec12abfb156dec450f547d02e0712969173f1292acf5_wifi_connection": {
+                "added": true,
+                "attributes": {
+                    "bssid": "e4:f0:42:f0:32:80",
+                    "frequency": 5745,
+                    "ip_address": "10.0.0.100",
+                    "is_hidden": false,
+                    "link_speed": 780,
+                    "signal_level": -51
+                },
+                "icon": "mdi:wifi-strength-3",
+                "name": "Wifi Connection",
+                "state": "TelstraFD2598",
+                "type": "sensor",
+                "unique_id": "wifi_connection",
+                "webhook_id": "2f7ec24e66a8dbac51abec12abfb156dec450f547d02e0712969173f1292acf5"
+            },
+            "39ea78cb3d9fdd9cabd0fe0502cf5d0595f9fa2a6c0b6519eb53a73828173ba8_battery_level": {
+                "added": true,
+                "attributes": {
+                    "charger_type": "N/A",
+                    "is_charging": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-80",
+                "name": "Battery Level",
+                "state": 88,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "39ea78cb3d9fdd9cabd0fe0502cf5d0595f9fa2a6c0b6519eb53a73828173ba8"
+            },
+            "39ea78cb3d9fdd9cabd0fe0502cf5d0595f9fa2a6c0b6519eb53a73828173ba8_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "Western Australia",
+                    "Country": "Australia",
+                    "ISO Country Code": "AU",
+                    "Locality": "Harrisdale",
+                    "Location": [
+                        -32.1160949,
+                        115.92178419999999
+                    ],
+                    "Postal Code": "6112",
+                    "Sub Administrative Area": "City of Armadale",
+                    "Sub Locality": null,
+                    "Sub Thoroughfare": "16",
+                    "Thoroughfare": "Oakleigh Pass"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "16 Oakleigh Pass, Harrisdale WA 6112, Australia",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "39ea78cb3d9fdd9cabd0fe0502cf5d0595f9fa2a6c0b6519eb53a73828173ba8"
+            },
+            "39ea78cb3d9fdd9cabd0fe0502cf5d0595f9fa2a6c0b6519eb53a73828173ba8_wifi_connection": {
+                "added": true,
+                "attributes": {
+                    "bssid": "e4:f0:42:f0:32:80",
+                    "frequency": 5745,
+                    "ip_address": "10.0.0.100",
+                    "is_hidden": false,
+                    "link_speed": 526,
+                    "signal_level": -61
+                },
+                "icon": "mdi:wifi-strength-2",
+                "name": "Wifi Connection",
+                "state": "TelstraFD2598",
+                "type": "sensor",
+                "unique_id": "wifi_connection",
+                "webhook_id": "39ea78cb3d9fdd9cabd0fe0502cf5d0595f9fa2a6c0b6519eb53a73828173ba8"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_audio_sensor": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:vibrate",
+                "name": "Audio Sensor",
+                "state": "vibrate",
+                "type": "sensor",
+                "unique_id": "audio_sensor",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_battery_health": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:battery-charging",
+                "name": "Battery Health",
+                "state": "good",
+                "type": "sensor",
+                "unique_id": "battery_health",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_battery_level": {
+                "added": true,
+                "attributes": {},
+                "device_class": "battery",
+                "icon": "mdi:battery-90",
+                "name": "Battery Level",
+                "state": 97,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_battery_state": {
+                "added": true,
+                "attributes": {},
+                "device_class": "battery",
+                "icon": "mdi:battery-minus",
+                "name": "Battery State",
+                "state": "discharging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_bluetooth_connection": {
+                "added": true,
+                "attributes": {
+                    "connected_not_paired_devices": "[E6:FB:94:DD:3B:E4]",
+                    "connected_paired_devices": "[E6:FB:94:DD:3B:E4]",
+                    "paired_devices": "[90:03:B7:A4:E9:22, 8C:DE:52:A5:D8:06, 00:1B:66:C5:4E:90, E6:FB:94:DD:3B:E4, A8:91:3D:D8:9E:9D, B0:1F:81:E3:B2:4E]"
+                },
+                "icon": "mdi:bluetooth",
+                "name": "Bluetooth Connection",
+                "state": 2,
+                "type": "sensor",
+                "unique_id": "bluetooth_connection",
+                "unit_of_measurement": "connection(s)",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_charger_type": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:battery",
+                "name": "Charger Type",
+                "state": "none",
+                "type": "sensor",
+                "unique_id": "charger_type",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_detected_activity": {
+                "added": true,
+                "attributes": {
+                    "still": 100
+                },
+                "icon": "mdi:sleep",
+                "name": "Detected Activity",
+                "state": "still",
+                "type": "sensor",
+                "unique_id": "detected_activity",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_dnd_sensor": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:do-not-disturb",
+                "name": "Do Not Disturb Sensor",
+                "state": "off",
+                "type": "sensor",
+                "unique_id": "dnd_sensor",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "Western Australia",
+                    "Country": "Australia",
+                    "ISO Country Code": "AU",
+                    "Latitude": -32.115982,
+                    "Locality": "Harrisdale",
+                    "Longitude": 115.92192,
+                    "Postal Code": "6112",
+                    "Sub Administrative Area": "City of Armadale",
+                    "Sub Locality": "null",
+                    "Sub Thoroughfare": "18",
+                    "Thoroughfare": "Oakleigh Pass"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "18 Oakleigh Pass, Harrisdale WA 6112, Australia",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_last_reboot": {
+                "added": true,
+                "attributes": {
+                    "Local Time": "Fri Apr 09 12:11:04 GMT+08:00 2021",
+                    "Time in Milliseconds": 1617941464167
+                },
+                "device_class": "timestamp",
+                "icon": "mdi:restart",
+                "name": "Last Reboot",
+                "state": "2021-04-09T04:11:04Z",
+                "type": "sensor",
+                "unique_id": "last_reboot",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_light_sensor": {
+                "added": true,
+                "attributes": {},
+                "device_class": "illuminance",
+                "icon": "mdi:brightness-5",
+                "name": "Light Sensor",
+                "state": "1",
+                "type": "sensor",
+                "unique_id": "light_sensor",
+                "unit_of_measurement": "lx",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_next_alarm": {
+                "added": true,
+                "attributes": {
+                    "Local Time": "",
+                    "Package": "",
+                    "Time in Milliseconds": 0
+                },
+                "device_class": "timestamp",
+                "icon": "mdi:alarm",
+                "name": "Next Alarm",
+                "state": "unavailable",
+                "type": "sensor",
+                "unique_id": "next_alarm",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_phone_state": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:phone",
+                "name": "Phone State",
+                "state": "idle",
+                "type": "sensor",
+                "unique_id": "phone_state",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_pressure_sensor": {
+                "added": true,
+                "attributes": {},
+                "device_class": "pressure",
+                "icon": "mdi:gauge",
+                "name": "Pressure Sensor",
+                "state": "1013.6",
+                "type": "sensor",
+                "unique_id": "pressure_sensor",
+                "unit_of_measurement": "hPa",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_proximity_sensor": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:leak",
+                "name": "Proximity Sensor",
+                "state": "far",
+                "type": "sensor",
+                "unique_id": "proximity_sensor",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_storage_sensor": {
+                "added": true,
+                "attributes": {
+                    "Free external storage": "No SD Card",
+                    "Free internal storage": "37GB",
+                    "Total external storage": "No SD Card",
+                    "Total internal storage": "111GB"
+                },
+                "icon": "mdi:harddisk",
+                "name": "Storage Sensor",
+                "state": 34,
+                "type": "sensor",
+                "unique_id": "storage_sensor",
+                "unit_of_measurement": "%",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889_wifi_connection": {
+                "added": true,
+                "attributes": {
+                    "is_hidden": false
+                },
+                "icon": "mdi:wifi",
+                "name": "Wifi Connection",
+                "state": "TelstraFD2598",
+                "type": "sensor",
+                "unique_id": "wifi_connection",
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "56827262d4fc2c0125419835d194d746f410ec814eac8e2934cba4fd58818a68_battery_level": {
+                "added": true,
+                "attributes": {
+                    "charger_type": "N/A",
+                    "is_charging": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-80",
+                "name": "Battery Level",
+                "state": 83,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "56827262d4fc2c0125419835d194d746f410ec814eac8e2934cba4fd58818a68"
+            },
+            "56827262d4fc2c0125419835d194d746f410ec814eac8e2934cba4fd58818a68_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "Western Australia",
+                    "Country": "Australia",
+                    "ISO Country Code": "AU",
+                    "Locality": "Harrisdale",
+                    "Location": [
+                        -32.1159819,
+                        115.92192279999999
+                    ],
+                    "Postal Code": "6112",
+                    "Sub Administrative Area": "City of Armadale",
+                    "Sub Locality": null,
+                    "Sub Thoroughfare": "18",
+                    "Thoroughfare": "Oakleigh Pass"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "18 Oakleigh Pass, Harrisdale WA 6112, Australia",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "56827262d4fc2c0125419835d194d746f410ec814eac8e2934cba4fd58818a68"
+            },
+            "56827262d4fc2c0125419835d194d746f410ec814eac8e2934cba4fd58818a68_wifi_connection": {
+                "added": true,
+                "attributes": {
+                    "bssid": "e4:f0:42:f0:32:80",
+                    "frequency": 5745,
+                    "ip_address": "10.0.0.100",
+                    "is_hidden": false,
+                    "link_speed": 526,
+                    "signal_level": -50
+                },
+                "icon": "mdi:wifi-strength-3",
+                "name": "Wifi Connection",
+                "state": "TelstraFD2598",
+                "type": "sensor",
+                "unique_id": "wifi_connection",
+                "webhook_id": "56827262d4fc2c0125419835d194d746f410ec814eac8e2934cba4fd58818a68"
+            },
+            "5ceae6ca2fedd39ff2be882e5fb0714c619011cb847819bd21655fa151184e4f_battery_level": {
+                "added": true,
+                "attributes": {},
+                "device_class": "battery",
+                "icon": "mdi:battery-50",
+                "name": "Battery Level",
+                "state": 52,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "5ceae6ca2fedd39ff2be882e5fb0714c619011cb847819bd21655fa151184e4f"
+            },
+            "5ceae6ca2fedd39ff2be882e5fb0714c619011cb847819bd21655fa151184e4f_battery_state": {
+                "added": true,
+                "attributes": {
+                    "charger_type": "unknown",
+                    "is_charging": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-50",
+                "name": "Battery State",
+                "state": "discharging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "5ceae6ca2fedd39ff2be882e5fb0714c619011cb847819bd21655fa151184e4f"
+            },
+            "5ceae6ca2fedd39ff2be882e5fb0714c619011cb847819bd21655fa151184e4f_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "Western Australia",
+                    "Country": "Australia",
+                    "ISO Country Code": "AU",
+                    "Locality": "Harrisdale",
+                    "Location": [
+                        -32.1160949,
+                        115.92178419999999
+                    ],
+                    "Postal Code": "6112",
+                    "Sub Administrative Area": "City of Armadale",
+                    "Sub Locality": null,
+                    "Sub Thoroughfare": "16",
+                    "Thoroughfare": "Oakleigh Pass"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "16 Oakleigh Pass, Harrisdale WA 6112, Australia",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "5ceae6ca2fedd39ff2be882e5fb0714c619011cb847819bd21655fa151184e4f"
+            },
+            "5ceae6ca2fedd39ff2be882e5fb0714c619011cb847819bd21655fa151184e4f_wifi_connection": {
+                "added": true,
+                "attributes": {
+                    "bssid": "e4:f0:42:f0:32:80",
+                    "frequency": 5745,
+                    "ip_address": "10.0.0.7",
+                    "is_hidden": false,
+                    "link_speed": 866,
+                    "signal_level": -42
+                },
+                "icon": "mdi:wifi-strength-3",
+                "name": "Wifi Connection",
+                "state": "TelstraFD2598",
+                "type": "sensor",
+                "unique_id": "wifi_connection",
+                "webhook_id": "5ceae6ca2fedd39ff2be882e5fb0714c619011cb847819bd21655fa151184e4f"
+            },
+            "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4_battery_level": {
+                "added": true,
+                "attributes": {
+                    "Battery State": "Charging",
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-charging-80",
+                "name": "Battery Level",
+                "state": 94,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4"
+            },
+            "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4_battery_state": {
+                "added": true,
+                "attributes": {
+                    "Battery Level": 94,
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-charging-80",
+                "name": "Battery State",
+                "state": "Charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4"
+            },
+            "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4_connectivity_bssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-off",
+                "name": "BSSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "webhook_id": "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4"
+            },
+            "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4_connectivity_cellular_provider": {
+                "added": true,
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "N/A",
+                    "Carrier Name": "Telstra",
+                    "Current Radio Technology": "Wideband Code Division Multiple Access (WCDMA)",
+                    "ISO Country Code": "au",
+                    "Mobile Country Code": "505",
+                    "Mobile Network Code": "01"
+                },
+                "icon": "mdi:sim",
+                "name": "Cellular Provider",
+                "state": "Telstra",
+                "type": "sensor",
+                "unique_id": "connectivity_cellular_provider",
+                "webhook_id": "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4"
+            },
+            "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4_connectivity_connection_type": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi",
+                "name": "Connection Type",
+                "state": "Wi-Fi",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "webhook_id": "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4"
+            },
+            "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4_connectivity_sim_1": {
+                "added": true,
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000001",
+                    "Carrier Name": "Telstra",
+                    "Current Radio Technology": "Long-Term Evolution (LTE)",
+                    "ISO Country Code": "au",
+                    "Mobile Country Code": "505",
+                    "Mobile Network Code": "01"
+                },
+                "icon": "mdi:sim",
+                "name": "SIM 1",
+                "state": "Telstra",
+                "type": "sensor",
+                "unique_id": "connectivity_sim_1",
+                "webhook_id": "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4"
+            },
+            "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4_connectivity_ssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-off",
+                "name": "SSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "webhook_id": "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4"
+            },
+            "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "WA",
+                    "Areas Of Interest": "N/A",
+                    "Country": "Australia",
+                    "ISO Country Code": "AU",
+                    "Inland Water": "N/A",
+                    "Locality": "Harrisdale",
+                    "Location": [
+                        -32.116119384765625,
+                        115.92175466747905
+                    ],
+                    "Name": "16 Oakleigh Pass",
+                    "Ocean": "N/A",
+                    "Postal Code": "6112",
+                    "Sub Administrative Area": "Perth",
+                    "Sub Locality": "N/A",
+                    "Sub Thoroughfare": "16",
+                    "Thoroughfare": "Oakleigh Pass",
+                    "Time Zone": "Australia/Perth",
+                    "Zones": [
+                        "Home"
+                    ]
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "16 Oakleigh Pass\nHarrisdale WA 6112\nAustralia",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4"
+            },
+            "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4_last_update_trigger": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:cellphone-wireless",
+                "name": "Last Update Trigger",
+                "state": "Launch",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "webhook_id": "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4"
+            },
+            "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4_storage": {
+                "added": true,
+                "attributes": {
+                    "Available": "3.33 GB",
+                    "Available (Important)": "7.92 GB",
+                    "Available (Opportunistic)": "6.64 GB",
+                    "Total": "63.99 GB"
+                },
+                "icon": "mdi:database",
+                "name": "Storage",
+                "state": "10.37",
+                "type": "sensor",
+                "unique_id": "storage",
+                "unit_of_measurement": "% available",
+                "webhook_id": "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4"
+            },
+            "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f_battery_level": {
+                "added": true,
+                "attributes": {
+                    "Battery State": "Not Charging",
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-80",
+                "name": "Battery Level",
+                "state": 83,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f"
+            },
+            "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f_battery_state": {
+                "added": true,
+                "attributes": {
+                    "Battery Level": 83,
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-80",
+                "name": "Battery State",
+                "state": "Not Charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f"
+            },
+            "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f_connectivity_bssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-off",
+                "name": "BSSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "webhook_id": "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f"
+            },
+            "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f_connectivity_connection_type": {
+                "added": true,
+                "attributes": {
+                    "Cellular Technology": "4G"
+                },
+                "icon": "mdi:signal",
+                "name": "Connection Type",
+                "state": "Cellular",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "webhook_id": "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f"
+            },
+            "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f_connectivity_sim_1": {
+                "added": true,
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000001",
+                    "Carrier Name": "Telstra",
+                    "Current Radio Technology": "Long-Term Evolution (LTE)",
+                    "ISO Country Code": "au",
+                    "Mobile Country Code": "505",
+                    "Mobile Network Code": "01"
+                },
+                "icon": "mdi:sim",
+                "name": "SIM 1",
+                "state": "Telstra",
+                "type": "sensor",
+                "unique_id": "connectivity_sim_1",
+                "webhook_id": "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f"
+            },
+            "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f_connectivity_sim_2": {
+                "added": true,
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000002",
+                    "Carrier Name": "N/A",
+                    "ISO Country Code": "N/A",
+                    "Mobile Country Code": "N/A",
+                    "Mobile Network Code": "N/A"
+                },
+                "icon": "mdi:sim",
+                "name": "SIM 2",
+                "state": "N/A",
+                "type": "sensor",
+                "unique_id": "connectivity_sim_2",
+                "webhook_id": "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f"
+            },
+            "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f_connectivity_ssid": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:wifi-off",
+                "name": "SSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "webhook_id": "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f"
+            },
+            "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "WA",
+                    "Areas Of Interest": "N/A",
+                    "Country": "Australia",
+                    "ISO Country Code": "AU",
+                    "Inland Water": "N/A",
+                    "Locality": "Harrisdale",
+                    "Location": [
+                        -32.116119384765625,
+                        115.92207673581103
+                    ],
+                    "Name": "18 Oakleigh Pass",
+                    "Ocean": "N/A",
+                    "Postal Code": "6112",
+                    "Sub Administrative Area": "Perth",
+                    "Sub Locality": "N/A",
+                    "Sub Thoroughfare": "18",
+                    "Thoroughfare": "Oakleigh Pass",
+                    "Time Zone": "Australia/Perth"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "18 Oakleigh Pass\nHarrisdale WA 6112\nAustralia",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f"
+            },
+            "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f_last_update_trigger": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:cellphone-wireless",
+                "name": "Last Update Trigger",
+                "state": "Launch",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "webhook_id": "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f"
+            },
+            "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f_storage": {
+                "added": true,
+                "attributes": {
+                    "Available": "27.91 GB",
+                    "Available (Important)": "33.23 GB",
+                    "Available (Opportunistic)": "31.94 GB",
+                    "Total": "63.99 GB"
+                },
+                "icon": "mdi:database",
+                "name": "Storage",
+                "state": "49.92",
+                "type": "sensor",
+                "unique_id": "storage",
+                "unit_of_measurement": "% available",
+                "webhook_id": "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f"
+            },
+            "f899c5e2b9c32a81385252251b10f40b6e2a3ef849fec330ba799fa800a1df9f_battery_level": {
+                "added": true,
+                "attributes": {},
+                "device_class": "battery",
+                "icon": "mdi:battery-80",
+                "name": "Battery Level",
+                "state": 86,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "f899c5e2b9c32a81385252251b10f40b6e2a3ef849fec330ba799fa800a1df9f"
+            },
+            "f899c5e2b9c32a81385252251b10f40b6e2a3ef849fec330ba799fa800a1df9f_battery_state": {
+                "added": true,
+                "attributes": {
+                    "charger_type": "unknown",
+                    "is_charging": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-80",
+                "name": "Battery State",
+                "state": "discharging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "f899c5e2b9c32a81385252251b10f40b6e2a3ef849fec330ba799fa800a1df9f"
+            },
+            "f899c5e2b9c32a81385252251b10f40b6e2a3ef849fec330ba799fa800a1df9f_wifi_connection": {
+                "added": true,
+                "attributes": {
+                    "bssid": "e4:f0:42:f0:32:28",
+                    "frequency": 5745,
+                    "ip_address": "10.0.0.7",
+                    "is_hidden": false,
+                    "link_speed": 866,
+                    "signal_level": -57
+                },
+                "icon": "mdi:wifi-strength-2",
+                "name": "Wifi Connection",
+                "state": "TelstraFD2598",
+                "type": "sensor",
+                "unique_id": "wifi_connection",
+                "webhook_id": "f899c5e2b9c32a81385252251b10f40b6e2a3ef849fec330ba799fa800a1df9f"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5_audio_sensor": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:volume-off",
+                "name": "Audio Sensor",
+                "state": "silent",
+                "type": "sensor",
+                "unique_id": "audio_sensor",
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5_battery_health": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:battery-heart-variant",
+                "name": "Battery Health",
+                "state": "good",
+                "type": "sensor",
+                "unique_id": "battery_health",
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5_battery_level": {
+                "added": true,
+                "attributes": {},
+                "device_class": "battery",
+                "icon": "mdi:battery-20",
+                "name": "Battery Level",
+                "state": 25,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5_battery_state": {
+                "added": true,
+                "attributes": {},
+                "device_class": "battery",
+                "icon": "mdi:battery-plus",
+                "name": "Battery State",
+                "state": "charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5_bluetooth_connection": {
+                "added": true,
+                "attributes": {
+                    "connected_not_paired_devices": "[]",
+                    "connected_paired_devices": "[]",
+                    "paired_devices": "[A8:91:3D:D8:9E:9D, 34:88:5D:79:01:4D, 00:1B:66:C5:4E:90]"
+                },
+                "icon": "mdi:bluetooth",
+                "name": "Bluetooth Connection",
+                "state": 0,
+                "type": "sensor",
+                "unique_id": "bluetooth_connection",
+                "unit_of_measurement": "connection(s)",
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5_charger_type": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:usb-port",
+                "name": "Charger Type",
+                "state": "usb",
+                "type": "sensor",
+                "unique_id": "charger_type",
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5_detected_activity": {
+                "added": true,
+                "attributes": {
+                    "still": 100
+                },
+                "icon": "mdi:sleep",
+                "name": "Detected Activity",
+                "state": "still",
+                "type": "sensor",
+                "unique_id": "detected_activity",
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5_dnd_sensor": {
+                "added": true,
+                "attributes": {},
+                "icon": "mdi:do-not-disturb",
+                "name": "Do Not Disturb Sensor",
+                "state": "off",
+                "type": "sensor",
+                "unique_id": "dnd_sensor",
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": "Western Australia",
+                    "Country": "Australia",
+                    "ISO Country Code": "AU",
+                    "Latitude": -32.116096,
+                    "Locality": "Harrisdale",
+                    "Longitude": 115.92178,
+                    "Postal Code": "6112",
+                    "Sub Administrative Area": "City of Armadale",
+                    "Sub Locality": "null",
+                    "Sub Thoroughfare": "16",
+                    "Thoroughfare": "Oakleigh Pass"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "16 Oakleigh Pass, Harrisdale WA 6112, Australia",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5_last_reboot": {
+                "added": true,
+                "attributes": {
+                    "Local Time": "Thu Apr 08 06:00:51 GMT+08:00 2021",
+                    "Time in Milliseconds": 1617832851450
+                },
+                "device_class": "timestamp",
+                "icon": "mdi:restart",
+                "name": "Last Reboot",
+                "state": "2021-04-07T22:00:51Z",
+                "type": "sensor",
+                "unique_id": "last_reboot",
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5_light_sensor": {
+                "added": true,
+                "attributes": {},
+                "device_class": "illuminance",
+                "icon": "mdi:brightness-5",
+                "name": "Light Sensor",
+                "state": "6",
+                "type": "sensor",
+                "unique_id": "light_sensor",
+                "unit_of_measurement": "lx",
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5_next_alarm": {
+                "added": true,
+                "attributes": {
+                    "Local Time": "",
+                    "Package": "",
+                    "Time in Milliseconds": 0.0
+                },
+                "device_class": "timestamp",
+                "icon": "mdi:alarm",
+                "name": "Next Alarm",
+                "state": "unavailable",
+                "type": "sensor",
+                "unique_id": "next_alarm",
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5_storage_sensor": {
+                "added": true,
+                "attributes": {
+                    "Free internal storage": "0GB",
+                    "Total internal storage": "53GB"
+                },
+                "icon": "mdi:harddisk",
+                "name": "Storage Sensor",
+                "state": 1,
+                "type": "sensor",
+                "unique_id": "storage_sensor",
+                "unit_of_measurement": "%",
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5_wifi_connection": {
+                "added": true,
+                "attributes": {
+                    "is_hidden": false
+                },
+                "icon": "mdi:wifi",
+                "name": "Wifi Connection",
+                "state": "TelstraFD2598",
+                "type": "sensor",
+                "unique_id": "wifi_connection",
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73_battery_level": {
+                "attributes": {
+                    "Battery State": "Not Charging",
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-20",
+                "name": "Battery Level",
+                "state": 27,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73",
+                "added": true
+            },
+            "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73_battery_state": {
+                "attributes": {
+                    "Battery Level": 27,
+                    "Low Power Mode": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-20",
+                "name": "Battery State",
+                "state": "Not Charging",
+                "type": "sensor",
+                "unique_id": "battery_state",
+                "webhook_id": "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73",
+                "added": true
+            },
+            "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73_storage": {
+                "attributes": {
+                    "Available": "21.49 GB",
+                    "Available (Important)": "27.46 GB",
+                    "Available (Opportunistic)": "26.17 GB",
+                    "Total": "63.94 GB"
+                },
+                "icon": "mdi:database",
+                "name": "Storage",
+                "state": "40.93",
+                "type": "sensor",
+                "unique_id": "storage",
+                "unit_of_measurement": "% available",
+                "webhook_id": "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73",
+                "added": true
+            },
+            "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73_connectivity_ssid": {
+                "icon": "mdi:wifi-off",
+                "name": "SSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_ssid",
+                "attributes": {},
+                "webhook_id": "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73",
+                "added": true
+            },
+            "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73_connectivity_bssid": {
+                "icon": "mdi:wifi-off",
+                "name": "BSSID",
+                "state": "Not Connected",
+                "type": "sensor",
+                "unique_id": "connectivity_bssid",
+                "attributes": {},
+                "webhook_id": "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73",
+                "added": true
+            },
+            "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73_connectivity_connection_type": {
+                "icon": "mdi:signal",
+                "name": "Connection Type",
+                "state": "Cellular",
+                "type": "sensor",
+                "unique_id": "connectivity_connection_type",
+                "attributes": {
+                    "Cellular Technology": "4G"
+                },
+                "webhook_id": "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73",
+                "added": true
+            },
+            "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73_connectivity_sim_1": {
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000001",
+                    "Carrier Name": "Telstra",
+                    "Current Radio Technology": "Long-Term Evolution (LTE)",
+                    "ISO Country Code": "au",
+                    "Mobile Country Code": "505",
+                    "Mobile Network Code": "01"
+                },
+                "icon": "mdi:sim",
+                "name": "SIM 1",
+                "state": "Telstra",
+                "type": "sensor",
+                "unique_id": "connectivity_sim_1",
+                "webhook_id": "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73",
+                "added": true
+            },
+            "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73_connectivity_sim_2": {
+                "attributes": {
+                    "Allows VoIP": true,
+                    "Carrier ID": "0000000100000002",
+                    "Carrier Name": "N/A",
+                    "ISO Country Code": "N/A",
+                    "Mobile Country Code": "N/A",
+                    "Mobile Network Code": "N/A"
+                },
+                "icon": "mdi:sim",
+                "name": "SIM 2",
+                "state": "N/A",
+                "type": "sensor",
+                "unique_id": "connectivity_sim_2",
+                "webhook_id": "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73",
+                "added": true
+            },
+            "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73_geocoded_location": {
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "16 Oakleigh Pass\nHarrisdale WA 6112\nAustralia",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "attributes": {
+                    "Administrative Area": "WA",
+                    "Areas Of Interest": "N/A",
+                    "Country": "Australia",
+                    "Inland Water": "N/A",
+                    "ISO Country Code": "AU",
+                    "Locality": "Harrisdale",
+                    "Location": [
+                        -32.1160888671875,
+                        115.92178756922014
+                    ],
+                    "Name": "16 Oakleigh Pass",
+                    "Ocean": "N/A",
+                    "Postal Code": "6112",
+                    "Sub Administrative Area": "Perth",
+                    "Sub Locality": "N/A",
+                    "Sub Thoroughfare": "16",
+                    "Thoroughfare": "Oakleigh Pass",
+                    "Time Zone": "Australia/Perth",
+                    "Zones": [
+                        "Home"
+                    ]
+                },
+                "webhook_id": "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73",
+                "added": true
+            },
+            "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73_last_update_trigger": {
+                "icon": "mdi:cellphone-wireless",
+                "name": "Last Update Trigger",
+                "state": "Background Fetch",
+                "type": "sensor",
+                "unique_id": "last_update_trigger",
+                "attributes": {},
+                "webhook_id": "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73",
+                "added": true
+            }
+        }
+    }
+}

@@ -1,0 +1,218 @@
+
+- platform: group
+  name: Kitchen Lights
+  entities:
+      - light.kitchen_1
+      - light.kitchen_2
+  #  - light.6135078584f3eb0b3b30
+  #  - light.7808263084f3eb808d91
+- platform: group
+  name: Dinning Lights
+  entities:
+    - light.6135078584f3eb0b3e0b
+    - light.7808263084f3eb8092bc
+- platform: group
+  name: Living Lights
+  entities:
+    - light.7808263084f3eb808d91
+    - light.lightbulb_15
+
+
+- platform: mqtt
+  name: "Kitt Light old 1"
+  command_topic: "cmnd/koganl1/POWER"
+  state_topic: "tele/koganl1/STATE"
+  state_value_template: "{{value_json.POWER}}"
+  availability_topic: "tele/koganl1/LWT"
+  brightness_command_topic: "cmnd/koganl1/Dimmer"
+  brightness_state_topic: "tele/koganl1/STATE"
+  brightness_scale: 100
+  on_command_type: "brightness"
+  brightness_value_template: "{{value_json.Dimmer}}"
+  color_temp_command_topic: "cmnd/koganl1/CT"
+  color_temp_state_topic: "tele/koganl1/STATE"
+  color_temp_value_template: "{{value_json.CT}}"
+  rgb_command_topic: "cmnd/koganl1/Color2"
+  rgb_state_topic: "tele/koganl1/STATE"
+  rgb_value_template: "{{value_json.Color.split(',')[0:3]|join(',')}}"
+  effect_command_topic: "cmnd/koganl1/Scheme"
+  effect_state_topic: "tele/koganl1/STATE"
+  effect_value_template: "{{value_json.Scheme}}"
+  effect_list:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  qos: 1
+  retain: false
+
+- platform: mqtt
+  name: "Bathroom"
+  #icon: mdi:ceiling-light
+  command_topic: "cmnd/koganl2/POWER"
+  state_topic: "tele/koganl2/STATE"
+  state_value_template: "{{value_json.POWER}}"
+  availability_topic: "tele/koganl2/LWT"
+  brightness_command_topic: "cmnd/koganl2/Dimmer"
+  brightness_state_topic: "tele/koganl2/STATE"
+  brightness_scale: 100
+  on_command_type: "brightness"
+  brightness_value_template: "{{value_json.Dimmer}}"
+  color_temp_command_topic: "cmnd/koganl2/CT"
+  color_temp_state_topic: "tele/koganl2/STATE"
+  color_temp_value_template: "{{value_json.CT}}"
+  rgb_command_topic: "cmnd/koganl2/Color2"
+  rgb_state_topic: "tele/koganl2/STATE"
+  rgb_value_template: "{{value_json.Color.split(',')[0:3]|join(',')}}"
+  effect_command_topic: "cmnd/koganl2/Scheme"
+  effect_state_topic: "tele/koganl2/STATE"
+  effect_value_template: "{{value_json.Scheme}}"
+  effect_list:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  qos: 1
+  retain: false
+
+- platform: mqtt
+  name: "kogan Light 7"
+  command_topic: "cmnd/koganl7/POWER"
+  state_topic: "stat/koganl7/RESULT"
+  state_value_template: "{{value_json.POWER}}"
+  availability_topic: "tele/koganl7/LWT"
+  brightness_command_topic: "cmnd/koganl7/Dimmer"
+  brightness_state_topic: "stat/koganl7/RESULT"
+  brightness_scale: 100
+  on_command_type: "brightness"
+  brightness_value_template: "{{value_json.Dimmer}}"
+  color_temp_command_topic: "cmnd/koganl7/CT"
+  color_temp_state_topic: "stat/koganl7/RESULT"
+  color_temp_value_template: "{{value_json.CT}}"
+  rgb_command_topic: "cmnd/koganl7/Color2"
+  rgb_state_topic: "tele/koganl7/STATE"
+  rgb_value_template: "{{value_json.Color.split(',')[0:3]|join(',')}}"
+  effect_command_topic: "cmnd/koganl7/Scheme"
+  effect_state_topic: "tele/koganl7/STATE"
+  effect_value_template: "{{value_json.Scheme}}"
+  effect_list:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  qos: 1
+  retain: false  
+
+- platform: mqtt
+  name: "kogan Light 8"
+  command_topic: "cmnd/koganl8/POWER"
+  state_topic: "stat/koganl8/RESULT"
+  state_value_template: "{{value_json.POWER}}"
+  availability_topic: "tele/koganl8/LWT"
+  brightness_command_topic: "cmnd/koganl8/Dimmer"
+  brightness_state_topic: "stat/koganl8/RESULT"
+  brightness_scale: 100
+  on_command_type: "brightness"
+  brightness_value_template: "{{value_json.Dimmer}}"
+  color_temp_command_topic: "cmnd/koganl8/CT"
+  color_temp_state_topic: "stat/koganl8/RESULT"
+  color_temp_value_template: "{{value_json.CT}}"
+  rgb_command_topic: "cmnd/koganl8/Color2"
+  rgb_state_topic: "tele/koganl8/STATE"
+  rgb_value_template: "{{value_json.Color.split(',')[0:3]|join(',')}}"
+  effect_command_topic: "cmnd/koganl8/Scheme"
+  effect_state_topic: "tele/koganl8/STATE"
+  effect_value_template: "{{value_json.Scheme}}"
+  effect_list:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  qos: 1
+  retain: false
+
+- platform: mqtt
+  name: "kogan Light 9"
+  command_topic: "cmnd/koganl9/POWER"
+  state_topic: "stat/koganl9/RESULT"
+  state_value_template: "{{value_json.POWER}}"
+  availability_topic: "tele/koganl9/LWT"
+  brightness_command_topic: "cmnd/koganl9/Dimmer"
+  brightness_state_topic: "tele/koganl9/STATE"
+  brightness_scale: 100
+  on_command_type: "brightness"
+  brightness_value_template: "{{value_json.Dimmer}}"
+  color_temp_command_topic: "cmnd/koganl9/CT"
+  color_temp_state_topic: "stat/koganl9/RESULT"
+  color_temp_value_template: "{{value_json.CT}}"
+  rgb_command_topic: "cmnd/koganl9/Color2"
+  rgb_state_topic: "tele/koganl9/STATE"
+  rgb_value_template: "{{value_json.Color.split(',')[0:3]|join(',')}}"
+  effect_command_topic: "cmnd/koganl9/Scheme"
+  effect_state_topic: "tele/koganl9/STATE"
+  effect_value_template: "{{value_json.Scheme}}"
+  effect_list:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  qos: 1
+  retain: false
+
+- platform: mqtt
+  name: "Kitt's Light"
+  command_topic: "cmnd/koganl10/POWER"
+  state_topic: "stat/koganl10/RESULT"
+  state_value_template: "{{value_json.POWER}}"
+  availability_topic: "tele/koganl10/LWT"
+  brightness_command_topic: "cmnd/koganl10/Dimmer"
+  brightness_state_topic: "tele/koganl10/STATE"
+  brightness_scale: 100
+  on_command_type: "brightness"
+  brightness_value_template: "{{value_json.Dimmer}}"
+  color_temp_command_topic: "cmnd/koganl10/CT"
+  color_temp_state_topic: "stat/koganl10/RESULT"
+  color_temp_value_template: "{{value_json.CT}}"
+  rgb_command_topic: "cmnd/koganl10/Color2"
+  rgb_state_topic: "tele/koganl10/STATE"
+  rgb_value_template: "{{value_json.Color.split(',')[0:3]|join(',')}}"
+  effect_command_topic: "cmnd/koganl10/Scheme"
+  effect_state_topic: "tele/koganl10/STATE"
+  effect_value_template: "{{value_json.Scheme}}"
+  effect_list:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+  payload_on: "ON"
+  payload_off: "OFF"
+  payload_available: "Online"
+  payload_not_available: "Offline"
+  qos: 1
+  retain: false

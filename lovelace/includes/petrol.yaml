@@ -1,0 +1,16 @@
+type: vertical-stack
+title: Fuelwatch - Unleaded
+mode: vertical
+cards:
+  - type: 'custom:list-card'
+    columns:
+      - field: title
+        title: Today
+    entity: sensor.rss_fuel_watch_ulp
+    feed_attribute: entries
+  - type: 'custom:list-card'
+    columns:
+      - field: title
+        title: Tomorrow
+    entity: sensor.rss_fuel_watch_ulp_tomorrow
+    feed_attribute: entries

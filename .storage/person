@@ -1,0 +1,51 @@
+{
+    "version": 2,
+    "key": "person",
+    "data": {
+        "items": [
+            {
+                "device_trackers": [
+                    "device_tracker.phonelee"
+                ],
+                "id": "lee",
+                "name": "lee",
+                "user_id": "5c4082cf03ff4a4e943c4b4d7309044f",
+                "picture": null
+            },
+            {
+                "device_trackers": [
+                    "device_tracker.phoneaimee"
+                ],
+                "id": "aimee",
+                "name": "Aimee",
+                "user_id": "b64397dfcdcc416eb54c4480c2032709",
+                "picture": null
+            },
+            {
+                "device_trackers": [
+                    "device_tracker.carolines_iphone_2"
+                ],
+                "id": "caroline",
+                "name": "Caroline",
+                "user_id": "97c47cbaa2ca46d8b4efca2ecc946c50",
+                "picture": null
+            },
+            {
+                "name": "blake",
+                "device_trackers": [
+                    "device_tracker.blakephone"
+                ],
+                "user_id": null,
+                "picture": null,
+                "id": "blake"
+            },
+            {
+                "name": "Kitt",
+                "device_trackers": [],
+                "user_id": "b5b9970eec8c46639dc5a842db1bdab8",
+                "picture": null,
+                "id": "kitt"
+            }
+        ]
+    }
+}

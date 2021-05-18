@@ -1,0 +1,29 @@
+title: Garden
+#panel: true
+icon: mdi:flower
+id: VWgarden
+cards:
+    # The filter card will filter entities for their state
+    - id: garden1
+      type: vertical-stack      
+      title: Garden
+      cards:
+        - type: horizontal-stack              
+          cards: 
+            - type: glance
+              show_name: false
+              entities:
+              - entity: switch.garden_lights
+                tap_action: 
+                  action: toggle
+              - entity: switch.fountain
+                tap_action: 
+                  action: toggle
+              - entity:  switch.garden_fire
+                tap_action: 
+                  action: toggle             
+              - entity: light.28804801ecfabc6062cc 
+                show_state: true
+                icon: mdi:head-cog
+              - entity:  binary_sensor.motion_sensor_158d0001db52e8
+              show_last_changed: true

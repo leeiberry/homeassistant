@@ -1,0 +1,57 @@
+title: Aimee
+visible: 
+      - user: b64397dfcdcc416eb54c4480c2032709 #aimmee
+      - user: 5c4082cf03ff4a4e943c4b4d7309044f #lee
+path: aimee
+icon: mdi:home    
+cards:
+  - type: horizontal-stack
+    title: Aimee
+    cards: 
+    - type: vertical-stack
+      cards:   
+          - !include /config/lovelace/includes/phones.yaml
+          - type: horizontal-stack              
+            cards: 
+            - !include /config/lovelace/includes/garage_button.yaml
+            - !include /config/lovelace/includes/power_button.yaml              
+          - !include /config/lovelace/includes/weather_simple.yaml
+
+          # third row     
+          - type: horizontal-stack              
+            cards:
+              - type: conditional
+                conditions:
+                - entity:  light.aimee_light
+                  state_not: "unavailable"
+                card: 
+                  type: entities
+                  entities:
+                    - type: custom:slider-entity-row
+                      entity: light.aimee_light
+                      name: Aimee Ceiling   
+                      icon: mdi:ceiling-light
+                               
+                    
+                    - type: 'custom:rgb-light-card'
+                      entity: light.aimee_light
+                      justify: center  
+                      colors:
+                      - color_name: white
+                        brightness: 255
+                      - color_name: wheat
+                        brightness: 128
+                      - color_name: blue
+                        brightness: 180
+                      - color_name: red
+                        brightness: 128
+                            #icon_color: red 
+                      - color_name: gold
+                        brightness: 128
+                            #icon_color: gold                
+ 
+          - !include /config/lovelace/includes/petrol.yaml
+            
+              
+
+  

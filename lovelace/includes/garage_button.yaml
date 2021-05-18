@@ -1,0 +1,17 @@
+type: horizontal-stack              
+cards: 
+- type: "custom:button-card"
+  entity: binary_sensor.door_window_sensor_158d00016cdcad
+  name: Garage 
+  icon: mdi:garage
+  color: rgb(28, 128, 199)
+  state:
+    - value: "on"
+      color: var(--state-icon-active-color)
+      icon: mdi:garage-open
+  
+  tap_action:
+    action: call-service
+    service: switch.turn_on 
+    service_data:
+      entity_id: switch.garage_door_control

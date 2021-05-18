@@ -1,0 +1,8 @@
+type: custom:simple-weather-card
+entity:  weather.harrisdale
+name: " Harrisdale"
+secondary_info:    
+  - wind_speed
+  - wind_bearing
+custom:
+ - wind_bearing: sensor.jandakot_wind_direction

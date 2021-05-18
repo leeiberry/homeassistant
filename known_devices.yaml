@@ -1,0 +1,379 @@
+
+invertorgateway:
+  hide_if_away: false
+  icon:
+  mac: D4:CA:6E:EB:CF:BD
+  name: Invertor.gateway
+  picture:
+  track: true
+
+
+broadlink:
+  hide_if_away: false
+  icon:
+  mac: B4:43:0D:DC:8E:A8
+  name: Broadlink.gateway
+  picture:
+  track: true
+
+ps4wired:
+  hide_if_away: false
+  icon: mdi:playstation
+  mac: 70:9E:29:3A:FD:29
+  name: PS4Wired.gateway
+  picture:
+  track: true
+
+xgatewaygateway:
+  hide_if_away: false
+  icon:
+  mac: 28:6C:07:FA:38:F0
+  name: XGateway.gateway
+  picture:
+  track: true
+
+phonelee:
+  hide_if_away: false
+  icon: mdi:cellphone-android
+  mac: 60:b7:6e:03:7b:55  #10.0.0.100
+  name: Lee 
+  picture:
+  track: true
+  
+
+
+phonejayden:
+  hide_if_away: false
+  icon: mdi:cellphone-android
+  mac: EC:D0:9F:35:07:B0
+  name: Jayden
+  picture:
+  track: true
+
+phoneblake:
+  hide_if_away: false
+  icon: mdi:cellphone-iphone
+  mac: 36:d7:16:eb:3c:10  #10.0.0.104
+  name: Blake
+  picture:
+  track: true
+
+phoneaimee:
+  hide_if_away: false
+  icon: mdi:cellphone-iphone
+  mac: 7c:9a:1d:07:6b:fc
+  name: Aimee 
+  picture:
+  track: true
+
+
+phonecaroline:
+  hide_if_away: false
+  icon: mdi:cellphone-iphone
+  mac: d6:ed:80:ab:f5:85 #10.0.0.101
+  name: Caroline 
+  picture:
+  track: true
+
+
+ipadjayden:
+  hide_if_away: false
+  icon: 
+  mac: 34:AB:37:0E:13:F6
+  name: IpadJayden.gateway
+  picture:
+  track: true
+
+
+mygatewaygateway:
+  hide_if_away: false
+  icon:
+  mac: E0:B9:E5:AC:FE:CC
+  name: mygateway.gateway
+  picture:
+  track: true
+
+b827eb8d366c:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:8D:36:6C
+  name: b827eb8d366c
+  picture:
+  track: true
+
+mercurygateway:
+  hide_if_away: false
+  icon:
+  mac: 94:DE:80:34:3C:DA
+  name: Mercury.gateway
+  picture:
+  track: true
+
+hassiogateway:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:DE:99:01
+  name: Hassio.gateway
+  picture:
+  track: true
+
+plug2gateway:
+  hide_if_away: false
+  icon:
+  mac: AC:CF:23:9C:DE:0C
+  name: Plug2.gateway
+  picture:
+  track: true
+
+carolinetabs2gateway:
+  hide_if_away: false
+  icon:
+  mac: 9C:E0:63:22:A9:EA
+  name: CarolineTabS2.gateway
+  picture:
+  track: true
+
+theaterlightgateway:
+  hide_if_away: false
+  icon:
+  mac: 34:CE:00:88:0A:33
+  name: TheaterLight.gateway
+  picture:
+  track: true
+
+chromecastgateway:
+  hide_if_away: false
+  icon:
+  mac: 54:60:09:51:64:36
+  name: Chromecast.gateway
+  picture:
+  track: true
+
+
+
+blakelaptopwirelessgateway:
+  hide_if_away: false
+  icon:
+  mac: B0:52:16:12:70:73
+  name: BlakeLaptopWireless.gateway
+  picture:
+  track: true
+
+cupboard1930gateway:
+  hide_if_away: false
+  icon:
+  mac: D6:6E:0E:74:27:8A
+  name: Cupboard-1930.gateway
+  picture:
+  track: true
+
+galaxys8gateway:
+  hide_if_away: false
+  icon:
+  mac: D6:6E:0E:09:45:D8
+  name: Galaxy-S8.gateway
+  picture:
+  track: true
+
+lumigatewayv3_miio55588959gateway:
+  hide_if_away: false
+  icon:
+  mac: D6:6E:0E:FA:38:F0
+  name: lumi-gateway-v3 miio55588959.gateway
+  picture:
+  track: true
+
+leebgateway_2:
+  hide_if_away: false
+  icon:
+  mac: D6:6E:0E:EF:B5:B2
+  name: LeeB.gateway
+  picture:
+  track: true
+
+
+
+
+yeelinklightcolor1_miio77346832gateway:
+  hide_if_away: false
+  icon:
+  mac: D6:6E:0E:A5:F7:C7
+  name: yeelink-light-color1 miio77346832.gateway
+  picture:
+  track: true
+
+binary_sensor.door_window_sensor_158d0001d682cc:
+  name: Laundry Door
+  icon: mdi:door
+
+binary_sensor.door_window_sensor_158d00014d20b8:
+  name: Front Door
+  icon: mdi:door
+
+blakephone:
+  name: blakephone
+  mac:
+  icon:
+  picture:
+  track: true
+
+carolinephone:
+  name: carolinephone
+  mac:
+  icon:
+  picture:
+  track: true
+
+f4_f5_d8_d3_a6_7c:
+  name: f4_f5_d8_d3_a6_7c
+  mac: F4:F5:D8:D3:A6:7C
+  icon:
+  picture:
+  track: true
+
+e4_f0_42_15_f2_f3:
+  name: e4_f0_42_15_f2_f3
+  mac: E4:F0:42:15:F2:F3
+  icon:
+  picture:
+  track: true
+
+20_df_b9_08_93_74:
+  name: 20_df_b9_08_93_74
+  mac: 20:DF:B9:08:93:74
+  icon:
+  picture:
+  track: true
+
+d0_e7_82_f2_f1_e3:
+  name: d0_e7_82_f2_f1_e3
+  mac: D0:E7:82:F2:F1:E3
+  icon:
+  picture:
+  track: true
+
+44_09_b8_1f_f2_1b:
+  name: 44_09_b8_1f_f2_1b
+  mac: 44:09:B8:1F:F2:1B
+  icon:
+  picture:
+  track: true
+
+dc_4f_22_0a_ea_5d:
+  name: dc_4f_22_0a_ea_5d
+  mac: DC:4F:22:0A:EA:5D
+  icon:
+  picture:
+  track: true
+
+5c_cf_7f_1b_e1_67:
+  name: 5c_cf_7f_1b_e1_67
+  mac: 5C:CF:7F:1B:E1:67
+  icon:
+  picture:
+  track: true
+
+dc_4f_22_0a_e8_69:
+  name: dc_4f_22_0a_e8_69
+  mac: DC:4F:22:0A:E8:69
+  icon:
+  picture:
+  track: true
+
+e4_f0_42_50_e7_4d:
+  name: e4_f0_42_50_e7_4d
+  mac: E4:F0:42:50:E7:4D
+  icon:
+  picture:
+  track: true
+
+b4_e6_2a_bd_3b_dd:
+  name: b4_e6_2a_bd_3b_dd
+  mac: B4:E6:2A:BD:3B:DD
+  icon:
+  picture:
+  track: true
+
+d8_f1_5b_b2_6f_44:
+  name: d8_f1_5b_b2_6f_44
+  mac: D8:F1:5B:B2:6F:44
+  icon:
+  picture:
+  track: true
+
+60_01_94_06_fe_52:
+  name: 60_01_94_06_fe_52
+  mac: 60:01:94:06:FE:52
+  icon:
+  picture:
+  track: true
+
+5c_cf_7f_1b_e6_c4:
+  name: 5c_cf_7f_1b_e6_c4
+  mac: 5C:CF:7F:1B:E6:C4
+  icon:
+  picture:
+  track: true
+
+b6_68_82_23_85_df:
+  name: b6_68_82_23_85_df
+  mac: B6:68:82:23:85:DF
+  icon:
+  picture:
+  track: true
+
+aimeephone:
+  name: aimeephone
+  mac:
+  icon:
+  picture:
+  track: true
+
+e6_e7_ae_9b_f5_67:
+  name: e6_e7_ae_9b_f5_67
+  mac: E6:E7:AE:9B:F5:67
+  icon:
+  picture:
+  track: true
+
+f4_f5_d8_7f_bd_88:
+  name: f4_f5_d8_7f_bd_88
+  mac: F4:F5:D8:7F:BD:88
+  icon:
+  picture:
+  track: true
+
+'60_01_94_74_27_24':
+  name: '60_01_94_74_27_24'
+  mac: 60:01:94:74:27:24
+  icon:
+  picture:
+  track: true
+
+48_d6_d5_e4_32_6c:
+  name: 48_d6_d5_e4_32_6c
+  mac: 48:D6:D5:E4:32:6C
+  icon:
+  picture:
+  track: true
+
+48_d6_d5_ec_c9_39:
+  name: 48_d6_d5_ec_c9_39
+  mac: 48:D6:D5:EC:C9:39
+  icon:
+  picture:
+  track: true
+
+68_c6_3a_95_98_a3:
+  name: 68_c6_3a_95_98_a3
+  mac: 68:C6:3A:95:98:A3
+  icon:
+  picture:
+  track: true
+
+92_3f_71_a1_1e_7a:
+  name: 92_3f_71_a1_1e_7a
+  mac: 92:3F:71:A1:1E:7A
+  icon:
+  picture:
+  track: true

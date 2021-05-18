@@ -1,0 +1,51 @@
+title: Kitt
+visible: 
+      - user: b5b9970eec8c46639dc5a842db1bdab8 #Kitt
+      - user: 5c4082cf03ff4a4e943c4b4d7309044f #lee
+icon: mdi:home    
+cards:
+  - type: horizontal-stack
+    title: Kitt
+    cards: 
+    - type: vertical-stack
+      cards:   
+          - !include /config/lovelace/includes/phones.yaml
+          #- type: horizontal-stack              
+           # cards: 
+            #- !include /config/lovelace/includes/garage_button.yaml
+            #- !include /config/lovelace/includes/power_button.yaml              
+          - !include /config/lovelace/includes/weather_simple.yaml
+
+          # third row     
+          - type: horizontal-stack              
+            cards:
+              - type: conditional
+                conditions:
+                - entity:  light.kitt_s_light
+                  state_not: "unavailable"
+                card: 
+                  type: entities
+                  entities:
+                    - type: custom:slider-entity-row
+                      entity: light.kitt_s_light
+                      name: Kitt Ceiling   
+                      icon: mdi:ceiling-light
+                               
+                    
+                    - type: 'custom:rgb-light-card'
+                      entity: light.kitt_s_light
+                      justify: center  
+                      colors:
+                      - color_name: white
+                        brightness: 255
+                      - color_name: wheat
+                        brightness: 128
+                      - color_name: blue
+                        brightness: 180
+                      - color_name: red
+                        brightness: 128
+                            #icon_color: red 
+                      - color_name: gold
+                        brightness: 128
+                            #icon_color: gold                
+ 

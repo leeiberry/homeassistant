@@ -1,0 +1,34 @@
+title: Media
+panel: false
+icon: mdi:plex
+id: media
+cards:
+    - id: media1
+      type: vertical-stack
+      cards:
+        - type: horizontal-stack
+          cards:
+          - type: custom:upcoming-media-card
+            entity: sensor.sonarr_upcoming_media
+            title: Shows
+            service: sonarr
+            image_style: banner
+            all_shadows: off
+            
+          - type: custom:upcoming-media-card
+            entity: sensor.recently_added_tv
+            title: Recent Shows
+            service: plex
+            image_style: banner
+            all_shadows: off
+           
+        - type: horizontal-stack
+          cards:    
+            - type: custom:upcoming-media-card
+              entity: sensor.recently_added_movie
+              title: Recent Movies
+              service: plex
+              image_style: banner
+              all_shadows: off
+            - type: "custom:button-card"
+              color_type: blank-card

@@ -1,0 +1,63 @@
+title: Garage
+#panel: true
+icon: mdi:garage
+id: Garage
+theme: dark-mode
+# The cards to show on this view.
+cards:
+    # The filter card will filter entities for their state
+    - id: gargage1
+      type: vertical-stack
+      cards:
+        - type: picture-entity
+          name: Garage
+          entity: camera.garage_camera_cam
+          show_state: false
+          camera_view: live
+         
+
+
+
+        - type: horizontal-stack
+          cards: 
+            
+            - !include /config/lovelace/includes/garage_button.yaml
+            - type: "custom:button-card"
+              entity: sensor.tumble_dryer_power
+              color: var(--state-icon-color) 
+              state:
+              - value: 3
+                operator: '>='
+                color: var(--state-icon-active-color)
+              show_label: true
+              show_name: false
+              show_state: true
+              tap_action:
+                action: more-info
+
+
+        - type: horizontal-stack
+          cards: 
+            - type: glance
+              title: Garage
+              show_name: false
+              entities:
+              - entity: switch.garage_door_control
+                # tap_action: toggle
+              - entity:  binary_sensor.door_window_sensor_158d00016cdcad
+                secondary_info: binary_sensor.door_window_sensor_158d00016cdcad, last_changed
+              - entity:  binary_sensor.motion_sensor_158d0001231c9b
+                secondary_info: binary_sensor.motion_sensor_158d0001231c9b, last_changed
+              - entity: light.lightbulb_13
+              - entity: switch.tumble_dryer
+                secondary_info: sensor.tumble_dryer_power
+              #show_state: false
+              - entity: sensor.tumble_dryer_power
+                state: 
+                  - value: =>2
+                    color: var(--state-icon-active-color)
+              - entity : light.garage_camera_light
+                  
+              
+           
+  

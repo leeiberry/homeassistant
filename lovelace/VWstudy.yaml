@@ -1,0 +1,107 @@
+title: Study
+#panel: true
+visible: 
+      - user: 5c4082cf03ff4a4e943c4b4d7309044f #lee
+icon: mdi:desktop-classic
+id: VWstudy
+cards:
+    - type: vertical-stack
+      cards:       
+        - type: glance
+          title: Study
+          show_name: false
+          entities:
+            - light.176410232cf43241ebc9
+            - light.07054573ecfabc1de6a7
+            - sensor.temperature_158d00015cbc22
+            - binary_sensor.motion_sensor_158d00016d5813              
+            - binary_sensor.motion_sensor_158d000164362d 
+            - switch.power_board_1 #fan             
+            - switch.power_board_2 #lamp
+            - switch.power_board_3 #spare
+            - switch.power_board_4 #spare
+            - switch.power_board_usb #usb power
+            - light.lightbulb_03
+            - light.gateway_light_286c07fa38f0
+            - sensor.illumination_286c07fa38f0
+            - sensor.google_wifi_system_aaaaaa9_sk8_download_speed
+        - type: custom:mini-graph-card
+          entities: 
+            - entity: sensor.speedtest_download
+              name: Down
+            - entity: sensor.speedtest_upload
+              name: Up
+          name: Internet Speeds
+          labels: true
+          height: 80
+
+        - type: picture-entity
+          name: Study
+          entity: camera.study_camera_cam
+          show_state: false
+          camera_view: live
+         
+        
+        - type: glance
+          title: Synology
+          show_name: true
+          entities:
+            - entity : sensor.synology_cpu_load_total
+              name: CPU 
+              icon: mdi:speedometer
+            - entity : sensor.synology_memory_usage_real
+              name: RAM
+            - entity : sensor.synology_volume_used_volume_1
+              name: Volume
+
+        - type : glance
+          title: PC Saturn
+          entities:
+
+            - entity:  binary_sensor.my_computer
+
+            - entity : sensor.my_computer_up_time
+              name: Uptime
+
+            
+
+            - entity : sensor.my_computer_cpu_usage
+              name: CPU 
+            - entity : sensor.my_computer_ram_usage
+              name: RAM
+            - entity : sensor.my_computer_hdd_total_free_space_c
+              name: Disk C
+            - entity : sensor.my_computer_hdd_total_free_space_d
+              name: Disk D
+            - entity : sensor.my_computer_hdd_total_free_space_g
+              name: Disk G
+            - entity : sensor.my_computer_hdd_total_free_space_h
+              name: Disk H                 
+            - entity : sensor.my_computer_hdd_total_free_space_j
+              name: Disk J
+            - entity : sensor.my_computer_hdd_total_free_space_k
+              name: Disk K
+        - type : glance
+          title: PC Mercury
+          entities:
+            #- entity:  binary_sensor.mercury
+            - entity : sensor.mercury_up_time
+              name: Uptime
+
+            - entity:  switch.mercuryshutdown
+              name: Shutdown
+            - entity : sensor.mercury_cpu_usage
+              name: CPU 
+            - entity : sensor.mercury_ram_usage
+              name: RAM
+            - entity : sensor.mercury_hdd_total_free_space_c
+              name: Disk C
+        - type: picture-glance
+          title: Mercury
+          entities:
+            - binary_sensor.mercury
+            - entity : sensor.mercury_up_time
+              name: Uptime
+            - binary_sensor.motion_sensor_158d0001db087a
+          camera_image: camera.mercury_screen
+

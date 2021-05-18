@@ -1,0 +1,57 @@
+title: Power
+#panel: true
+icon: mdi:solar-power
+id: Power
+theme: dark-mode
+# The cards to show on this view.
+cards:
+  - type: vertical-stack
+    title: Power Usage
+    cards: 
+    - type: custom:mini-graph-card
+      icon: mdi:solar-power
+      name: Power Generation
+      entities:
+      - sensor.pv 
+      - sensor.load
+      points_per_hour: 4
+      labels: true
+      height: 100
+      #show_extrema: true
+      #fill: false
+      #color_thresholds:
+      #- value:  0
+      #  color: black
+      #- value: -0.01
+      #  color: green
+      #- value: -2.5
+      #  color: red
+      #- value: 0.01
+      #  color: yellow
+      #- value: 1.5
+      #  color: blue
+    - type: custom:mini-graph-card
+      name: Power Cost
+      icon : mdi:transmission-tower
+      entities: 
+      -  sensor.power_cost
+      labels: true
+      height: 100
+      fill: false
+      #show_extrema: true
+      points_per_hour: 4
+      #color_thresholds:
+      #- value:  0
+      # color: blue
+      #- value: -0.75
+      #  color: orange
+      #- value: -1.5
+      #  color: red
+      
+    #- type: custom:tesla-style-solar-power-card    
+    # entities:
+    #   house_consumption_entity: sensor.load
+    #   grid_consumption_entity: sensor.grid_power
+    #   grid_feed_in_entity: sensor.grid_power
+    #   solar_consumption_entity: sensor.pv
+    #   solar_yield_entity: sensor.pv

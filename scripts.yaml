@@ -1,0 +1,14 @@
+mercury_shutdown:
+  alias: "mercury - Shutdown"
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "iotlink/berrys/mercury/commands/shutdown"
+        payload: ""
+saturn_shutdown:
+  alias: "Saturn - Shutdown"
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "iotlink/berrys/saturn/commands/shutdown"
+        payload: ""

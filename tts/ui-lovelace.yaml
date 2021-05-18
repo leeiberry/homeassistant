@@ -1,0 +1,508 @@
+title: Home
+# Include external resources
+resources:
+  - url: /local/card-tools.js
+    type: js
+  - url: /local/bignumber-card.js?v=0.0.1
+    type: js
+  - url: /local/custom_ui/card-modder.js?v=35eb37
+    type: js
+  - url: /local/custom-lovelace/my-custom-card.js?v=1
+    type: js
+  - url: /local/mini-graph-card-bundle.js?v=0.3.2
+    type: module
+  - url: /local/my-webfont.css
+    type: css
+  - url: /local/custom_ui/weather-card.js?v=6
+    type: js
+  - url: /local/custom_ui/mini-media-player-bundle.js?v=1.0.3
+    type: js
+  - url: /local/custom_ui/simple-weather-card.bundle.js?v=0.1.0
+    type: module
+# Optional background for all views. Check https://developer.mozilla.org/en-US/docs/Web/CSS/background for more examples.
+#background: center / cover no-repeat url("/background.png") fixed
+# Exclude entities from "Unused entities" view
+excluded_entities:
+  - weblink.router
+views:
+    # View tab title.
+  - title: Main
+    panel: true
+    # Optional unique id for direct access /lovelace/${id}
+    id: example
+    icon: mdi:home
+    cards:
+        # The filter card will filter entities for their state
+        - id: 999999999
+          type: vertical-stack
+          cards:
+            - type: horizontal-stack
+              cards: 
+                 - type: vertical-stack
+                   cards:
+                                      
+                        - type: entity-filter 
+                          entities:
+                              - device_tracker.phonelee
+                              - device_tracker.phonejayden
+                              - device_tracker.phonecaroline
+                              - device_tracker.phoneaimee
+                              - device_tracker.phoneblake
+                          state_filter:
+                              - 'home'
+                          show_state : false
+                          card: 
+                            
+                              type: entities
+                              title: Who's Home
+                              show_header_toggle: false
+                        - type: horizontal-stack
+                          cards:
+                            - type: custom:mini-graph-card
+                              entities: 
+                              - sensor.dark_sky_apparent_temperature
+                              name: Outside Temp
+                              labels: true
+                              height: 60
+                            - type: custom:mini-graph-card
+                              entities: 
+                              - sensor.temperature_158d0001a2c316
+                              name: Lounge Temp
+                              labels: true
+                              height: 60
+                        - type: horizontal-stack
+                          cards:
+                            - type: custom:mini-graph-card
+                              entities: 
+                              - sensor.temperature_158d0001a2de84
+                              name: Master Temp
+                              labels: true
+                              height: 60
+#                            - type: custom:mini-graph-card
+#                              entities: 
+#                              - sensor.temperature_158d000170b5c3
+#                              name: Activity Temp
+#                              labels: true
+#                              height: 60
+
+                              
+
+
+                        - type: custom:mini-graph-card
+                          entities: 
+                           - sensor.speedtest_download
+                          name: Internet Speed
+                          labels: true
+                          height: 60
+                          line_color: blue
+                          line_width: 4
+                          font_size: 75
+                          show:
+                            fill: true
+
+
+
+                            
+                        - type: custom:bignumber-card
+                          title: Disk Space
+                          entity: sensor.volume_used_volume_1
+                          scale: 30px
+                          from: bottom
+                          min: 40
+                          max: 100
+                          severity:
+                            - value: 70
+                              style: 'var(--label-badge-blue)'
+                            - value: 80
+                              style: 'var(--label-badge-yellow)'
+                            - value: 90
+                              style: 'var(--label-badge-red)'
+                           
+                          
+                
+       
+                 - type: vertical-stack
+                   cards:
+                        - type: picture-glance
+                          title: Kitchen
+                          entities:
+                            - entity: switch.cupboard_light
+                            - entity: light.kitchen_lights
+                              name: Kitchen
+                            - entity: light.dinning_lights
+                              name: Dinning
+                            - light.lightbulb_05
+                          image: /local/images/Kitchen.jpg
+                        
+                    
+                       
+
+                 - type: vertical-stack
+                   cards:                      
+                  
+                   
+                      - type: picture-entity
+                        entity: camera.lounge
+                        show_name: false
+                        show_state: false
+                      
+                      - type: custom:mini-graph-card
+                        entities: 
+                         - sensor.temperature_158d0001a2c316
+                        name: Lounge Temp
+                        labels: true
+                        height: 60
+                        #line_color: '#3498db'
+                        #line_width: 8
+
+
+                      - type: custom:simple-weather-card
+                        entity: weather.smhi
+                        name: in current location
+
+                      - type: conditional
+                        conditions:
+                          - entity: media_player.lounge_tv
+                            state: "playing"
+                        card:
+                          type: custom:mini-media-player
+                          entity:  media_player.lounge_tv 
+                          icon: mdi:television
+                          power_color: true
+                          artwork: cover
+                          show_source: true 
+                        
+            
+     #theater room        
+          
+           
+  - title: Theater
+    panel: true
+    icon: mdi:theater
+    id: theater
+    theme: dark-mode
+    # The cards to show on this view.
+    cards:
+        # The filter card will filter entities for their state
+        - id: theater1
+          type: horizontal-stack 
+          cards:
+            - type:  vertical-stack  
+              cards:
+                - type: entities
+                  #show_name: false
+                  entities:
+                   - light.yeelight_rgb_7811dca5f7c7
+                   - entity: binary_sensor.motion_sensor_158d00015da5fd
+                     secondary_info: last-changed
+                   
+            - type:  vertical-stack 
+              Colum-width: 200px          
+              cards: 
+                - type: custom:mini-media-player
+                  entity: media_player.lg_tv
+                  icon: mdi:router-wireless
+                  artwork_border: true
+                  show_source: true     
+
+                - type: custom:mini-media-player
+                  entity: media_player.theater_tv
+                  icon: mdi:cast
+                  artwork: cover
+                  show_source: true 
+                  
+              
+                - type: conditional
+                  conditions:
+                    - entity: media_player.lg_70uj657t_ta
+                      state: "playing"
+                  card:
+                    type: custom:mini-media-player
+                    entity:  media_player.lg_70uj657t_ta 
+                    icon: mdi:television
+                    power_color: true
+                    artwork_border: true
+                    show_source: true 
+
+
+
+
+
+
+                 # artwork_border: true
+                  show_source: true 
+                - type: custom:mini-media-player
+                  entity:  media_player.galaxy_tab_s2_9_7_2
+                  name: LG Plex
+                  icon: mdi:cast
+                  artwork: cover
+                 # artwork_border: true
+                  show_source: true 
+
+                #- type: entities
+                #  title: Bittorrent
+                #  entities:
+                #  - sensor.qbittorrent_up_speed
+                #  - sensor.qbittorrent_down_speed
+                #  - sensor.qbittorrent_status
+                #  show_header_toggle: false
+                  
+
+
+
+
+                - type: glance
+                  show_name: false
+                  entities:
+                   - light.yeelight_rgb_7811dca5f7c7
+                   - binary_sensor.motion_sensor_158d00015da5fd
+
+               
+                    
+
+
+  - title: Master Bedroom
+    panel: true
+    icon: mdi:bed-empty
+    id: masterbedroom
+    cards:
+        # The filter card will filter entities for their state
+        - id: masterbedroom1
+          type: vertical-stack
+          cards:
+            - type: horizontal-stack              
+              cards: 
+              - type: glance
+                title: Lights
+                entities:
+                  - light.lightbulb_10
+                  - light.lightbulb_06
+                  - light.lightbulb_07
+              - type: custom:mini-graph-card
+                entities: 
+                - sensor.temperature_158d0001a2de84
+                labels: true
+                height: 60
+
+
+  - title: Lights
+    panel: true
+    icon: mdi:lightbulb-outline
+    id: lights
+    theme: dark-mode
+    # The cards to show on this view.
+    cards:
+        # The filter card will filter entities for their state
+        - id: lights1
+          type: vertical-stack
+          cards:
+            - type: horizontal-stack              
+              cards: 
+                - type: glance
+                  title: Lights
+                  entities:
+                    - light.lightbulb_10
+                    - light.lightbulb_06
+                    - light.lightbulb_07
+                    - light.lightbulb_08
+                    - light.lightbulb_09
+                    - switch.wire_light
+                    - entity: switch.cupboard_light
+                      name: Cupboard
+                    - light.yeelight_rgb_7811dca5f7c7
+                    - entity: light.lightbulb_13
+                      name: Garage
+                    - entity: light.kitchen_lights
+                      name: Kitchen
+                    - light.lightbulb_05
+                    - switch.xmas_tree
+
+
+
+  - title: Garden
+    panel: true
+    icon: mdi:flower
+    id: garden
+    theme: PmxMononight
+    # The cards to show on this view.
+    cards:
+        # The filter card will filter entities for their state
+        - id: garden1
+          type: vertical-stack
+          cards:
+            - type: horizontal-stack              
+              cards: 
+                - type: glance
+                  title: Garden
+                  show_name: false
+                  entities:
+                  - entity: switch.garden_lights
+                    tap_action: toggle
+                  - entity: switch.fountain
+                    tap_action: toggle
+                  - entity:  switch.garden_fire
+                    tap_action: toggle
+                  - entity:  binary_sensor.motion_sensor_158d0001db52e8
+                    secondary_info: binary_sensor.motion_sensor_158d0001db52e8, last_changed
+                  show_state: false
+  - title: Garage
+    panel: true
+    icon: mdi:garage
+    id: Garage
+    theme: dark-mode
+    # The cards to show on this view.
+    cards:
+        # The filter card will filter entities for their state
+        - id: gargage1
+          type: vertical-stack
+          cards:
+            - type: horizontal-stack
+              cards: 
+                - type: glance
+                  title: Garage
+                  show_name: false
+                  entities:
+                  - entity: switch.garage_door_control
+                   # tap_action: toggle
+                  - entity:  binary_sensor.door_window_sensor_158d00016cdcad
+                    secondary_info: binary_sensor.door_window_sensor_158d00016cdcad, last_changed
+                  - entity:  binary_sensor.motion_sensor_158d0001231c9b
+                    secondary_info: binary_sensor.motion_sensor_158d0001231c9b, last_changed
+                  - light.lightbulb_13
+                  show_state: false
+
+
+  - title: Weather
+    panel: true
+    icon: mdi:weather-sunny
+    id: Weather
+    theme: dark-mode
+    # The cards to show on this view.
+    cards:
+        # The filter card will filter entities for their state
+        - id: weather
+          type: vertical-stack
+          cards:
+            - type: horizontal-stack
+              
+              cards: 
+                - type: custom:dark-sky-weather-card
+                  card:
+                  entity_sun: sun.sun
+                  entity_daily_summary: sensor.dark_sky_daily_summary
+                  entity_current_conditions: sensor.dark_sky_icon  
+                  entity_humidity: sensor.dark_sky_humidity
+                  entity_pressure: sensor.dark_sky_pressure
+                  entity_temperature: sensor.dark_sky_temperature
+                  entity_visibility: sensor.dark_sky_visibility
+                  entity_wind_bearing: sensor.dark_sky_wind_bearing
+                  entity_wind_speed: sensor.dark_sky_wind_speed
+                  entity_forecast_high_temp_1: sensor.dark_sky_daytime_high_temperature_1
+                  entity_forecast_high_temp_2: sensor.dark_sky_daytime_high_temperature_2
+                  entity_forecast_high_temp_3: sensor.dark_sky_daytime_high_temperature_3
+                  entity_forecast_high_temp_4: sensor.dark_sky_daytime_high_temperature_4
+                  entity_forecast_high_temp_5: sensor.dark_sky_daytime_high_temperature_5
+                  entity_forecast_low_temp_1: sensor.dark_sky_overnight_low_temperature_1
+                  entity_forecast_low_temp_2: sensor.dark_sky_overnight_low_temperature_2
+                  entity_forecast_low_temp_3: sensor.dark_sky_overnight_low_temperature_3
+                  entity_forecast_low_temp_4: sensor.dark_sky_overnight_low_temperature_4
+                  entity_forecast_low_temp_5: sensor.dark_sky_overnight_low_temperature_5
+                  entity_forecast_icon_1: sensor.dark_sky_icon_1
+                  entity_forecast_icon_2: sensor.dark_sky_icon_2
+                  entity_forecast_icon_3: sensor.dark_sky_icon_3
+                  entity_forecast_icon_4: sensor.dark_sky_icon_4
+                  entity_forecast_icon_5: sensor.dark_sky_icon_5
+                - type: custom:mini-graph-card
+                  entities: 
+                   - sensor.dark_sky_apparent_temperature
+                  name: Outside Temp
+                  labels: true
+                  height: 60
+ 
+ 
+  - title: Cast
+    panel: true
+    icon: mdi:cast
+    id: cast
+    theme: dark-mode
+    # The cards to show on this view.
+    cards:
+        # The filter card will filter entities for their state
+        - id: Cast1
+          type: vertical-stack
+          cards:
+            - type: horizontal-stack
+              cards:
+              - type: custom:mini-media-player
+                entity: media_player.lounge
+                icon: mdi:cast
+                artwork_border: true
+                artwork: cover
+                show_source: true 
+              - type: custom:mini-media-player
+                entity: media_player.theater
+                icon: mdi:cast
+                url: 'https://play.google.com/music/listen?u=0#/pl/AMaBXym6wKr6WpaGwlVrkd7xNFRZ-NVb3BUetkkxkd0EsmtvOK0l4JfPLJc0ErEFJZUVVpjB2VH-fhvdto1N1B-wjYb5wwXdEA%3D%3D'
+                artwork_border: true
+                artwork: cover
+                show_source: true 
+              - type: custom:mini-media-player
+                entity: media_player.lg_tv
+                icon: mdi:television
+                power_color: true
+                artwork_border: true
+                show_source: true 
+            - type: horizontal-stack
+              cards:
+              - type: custom:mini-media-player
+                entity: media_player.kitts_speaker
+                #icon: mdi:television
+                show_tts: google
+                artwork_border: true
+                artwork: cover
+                show_source: true 
+                power_color: true
+              - type: custom:mini-media-player
+                entity: media_player.jaydens_room_speaker
+                show_tts: google
+                artwork: cover
+                #icon: mdi:television
+                artwork_border: true
+                show_source: true 
+                power_color: true
+              - type: custom:mini-media-player
+                entity: media_player.family_room_speaker
+                show_tts: google
+                #icon: mdi:television
+                artwork_border: true
+                artwork: cover
+                show_source: true 
+                power_color: true
+            - type: horizontal-stack
+              cards:
+              - type: custom:mini-media-player
+                entity: media_player.master
+                artwork_border: true
+                artwork: cover
+              - type: custom:mini-media-player
+                entity: media_player.bedroom_speaker
+                artwork_border: true
+                artwork: cover
+                show_tts: google
+                power_color: true
+              - type: custom:mini-media-player
+                entity: media_player.house_sound
+                artwork_border: true
+                artwork: cover
+                show_tts: google
+                power_color: true
+              - type: custom:mini-media-player
+                entity: media_player.plex
+                artwork_border: true
+                artwork: cover
+                show_tts: google
+                power_color: true
+
+
+
+                

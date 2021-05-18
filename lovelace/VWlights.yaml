@@ -1,0 +1,297 @@
+title: Lights
+#panel: true
+icon: mdi:lightbulb-outline
+id: VWlights
+# The cards to show on this view.
+cards:
+    # The filter card will filter entities for their state
+    - id: lights1
+      type: vertical-stack
+      title: Lights
+      cards:
+      
+        - type: conditional
+          conditions:
+          - entity:  light.kitchen_lights
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.kitchen_lights
+
+
+        - type: conditional
+          conditions:
+          - entity:  light.dinning_lights
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.dinning_lights
+
+        - type: conditional
+          conditions:
+          - entity:  light.lightbulb_15
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.lightbulb_15   
+                name: Living Room
+
+        - type: conditional
+          conditions:
+          - entity:  light.lightbulb_10
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.lightbulb_10
+                name: Master Ceiling
+              
+        - type: conditional
+          conditions:
+          - entity:  light.lightbulb_11
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.lightbulb_11
+                name: Walkin
+
+        - type: conditional
+          conditions:
+          - entity:  light.lightbulb_06
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.lightbulb_06
+
+        - type: conditional
+          conditions:
+          - entity:  light.kitt_s_light
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.kitt_s_light
+                name: Kitt's Ceiling      
+                
+        - type: conditional
+          conditions:
+          - entity:  light.lightbulb_07
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.lightbulb_07
+                name: Caroline's Lamp
+
+        - type: conditional
+          conditions:
+          - entity:  light.dinning_lamp
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.dinning_lamp
+
+
+        - type: conditional
+          conditions:
+          - entity:  light.lightbulb_08
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.lightbulb_08
+
+        - type: conditional
+          conditions:
+          - entity:  light.542300058caab5e14c9a
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                name: Toliet
+                entity: light.542300058caab5e14c9a 
+                #name: Walkin    
+
+
+        - type: conditional
+          conditions:
+          - entity:  light.lightbulb_13
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.lightbulb_13 
+                name: Garage   
+        
+        - type: conditional
+          conditions:
+          - entity:  light.lightbulb_05
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.lightbulb_05
+                name: Pantry 
+
+        - type: conditional
+          conditions:
+          - entity:  light.aimee_light
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.aimee_light
+                name: Aimee 
+                
+
+
+        - type: conditional
+          conditions:
+          - entity:  light.lightbulb_12
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.lightbulb_12
+                name: Hallway
+
+
+
+
+        - type: conditional
+          conditions:
+          - entity:  light.35054083ecfabc1dd7eb
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.35054083ecfabc1dd7eb
+
+        - type: conditional
+          conditions:
+          - entity:  light.jayden_light
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.jayden_light
+
+        - type: conditional
+          conditions:
+          - entity:  light.kitt_light
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.kitt_light
+
+       
+        - type: conditional
+          conditions:
+          - entity:  light.kogan_light2
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.kogan_light2
+
+        - type: conditional
+          conditions:
+          - entity:  light.kogan_light_7
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.kogan_light_7
+                              
+        - type: conditional
+          conditions:
+          - entity:  light.kogan_light_8
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.kogan_light_8
+        
+        - type: conditional
+          conditions:
+          - entity:  light.kogan_light_9
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.kogan_light_9
+                                          
+              
+        - type: conditional
+          conditions:
+          - entity:  light.kogan_light_10
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.kogan_light_10
+ 
+        - type: conditional
+          conditions:
+          - entity:  light.theater_room
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.theater_room
+
+        - type: conditional
+          conditions:
+          - entity:  light.jayden_light
+            state_not: "unavailable"
+          card: 
+            type: entities
+            entities:
+              - type: custom:slider-entity-row
+                entity: light.jayden_light
+
+     
+
+        - type: horizontal-stack              
+          cards: 
+            - type: glance
+              title: Lights
+              entities:
+                
+                - switch.wire_light
+                
+                - entity: switch.cupboard_light
+                  name: Cupboard
+               
+                - switch.kitt_lamp

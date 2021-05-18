@@ -5,183 +5,400 @@ homeassistant:
   latitude: !secret HomeLat
   longitude: !secret HomeLong
   # Impacts weather/sunrise data (altitude above sea level in meters)
-  elevation: 180
+  elevation: 0
   # metric for Metric, imperial for Imperial
   unit_system: metric
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Australia/Perth
-  customize: !include_dir_merge_named customized
+  # Customization file
+  customize: !include customize.yaml
+  auth_providers:
+   - type: homeassistant
+   #- type: legacy_api_password
+     api_password: !secret http_password
+  packages: !include_dir_named packages/
 
-# Enables the frontend #
+# Enables the frontend
 frontend:
+  themes:  !include_dir_merge_named themes/
+  javascript_version: auto
 
-# Enables configuration UI #
+# Enables configuration UI
 config:
 
-http:
-  api_password: !secret http_password
-  base_url: !secret Baseurl
-  ssl_certificate: /ssl/fullchain.pem
-  ssl_key: /ssl/privkey.pem
+
+lovelace:
+  mode: yaml
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
 
 # Checks for available updates
 # Note: This component will send some information about your system to
 # the developers to assist with development of Home Assistant.
 # For more information, please see:
 # https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
-updater:
+#updater:
   # Optional, allows Home Assistant developers to focus on popular components.
   # include_used_components: true
 
 # Discover some devices automatically
 discovery:
+ ignore:
+    - yeelight
 
-# Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
+#resources:  !include /config/lovelace/includes/resources.yaml
 
+mobile_app:
+ios:
+
+
+logger:
+  default: info
+  logs:
+    custom_components.ytube_music_player: debug  
+  
 # Enables support for tracking state changes over time
 history:
 
 # View all events in a logbook
 logbook: !include logbook.yaml
 
+# recorder
+recorder:
+  purge_keep_days: 14
+  db_url: mysql://lee:light8944@10.0.0.180:3306/homeassistant?charset=utf8
+  include:
+    domains:
+      - sensor
+      - sun
+      - switch
+      - device_tracker
+      - light
+      - binary_sensor
+      
+
+influxdb:
+  host: 10.0.0.180
+  port: 8086
+  include:
+    domains:
+    - sensor
+    - sun
+
+
+mqtt:
+  broker: 10.0.0.180
+  port: 1883
+  client_id: home-assistant-1
+  username: !secret MQuser
+  password: !secret MQpass
+
+
+system_health:
 # Track the sun
 sun:
 
 
-# recorder
-recorder:
-  purge_keep_days: 7
-  db_url: !secret dbURL
-  exclude:
-#    entities:
-#      - sun
-    domains:
-      - automation
-      - Motion
 
-# Text to speech
-tts:
-  - platform: google
-    cache: true
-    cache_dir: /tmp/tts
-    time_memory: 300
+# Cloud
+cloud:
 
-group: !include groups.yaml
+#group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 switch: !include switch.yaml
-notify: !include_dir_list notify
-zone: !include zones.yaml
-#input_select: !include input_select.yaml
-#device_tracker:  !include nmap.yaml
+sensor: !include sensor.yaml
+group: !include groups.yaml
+light: !include lights.yaml
+#weather: !include weather.yaml
 
+#weather:
+#  - platform: smhi
+
+panel_iframe:
+  nodered:
+    title: 'Node-Red'
+    icon: 'mdi:shuffle-variant'
+    url: 'http://10.0.0.180:1881'
+    require_admin: true
+  sonweb:
+    title: SonWEB
+    icon: mdi:lightbulb-on
+    url: http://10.0.0.180:9541
+    require_admin: true
+  powerweb:
+    title: Power
+    icon:  mdi:solar-power
+    url:  http://10.0.0.180:3003/dashboard/db/power-usage
+    require_admin: true
+
+webostv:
+    host: 10.0.0.202
+    name: LG TV
+    #filename: webostv.conf
+    #timeout: 5
+    turn_on_action:
+      service: switch.turn_on
+      entity_id: switch.lgtv
+    customize:
+      sources:
+        - livetv
+        - youtube
+        - netflix
+
+
+        
+
+
+# Example configuration.yaml entry
+#sabnzbd:
+#  api_key: af5e8c2df89c7eba3c4d67d58a2463eb
+
+wemo:
+  discovery: false
+  static: 
+    - 10.0.0.52
+
+yeelight:
+ devices:
+       10.0.0.190:
+         name: Aimee Light
+       10.0.0.192:
+         name: Dinning Lamp          
+       10.0.0.194:
+         name: Theater Room
+       10.0.0.181:
+         name: Kitchen 1
+       10.0.0.183:
+         name: Kitchen 2
+
+
+synology_dsm:
+  host: 10.0.0.180
+  username: lee   
+  password: Lighttree8944
+  #monitored_conditions:
+  #    - cpu_total_load
+  #    - memory_real_usage
+  #    - network_up
+  #    - volume_percentage_used
+
+speedtestdotnet:
+  scan_interval:
+     minutes: 5
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+#platform: template
+#sensors:
+#  friendly_name: lee phone change
+#  device_class: timestamp
+#  value_template: >-
+#    {{states.device_tracker.phonelee.last_changed | timestamp_local}}
+
+binary_sensor:
+  - platform: mqtt
+    name: "Mercury"
+    state_topic: "iotlink/berrys/mercury/lwt"
+    value_template: "{{ value }}"
+    payload_on: "ON"
+    payload_off: "OFF"
+    device_class: "connectivity"
+    qos: 1
+  - platform: mqtt
+    name: "My Computer"
+    state_topic: "iotlink/berrys/saturn/lwt"
+    value_template: "{{ value }}"
+    payload_on: "ON"
+    payload_off: "OFF"
+    device_class: "connectivity"
+    qos: 1
+  - platform: octoprint
+    monitored_conditions:
+      - Printing
+      - Printing Error
+
+#tuya:
+ # username: leeiberry@gmail.com
+  #password: light8944
+  #country_code: 61
+
+
+#xiaomi_aqara:
+ # discovery_retry: 10
+  #gateways:
+   # - key: fyi1nxb0z1zwfs4u
+
+#camera:
+#  - platform: mjpeg
+#    name: Lounge 
+#    mjpeg_url: http://10.0.0.152:8081
+#    username: admin
+#    password: light8944
+    #authentication: basic
+
+camera:
+  - platform: ffmpeg
+    name: Garage
+    input: rtsp://admin:light8944@10.0.0.65/live
+    #authentication: basic
+  - platform: mqtt
+    name: "Mercury - Screen "
+    topic: "iotlink/berrys/mercury/windows-monitor/stats/display/0/screen"
+  - platform: mqtt
+    name: "Saturn- Screen "
+    topic: "iotlink/berrys/saturn/windows-monitor/stats/display/0/screen"
+
+ 
+sabnzbd:
+  api_key: af5e8c2df89c7eba3c4d67d58a2463eb
+  host: 10.0.0.180
+  path: /sabnzbd
+  name: sab
+  port: 8880
+  ssl: true
+  sensors:
+    - current_status
+    - speed
+    - queue_size
+    - queue_remaining
+    - disk_size
+    - disk_free
+    - queue_count
+    - day_size
+    - week_size
+    - month_size
+    - total_size
+
+octoprint:
+  host: 10.0.0.152
+  api_key: 135A5D2F7033453B830F00CA2B8DF25E
+  sensors:
+      monitored_conditions:
+        - 'Current State'
+        - 'Job Percentage'
+
+device_tracker:
+  - platform: nmap_tracker
+    hosts:   -Pn 10.0.0.100-150
+     #        -Pn 10.0.0.001-020
+    scan_options: " -Pn -p 5060 "
+     # Minutes nmap will not scan a device, assuming it is home#    home_interval: 10
+    # Seconds between each scan for new devices (default: 12)
+    interval_seconds: 30
+    # Seconds to wait till marking someone as not home after not being seen (default: 180)
+    consider_home: 240
+    track_new_devices: yes
+  - platform: iphonedetect
+    consider_home: 60
+    scan_interval: 12
+    new_device_defaults:
+      track_new_devices: true
+    hosts:
+      Carolinephone: 10.0.0.101
+      Aimeephone: 10.0.0.105
+      hostname3: 10.0.0.103
+      blakePhone: 10.0.0.104
+      
+
+
+rest_command:
+  assistant_broadcast:
+    url: http://10.0.0.200:3000/assistant
+    method: POST
+    content_type: 'application/json'
+    payload: '{"command":"{{ command }}", "user":"username", "broadcast":true}'
+    
+  assistant_converse:
+    url: http://http://10.0.0.200/assistant
+    method: POST
+    content_type: 'application/json'
+    payload: '{"command":"{{ command }}", "user":"username", "converse":true}'
+
+  assistant_relay:
+    url: http://http://10.0.0.200:3000/assistant
+    method: POST
+    content_type: 'application/json'
+    payload: '{"command":"{{ command }}", "user":"username"}'
+
+
+
+media_player:
+  - platform: plex
+    entity_namespace: 'plex'
+    show_all_controls: false
+    use_episode_art: true
+    remove_unavailable_clients: true
+    client_remove_interval: 600
+
+
+  - platform: ytube_music_player
+    # adapt the file location if needed. this has to match the file path that was
+    # speicified in the config flow
+    speakers:
+      # if your speaker is called media_player.speaker123, add speaker123 here
+      - family_room_speaker
+      - nesthub9608
+      - master
+      - wireless_google_home_mini
+    
+tts:
+  - platform: google_translate
+    service_name: google_say
+    language: 'en-uk'
+    cache: false
+    
 input_select:
   alarm_mode:
     name: Alarm Mode
     options:
       - "off"
       - "on"
+      - "away"
     icon: mdi:alarm-light
-
-device_tracker:
-  - platform: nmap_tracker
-    hosts:
-      10.0.0.100
-      10.0.0.101
-      10.0.0.102
-      10.0.0.103
-      10.0.0.104
-      10.0.0.105
-      10.0.0.106
-      10.0.0.107
-      10.0.0.108
-      10.0.0.200
-      10.0.0.201
-      10.0.0.210
-      10.0.0.220
-      10.0.0.222
-      10.0.0.170
-
-    # Minutes nmap will not scan a device, assuming it is home
-    home_interval: 10
-    # Seconds between each scan for new devices (default: 12)
-    interval_seconds: 60
-    # Seconds to wait till marking someone as not home after not being seen (default: 180)
-    consider_home: 240
-    track_new_devices: yes
-
-sensor: !include_dir_list sensor
-wemo:
-
-light:
-  - platform: yeelight
-    devices:
-      10.0.0.130:
-        name: Theater Room
-        transition: 1000
-  - platform: group
-    name: Master lights
-    entities:
-      - light.lightbulb_10
-      - light.lightbulb_06
-      - light.lightbulb_07
+  auto_mode:
+    name: Auto Mode
+    options:
+      - "on"
+      - "off"
+      - "part"
+    icon: mdi:auto-fix
 
 
 
-mqtt:
-  broker: 127.0.0.1
-  port: 1883
-  client_id: home-assistant-1
-  username: !secret MQuser
-  password: !secret MQpass
+  ytube_music_player_source:
+    name: Source
+    icon: mdi:music-box-multiple
+    options: # don't change
+    - "Playlist Radio"
+    - "Playlist"
+  
+  ytube_music_player_speakers:
+    name: Speakers
+    icon: mdi:speaker
+    options: # don't change
+    - "loading"
 
-binary_sensor:
-  - platform: mqtt
-    name: Request to open garage door
-    state_topic: "homeassistant/binary_sensor/CarPresence/state"
+  ytube_music_player_playlist:
+    name: Playlist
+    icon: mdi:playlist-music
+    options: # don't change
+    - "loading"
 
-media_player:
-  - platform: webostv
-    host: 10.0.0.222
-    mac: 38:8c:50:94:64:c8
-    name: LG TV
-    timeout: 5
-    filename: webostv.conf
-    customize:
-      sources:
-        - Live TV
-        - Plex
-        - netflix
-    turn_on_action:
-      service: wake_on_lan.send_magic_packet
-      data:
-        mac: 38:8c:50:94:64:c8
+  ytube_music_player_playmode:
+    name: Playmode
+    icon: mdi:playlist-music
+    options: ## don't change
+    - "Shuffle"
+    - "Random"
+    - "Shuffle Random"
+    - "Direct"  
 
-google_assistant:
-  project_id: !secret GAprojectID
-  client_id: !secret GAclientID
-  access_token: !secret GAaccesstoken
-  expose_domains:
-    - switch
-    - light
-    - group
-
-#telbot:
-#  - platform: polling
-#    api_key : 587160014:AAHgvRsGw7Rn69BvFrdiDwKgOyVky4rvZko
-#    allowed_chat_ids:
-#      - Chat_ID_1
-
-
-#media_player:
-#  - platform: bluetooth_speaker
-#    name: Speaker
-#    address: 28:6C:07:FA:38:F0
-#    volume: 0.50
-
-xiaomi_aqara:
-  discovery_retry: 10
-  gateways:
-    - mac:
-      key: fyi1nxb0z1zwfs4u
+ # Optional, defaults to true
+input_boolean:
+  ytube_music_player_playcontinuous:
+    initial: true
+    name: "Countinuous playback"

@@ -1,0 +1,847 @@
+{
+    "version": 1,
+    "key": "core.config_entries",
+    "data": {
+        "entries": [
+            {
+                "entry_id": "8792d52886df443eb136ad2d98e413ab",
+                "version": 1,
+                "domain": "cast",
+                "title": "Google Cast",
+                "data": {
+                    "user_id": "f25b9effabca4a578acb794eab33a940"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "discovery",
+                "connection_class": "local_push",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "056af32738de4872bbf23d1a053dae57",
+                "version": 1,
+                "domain": "wemo",
+                "title": "Wemo",
+                "data": {},
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "import",
+                "connection_class": "local_push",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "5b24a9f9d4f64227a50252631e151430",
+                "version": 1,
+                "domain": "mqtt",
+                "title": "configuration.yaml",
+                "data": {},
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "import",
+                "connection_class": "local_push",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "5526ff6104ee4e50a7442e5c15275add",
+                "version": 1,
+                "domain": "plex",
+                "title": "jupiter",
+                "data": {
+                    "server": "jupiter",
+                    "server_id": "37b4aac393d3a1ca4bb2a1adc70d58a09a4e1db0",
+                    "server_config": {
+                        "url": "https://10-0-0-180.a8b07f4fef054ad880133e3c42d0718e.plex.direct:32400",
+                        "client_id": "96f425d7-74c2-446b-a24f-036ea3c027f0",
+                        "token": "wiytwEEceQrh5yWozRad",
+                        "verify_ssl": true
+                    }
+                },
+                "options": {
+                    "media_player": {
+                        "show_all_controls": false,
+                        "use_episode_art": false
+                    }
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "discovery",
+                "connection_class": "local_poll",
+                "unique_id": "37b4aac393d3a1ca4bb2a1adc70d58a09a4e1db0",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "d63ec1c326094677831c071ab89a79c2",
+                "version": 1,
+                "domain": "ifttt",
+                "title": "IFTTT Webhook",
+                "data": {
+                    "cloudhook": true,
+                    "webhook_id": "bfd4f558f1e3d4d475c076f928a23d5d4f737377b0af887d9d24640d08f727eb"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "unknown",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "8784020d258f4510bd0b6c33880decb9",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "Pixel 3",
+                "data": {
+                    "app_data": {
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+                        "push_token": "cQ4qTX8mtks:APA91bGj1yp2mngDBz4ITNLAwI5jR-DbvnqnwcpmMgfLD8dNOKbm_To0eAn4MyyvYPFq4_xvNXoRTTr47M1ID98hy2RuK_XXcHZ4N_e1aP_4QvDG2tjg5xgbOIYcduUE8h1NmLnwvsDh"
+                    },
+                    "app_id": "io.homeassistant.companion.android",
+                    "app_name": "Home Assistant",
+                    "app_version": "2021.4.1-full (658)",
+                    "cloudhook_url": "https://hooks.nabu.casa/gAAAAABebJ5FvCzhT72hjvTJ26Wv8JJOswngOwMX36DqZAZtDEUSJHQxcJNpFDP0OPSMCughZVi2m8_4jj9pPoOldj0ZglYAFmDHwEBs5yMGEEIZAEQOLYCclDZgP3J8k6lW-bAP3lGm1sP139dNVeYif9gMEKWUcXtOiMg0yZwJ3rzCe-t5yU0=",
+                    "device_id": "bbb0bbae41a342cc",
+                    "device_name": "Pixel 5",
+                    "manufacturer": "Google",
+                    "model": "Pixel 5",
+                    "os_name": "Android",
+                    "os_version": "30",
+                    "supports_encryption": false,
+                    "user_id": "5c4082cf03ff4a4e943c4b4d7309044f",
+                    "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "registration",
+                "connection_class": "cloud_push",
+                "unique_id": "io.homeassistant.companion.android-bbb0bbae41a342cc",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "f5c39f1e9e0940d89b13794efbe9ce9a",
+                "version": 1,
+                "domain": "synology_dsm",
+                "title": "10.0.0.180",
+                "data": {
+                    "host": "10.0.0.180",
+                    "mac": [
+                        "00-11-32-82-63-09",
+                        "00-11-32-82-63-0A"
+                    ],
+                    "password": "Lighttree8944",
+                    "port": 5001,
+                    "ssl": true,
+                    "username": "lee",
+                    "verify_ssl": false
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "import",
+                "connection_class": "cloud_poll",
+                "unique_id": "17A0PDN446101",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "8ca394f9cd8c4821b807fe7b0893419e",
+                "version": 1,
+                "domain": "tuya",
+                "title": "leeiberry@gmail.com",
+                "data": {
+                    "country_code": "61",
+                    "password": "light8944",
+                    "platform": "tuya",
+                    "username": "leeiberry@gmail.com"
+                },
+                "options": {
+                    "discovery_interval": 605,
+                    "query_interval": 120,
+                    "query_device": "none"
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "import",
+                "connection_class": "cloud_poll",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "3902682f556b45c1b31bcb2df155e7b7",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "aimee\u2019s iPhone",
+                "data": {
+                    "app_data": {
+                        "push_token": "cEx1qPT3hUzRk4mk1f1lkc:APA91bFE-sWmK5olRuBX-Qo5Y8YdWL1WoOmB15Gtrwl3bD-gaIVGIxHdWLaARGjdspDQBzVZcIME5PXB880QQvbAtGvT_rkLx498vCVfXBZY4XfzZRiMsfFcZu9YIeCLjGUbEA8IenUc",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_id": "io.robbie.HomeAssistant",
+                    "app_name": "Home Assistant",
+                    "app_version": "2020.4.1 (1)",
+                    "cloudhook_url": "https://hooks.nabu.casa/gAAAAABe6a9E8F8mRaHCEgDSUW69LmRcn9QF0pKNAJuXk7JEDS48zyOpnpqGH-jorSHTd_sN6Uz1Z-81e1X42r2ZvZzYa7C0o0XpY9UgeQ94q3b4zz9sfdtWKlCkZ9wen5rNdjNnEtC3MF4VhsbYc997cYzDwqDGEy62K-4UFyB28NOJhFRnZ9w=",
+                    "device_id": "24D624B0-7A42-4498-8EFC-051D416A2D09",
+                    "device_name": "aimee\u2019s iPhone",
+                    "manufacturer": "Apple",
+                    "model": "iPhone 8",
+                    "os_name": "iOS",
+                    "os_version": "13.6",
+                    "secret": "058cfaa6bc231ba07c934ef12370b06f41e14764730f2ca4c114826188774ff8",
+                    "supports_encryption": true,
+                    "user_id": "b64397dfcdcc416eb54c4480c2032709",
+                    "webhook_id": "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "registration",
+                "connection_class": "cloud_push",
+                "unique_id": "io.robbie.HomeAssistant-24D624B0-7A42-4498-8EFC-051D416A2D09",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "7a20006937a941efbec7846c30650d3e",
+                "version": 1,
+                "domain": "sonarr",
+                "title": "10.0.0.180",
+                "data": {
+                    "api_key": "ffc71dadcd934565b0655c9a76bb2c31",
+                    "base_path": "/api",
+                    "host": "10.0.0.180",
+                    "platform": "sonarr",
+                    "port": 8889,
+                    "ssl": false,
+                    "unit": "GB",
+                    "upcoming_days": 2,
+                    "verify_ssl": false
+                },
+                "options": {
+                    "upcoming_days": 2,
+                    "wanted_max_items": 50
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "import",
+                "connection_class": "local_poll",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "45add975dece45248bd7d44c7fd3b1db",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "Caroline\u2019s iPhone",
+                "data": {
+                    "app_data": {
+                        "push_token": "dpxHqQfRsEHFgwsTX6VO9w:APA91bHJqrLJeELOWbNp15dVs7Gk89YOeLGO-v1f468rzKsaYx-hxIRSXCmP6KuprFql5Ytw5NT8c_goKcH9xcNJcj25JFNVfTVZosaFgCpInNVySUH6PgdMaZxD2e6yKNyDQXy-1qov",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_id": "io.robbie.HomeAssistant",
+                    "app_name": "Home Assistant",
+                    "app_version": "2020.4 (8)",
+                    "cloudhook_url": "https://hooks.nabu.casa/gAAAAABe80InXPYLf0i1U8lAEgZCCoBHl7xIO3JclSBJi7gEI_Yr0OFF-aMSYgyGjttewAA-MlljJnV4Es4rWbhcj27NKl-3dTf4x4rFZ133FsAZK-xzwadwa09hkYZR-uyaI9P2-XJBqh5GNW-dXey0ZGlwctJQRrcYxlpQgkdamrdZqbToZv8=",
+                    "device_id": "13D857AA-E381-4C45-B2A5-7CDD0FDC71FB",
+                    "device_name": "Caroline\u2019s iPhone",
+                    "manufacturer": "Apple",
+                    "model": "iPhone X\u0280",
+                    "os_name": "iOS",
+                    "os_version": "13.5.1",
+                    "secret": "fafddcdf834fc3eeded68e50dcf84a4555a1ea4c475b1f23a8f5ea460d09f3a4",
+                    "supports_encryption": true,
+                    "user_id": "97c47cbaa2ca46d8b4efca2ecc946c50",
+                    "webhook_id": "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "registration",
+                "connection_class": "cloud_push",
+                "unique_id": "io.robbie.HomeAssistant-13D857AA-E381-4C45-B2A5-7CDD0FDC71FB",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "e1915c541632428a8477362921992167",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "SM-T813",
+                "data": {
+                    "app_data": {
+                        "push_token": "dHrvxKcoE7g:APA91bGnVuGe7F-8Omx5a6_JxuqChe73up1zX7IX-9yUJ7_aRjWk0XiBuLLlAm9qFalPGC4b-WQOzNfeU0ZOXO0aQ5qc6YtpaizeiBT1-jAqWZGQlZwr_ttPVp5IP9i8M5QlpNWZh2AO",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1"
+                    },
+                    "app_id": "io.homeassistant.companion.android",
+                    "app_name": "Home Assistant",
+                    "app_version": "1.9.0-167 (167)",
+                    "cloudhook_url": "https://hooks.nabu.casa/gAAAAABe-Gq64yiQZPTaUHw1xXPtQsh7HOaJMJLn17eQVDdppMS8MCFMecTW_ZWtgQ200ngO2nFCsFjK8JozSBvdRHRyawnkq8j5aqRrvGcJNfxFTcAlFptg9Q_dEEU0CadC4y_RZJRgqOeS0DxKm6nmfGktPYsvAhUTGUkIm8GxezyLuRaEmks=",
+                    "device_id": "495ca796aa7b82b7",
+                    "device_name": "SM-T813",
+                    "manufacturer": "samsung",
+                    "model": "SM-T813",
+                    "os_name": "Android",
+                    "os_version": "24",
+                    "supports_encryption": false,
+                    "user_id": "5c4082cf03ff4a4e943c4b4d7309044f",
+                    "webhook_id": "f899c5e2b9c32a81385252251b10f40b6e2a3ef849fec330ba799fa800a1df9f"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "registration",
+                "connection_class": "cloud_push",
+                "unique_id": "io.homeassistant.companion.android-495ca796aa7b82b7",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "b1c11084e8d740cbb0a96791a02229fe",
+                "version": 1,
+                "domain": "speedtestdotnet",
+                "title": "SpeedTest",
+                "data": {},
+                "options": {
+                    "manual": false,
+                    "scan_interval": 5,
+                    "server_id": ""
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "import",
+                "connection_class": "local_poll",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "7106a3a638bd4ed3924934a7179dfb11",
+                "version": 1,
+                "domain": "xiaomi_aqara",
+                "title": "Xiaomi Aqara",
+                "data": {
+                    "host": "10.0.0.6",
+                    "interface": "any",
+                    "key": "fyi1nxb0z1zwfs4u",
+                    "mac": "28:6c:07:fa:38:f0",
+                    "port": 9898,
+                    "protocol": "1.1.2",
+                    "sid": "286c07fa38f0"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_push",
+                "unique_id": "28:6c:07:fa:38:f0",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "d6fa6c6623304c7a88b46c5ef382ffd2",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "SM-T813",
+                "data": {
+                    "app_data": {
+                        "push_token": "f8Qd8m9iTdmHcbnmuF9jzX:APA91bHiwEmNGB3ATZv8YO-Z7ux9T0hAf3aIUcf1wxAWh2iU6IKzjKaBJ9e3FLvfH5aCIUQv0S1ukC_oGWH9nfenhjJEpknL9US26HeMywZYta1q57od5GHckGKAqGQAPE07UULQeMU5",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1"
+                    },
+                    "app_id": "io.homeassistant.companion.android",
+                    "app_name": "Home Assistant",
+                    "app_version": "2021.4.1-full (658)",
+                    "cloudhook_url": "https://hooks.nabu.casa/gAAAAABfS0zE4usmD0gC98-KE8piR_T3ExCXNoT2V-Js0i_Arzao27frohNiuqrJmt4beivLmcMag41mu8LwXWbKYnnRjxY2fHQxzjYWsy9yw52CqYc3g6kJioFTECwdL5ERWMr7qhL21EfRmJA13TAHuLXg0edcvsuZLq-tds_1CriHT4c3Sss=",
+                    "device_id": "5ebd36786257a353",
+                    "device_name": "SM-T813",
+                    "manufacturer": "samsung",
+                    "model": "SM-T813",
+                    "os_name": "Android",
+                    "os_version": "24",
+                    "supports_encryption": false,
+                    "user_id": "5c4082cf03ff4a4e943c4b4d7309044f",
+                    "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "registration",
+                "connection_class": "cloud_push",
+                "unique_id": "io.homeassistant.companion.android-5ebd36786257a353",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "66e5c540fd5811eab1fa9f211602e014",
+                "version": 1,
+                "domain": "yeelight",
+                "title": "Aimee Light",
+                "data": {
+                    "host": "10.0.0.190",
+                    "id": null
+                },
+                "options": {
+                    "name": "Aimee Light",
+                    "model": "",
+                    "transition": 350,
+                    "use_music_mode": false,
+                    "save_on_change": false,
+                    "nightlight_switch": false
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "import",
+                "connection_class": "local_poll",
+                "unique_id": "0x0000000004cade51",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "036aeb41012511ebb3ad35c4c450a0d6",
+                "version": 1,
+                "domain": "yeelight",
+                "title": "Kitchen 2",
+                "data": {
+                    "host": "10.0.0.183",
+                    "id": null
+                },
+                "options": {
+                    "name": "Kitchen 2",
+                    "model": "",
+                    "transition": 350,
+                    "use_music_mode": false,
+                    "save_on_change": false,
+                    "nightlight_switch": false
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "import",
+                "connection_class": "local_poll",
+                "unique_id": "0x00000000052c7b42",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "036af665012511eb9d7fcf7f7197e4ba",
+                "version": 1,
+                "domain": "yeelight",
+                "title": "Kitchen 1",
+                "data": {
+                    "host": "10.0.0.181",
+                    "id": null
+                },
+                "options": {
+                    "name": "Kitchen 1",
+                    "model": "",
+                    "transition": 350,
+                    "use_music_mode": false,
+                    "save_on_change": false,
+                    "nightlight_switch": false
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "import",
+                "connection_class": "local_poll",
+                "unique_id": "0x00000000052c8529",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "03a0628e012511eb9c510f730c73d5ce",
+                "version": 1,
+                "domain": "yeelight",
+                "title": "Theater Room",
+                "data": {
+                    "host": "10.0.0.194",
+                    "id": null
+                },
+                "options": {
+                    "name": "Theater Room",
+                    "model": "",
+                    "transition": 350,
+                    "use_music_mode": false,
+                    "save_on_change": false,
+                    "nightlight_switch": false
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "import",
+                "connection_class": "local_poll",
+                "unique_id": "0x00000000049c3810",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "82b5d7630a0b11eb9e47f373453e9937",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "Caroline\u2019s iPhone",
+                "data": {
+                    "app_name": "Home Assistant",
+                    "supports_encryption": true,
+                    "app_id": "io.robbie.HomeAssistant",
+                    "manufacturer": "Apple",
+                    "model": "iPhone11,8",
+                    "os_name": "iOS",
+                    "device_id": "402A0468-99D4-407B-89A6-A16278AC2192",
+                    "os_version": "14.2",
+                    "app_version": "2020.7 (11)",
+                    "device_name": "Caroline\u2019s iPhone",
+                    "app_data": {
+                        "push_token": "dzRUmyMSNUlRqxfwKAa_Lc:APA91bHyYI6mVa8ybC-_lXvTPnbmFa1VQ1nIcxz5vqns5U9JYws8LNdhMbwRMqafytkKof2fSfOcJOJiEE8SgA4uwFXNqv072trjbwKuzoJrmhKcqWYSWTpJtXUHKj10QtEoWYcyyVSE",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "cloudhook_url": "https://hooks.nabu.casa/gAAAAABfgCKzLFitO-ALRfcZMELUCHHb3Ih0vVAIjmQZS2PkI0jXgTEXFRAnZGl7P8Hg_Lj6BgjYZY0-o-Sf_N0fPcvaP_5WlKPhJC6IySCJ4uqOyKEtFhd1GrE8sg3gPOcMRf5UPQgiQpru72wgSjyF1ruh3zEZDXHGNiJXfAdhszTNkxXvhc4=",
+                    "webhook_id": "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73",
+                    "secret": "ebd61937a57289438c38c229f22efe23a595923b29362f9d7d8537a463777759",
+                    "user_id": "97c47cbaa2ca46d8b4efca2ecc946c50"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "registration",
+                "connection_class": "cloud_push",
+                "unique_id": "io.robbie.HomeAssistant-402A0468-99D4-407B-89A6-A16278AC2192",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "3d700bfa137e11ebb158816bd07aa3f9",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "Pixel_3",
+                "data": {
+                    "app_id": "com.surodev.ariela",
+                    "app_name": "Ariela",
+                    "app_version": "1.3.8.5",
+                    "device_name": "Pixel_3",
+                    "manufacturer": "Google",
+                    "model": "blueline",
+                    "os_name": "11",
+                    "os_version": "11",
+                    "supports_encryption": false,
+                    "app_data": {
+                        "push_token": "dIKdXP2ARjGiqpyVOjGkVm:APA91bHYeMMwYCtm8nmuWS56XzflY7Fz3BDur6cuR7CQYGCueqdDJDhO4cZZp4iXUS6rJx1aSHrEEQB8R78NgaM_yQEVHNYIjLAsjyZ4it6riPO5fMLofQWUZb1lZYd1Ig--EsHJa_um",
+                        "push_url": "https://ariela.surodev.com/notification/"
+                    },
+                    "cloudhook_url": "https://hooks.nabu.casa/gAAAAABfj_ynRrvEEsRa-xowX0CZUygGdzU6zOoOH_nZMLyZyTB9cTeh_hGQxZoQmH2uYVa3x36hbHDzGanbNfP1u-nI8c79wdYgyFMqc1r4sEzxukEEz-X2QuqlIdHdpvb_ZtphadxumJpCvZbeE_3SNbjMkV7idHWQVRzhAgGveefdGQX2Z30=",
+                    "webhook_id": "0df32f25b23e724f97c97609bd0b37ded4e17406c5a3ac567d42eb39701cd94e",
+                    "user_id": "5c4082cf03ff4a4e943c4b4d7309044f",
+                    "device_id": "59ccbc548ddf42ffb6deda6250e609bf"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "registration",
+                "connection_class": "cloud_push",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "941f1f1d9279046f2160b89c99acecb8",
+                "version": 1,
+                "domain": "googlewifi",
+                "title": "Google Wifi",
+                "data": {
+                    "refresh_token": "1//0gbUo6gDri5bbCgYIARAAGBASNwF-L9IrhI4SEcG6-_zsUrrW6jufSQ8lf0ApltxCRJGIRwZf_S-mxyuR-olYHr9DrhfS1tU-a8A"
+                },
+                "options": {
+                    "scan_interval": 3,
+                    "auto_speedtest": true,
+                    "speedtest_interval": 4,
+                    "speed_units": "MB/s"
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": "1//0gbUo6gDri5bbCgYIARAAGBASNwF-L9IrhI4SEcG6-_zsUrrW6jufSQ8lf0ApltxCRJGIRwZf_S-mxyuR-olYHr9DrhfS1tU-a8A",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "dc2752b3078082af3fc9b1ad4dab869a",
+                "version": 1,
+                "domain": "ios",
+                "title": "Home Assistant iOS",
+                "data": {},
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "import",
+                "connection_class": "cloud_push",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "56df23303396830b678428f508463ce8",
+                "version": 1,
+                "domain": "ipp",
+                "title": "EPSON WF-4740 Series",
+                "data": {
+                    "host": "10.0.0.60",
+                    "port": 631,
+                    "ssl": true,
+                    "verify_ssl": false,
+                    "base_path": "/ipp/print",
+                    "name": "EPSON WF-4740 Series",
+                    "uuid": "cfe92100-67c4-11d4-a45f-381a528fd24a"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_poll",
+                "unique_id": "cfe92100-67c4-11d4-a45f-381a528fd24a",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "7851a6c4c35fc37552bf2636389595df",
+                "version": 1,
+                "domain": "bureau_of_meteorology",
+                "title": "Harrisdale",
+                "data": {
+                    "latitude": -32.116135,
+                    "longitude": 115.921786,
+                    "observations_create": true,
+                    "observations_basename": "Jandakot",
+                    "observations_monitored": [
+                        "temp",
+                        "temp_feels_like",
+                        "rain_since_9am",
+                        "humidity",
+                        "wind_speed_kilometre",
+                        "wind_speed_knot",
+                        "wind_direction",
+                        "gust_speed_kilometre",
+                        "gust_speed_knot"
+                    ],
+                    "forecasts_create": true,
+                    "forecasts_basename": "Harrisdale",
+                    "forecasts_monitored": [
+                        "temp_max",
+                        "temp_min",
+                        "extended_text",
+                        "icon_descriptor",
+                        "mdi_icon",
+                        "short_text",
+                        "uv_category",
+                        "uv_max_index",
+                        "uv_start_time",
+                        "uv_end_time",
+                        "rain_amount_min",
+                        "rain_amount_max",
+                        "rain_amount_range",
+                        "rain_chance",
+                        "fire_danger"
+                    ],
+                    "forecasts_days": 6
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "1657144efa254f855a6c8a1f738f38fb",
+                "version": 1,
+                "domain": "xiaomi_miio",
+                "title": "Ignored",
+                "data": {
+                    "host": "10.0.0.6"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "ignore",
+                "connection_class": "local_poll",
+                "unique_id": "28:6c:07:fa:38:f0",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "03ceadd88e6e09f814eee2416809d0c7",
+                "version": 1,
+                "domain": "ytube_music_player",
+                "title": "yTubeMusic",
+                "data": {
+                    "name": "ytube_music_player",
+                    "speakers": "",
+                    "shuffle": true,
+                    "shuffle_mode": 1,
+                    "select_source": "ytube_music_player_source",
+                    "select_playlist": "ytube_music_player_playlist",
+                    "select_playmode": "ytube_music_player_playmode",
+                    "select_speakers": "ytube_music_player_speakers",
+                    "select_playcontinuous": "input_boolean.ytube_music_player_playcontinuous",
+                    "proxy_path": "",
+                    "proxy_url": "",
+                    "brand_id": "",
+                    "cookie": "",
+                    "header_path": "/config/.storage/ytube_header.json"
+                },
+                "options": {
+                    "name": "ytube_music_player",
+                    "speakers": "",
+                    "shuffle": true,
+                    "shuffle_mode": 1,
+                    "select_source": "ytube_music_player_source",
+                    "select_playlist": "ytube_music_player_playlist",
+                    "select_playmode": "ytube_music_player_playmode",
+                    "select_speakers": "ytube_music_player_speakers",
+                    "select_playcontinuous": "input_boolean.ytube_music_player_playcontinuous",
+                    "proxy_path": "",
+                    "proxy_url": "",
+                    "brand_id": "",
+                    "cookie": "",
+                    "header_path": "/config/.storage/ytube_header.json"
+                },
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "330e1d89a1c4afddb8296f5a5ccc19aa",
+                "version": 1,
+                "domain": "hacs",
+                "title": "",
+                "data": {
+                    "token": "b0940e11cc51fcf620fe38fe0d0879f0222d065e"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "cloud_poll",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "7f57ada98a0cba43fc11abe617dae0d6",
+                "version": 1,
+                "domain": "ipp",
+                "title": "Printer: Canon TS3100 series @ Aimee\u2019s MacBook Air",
+                "data": {
+                    "host": "10.0.0.21",
+                    "name": "Canon TS3100 series @ Aimee\u2019s MacBook Air"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "ignore",
+                "connection_class": "local_poll",
+                "unique_id": "7d5afdd3-d727-3fb0-5367-dd8073d9e3e4",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "43980090dfeee9a4cde1a25f5523a2cc",
+                "version": 1,
+                "domain": "esphome",
+                "title": "garage_camera",
+                "data": {
+                    "host": "10.0.0.62",
+                    "port": 6053,
+                    "password": "haman"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_push",
+                "unique_id": "garage_camera",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "7d35794ec1d8d76698612a59d29f5158",
+                "version": 1,
+                "domain": "esphome",
+                "title": "study_camera",
+                "data": {
+                    "host": "10.0.0.164",
+                    "port": 6053,
+                    "password": "haman"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_push",
+                "unique_id": "cam3",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "59d556110d6c6aa808fe1a5a2e1854e9",
+                "version": 1,
+                "domain": "localtuya",
+                "title": "Study Ceiling LT ",
+                "data": {
+                    "host": "10.0.0.66",
+                    "device_id": "176410232cf43241ebc9",
+                    "protocol_version": "3.3",
+                    "friendly_name": "Study Ceiling LT ",
+                    "local_key": "46864e934c842c88",
+                    "product_key": "keyj979nf3q3theh",
+                    "dps_strings": [
+                        "20 (value: True)",
+                        "21 (value: white)",
+                        "22 (value: 830)",
+                        "24 (value: 012403e80294)",
+                        "25 (value: 010e0d0000840000000003e803e8)",
+                        "26 (value: 0)"
+                    ],
+                    "entities": [
+                        {
+                            "brightness_lower": 3226,
+                            "brightness_upper": 4696,
+                            "color_temp_min_kelvin": 2700,
+                            "color_temp_max_kelvin": 6500,
+                            "music_mode": false,
+                            "friendly_name": "Studt Light LT",
+                            "color": 20,
+                            "color_temp": 20,
+                            "color_mode": 20,
+                            "id": 20,
+                            "platform": "light"
+                        }
+                    ]
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": "176410232cf43241ebc9",
+                "disabled_by": null
+            }
+        ]
+    }
+}

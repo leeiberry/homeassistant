@@ -1,0 +1,71 @@
+title: Home
+resources:
+  - url: /local/stack-in-card.js
+    type: module
+custom_header:
+  compact_mode: true
+  voice: hide
+  hide_help: true
+  exceptions:
+    - conditions:
+        user: Aimee
+      config:        
+        hide_tabs: 'Secuirty, 3, Study, 6, 12, 13, Weather'
+        default_tab: 2
+        #disable_sidebar: true 
+
+
+resources:
+   !include /config/lovelace/includes/resources.yaml
+
+button_card_templates:
+  #!include /config/lovelace/includes/button_card_templates.yaml
+  #!include lovelace/includes/button_card_templates.yaml
+  phones:
+    #aspect_ratio: 1/1
+    #size: 100%
+    styles:
+      - border-radius: 10%
+      - color: state-icon-color
+    tap_action:
+      action: more-info
+    state: 
+      - value: "home"
+        color: var(--state-icon-active-color)
+    
+    show_label: true
+    #show_last_changed: true 
+
+
+excluded_entities:
+  - weblink.router
+views:
+  - !include /config/lovelace/VWmain.yaml
+  - !include /config/lovelace/VWlounge.yaml
+  - !include /config/lovelace/VWaimee.yaml  
+  - !include /config/lovelace/VWKitt.yaml 
+  - !include /config/lovelace/VWblake.yaml    
+  - !include /config/lovelace/VWmaster.yaml  #3
+  #- !include /config/lovelace/VWmedia.yaml   ##  sonar upcoming not working  HA v 0.111
+  - !include /config/lovelace/VWtheater.yaml
+  - !include /config/lovelace/VWsecurity.yaml 
+  - !include /config/lovelace/VWpower.yaml 
+  - !include /config/lovelace/VWweather.yaml
+  - !include /config/lovelace/VWstudy.yaml #
+  - !include /config/lovelace/VWgarden.yaml
+  - !include /config/lovelace/VWgarage.yaml
+  - !include /config/lovelace/VWlights.yaml
+  - !include /config/lovelace/VWcast.yaml
+            
+                        
+
+
+  
+ 
+  
+
+ 
+  
+
+
+                

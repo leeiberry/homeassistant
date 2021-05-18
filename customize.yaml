@@ -1,0 +1,227 @@
+cover.garage_door:
+  device_class: garage
+media_player.soundbar:
+  icon: mdi:speaker
+device_tracker.80a589aeccf7:
+  icon: mdi:tablet
+switch.xmas_tree:
+  friendly_name: Xmas Tree
+  icon: mdi:pine-tree
+device_tracker.phoneleegateway:
+  icon: mdi:cellphone-android
+device_tracker.JaydenPhone:
+  icon: mdi:cellphone-android
+device_tracker.carolines_iphone:
+  icon: mdi:cellphone-iphone
+device_tracker.AimeeiPhone:
+  icon: mdi:cellphone-iphone
+device_tracker.BlakeiPhone:
+  icon: mdi:cellphone-iphone
+device_tracker.carolineIPad:
+  icon: mdi:tablet-ipad
+device_tracker.ps4:
+  icon: mdi:playstation
+sensor.ps4:
+  icon: mdi:playstation
+device_tracker.canon:
+  icon: mdi:printer
+  hidden: true
+device_tracker.xbox:
+  icon: mdi:lamp
+device_tracker.PCSaturn:
+  hidden: true
+sensor.Canon:
+  icon: mdi:printer
+sensor.saturn:
+  icon: mdi:desktop-tower
+sensor.mercury:
+  icon: mdi:desktop-tower
+sensor.pixelc:
+  icon: mdi:tablet-android
+sensor.kodi:
+  icon: mdi:kodi
+sensor.xbox:
+  icon: mdi:xbox
+sensor.lounge_temperature:
+  friendly_name: Lounge Temperature
+  icon: mdi:temperature-celsius
+sensor.master_bedroom_temperature:
+  friendly_name: Master Bedroom Temperature
+  icon: mdi:temperature-celsius
+sensor.temperature_158d00015cbc22:
+  friendly_name: Study Temperature
+  icon: mdi:temperature-celsius
+sensor.weather_wind_speed:
+  icon: mdi:weather-windy
+switch.bedside_lamps:
+  icon: mdi:lightbulb
+switch.22686832bcddc29151b5_1:
+  icon: mdi:fan
+switch.22686832bcddc29151b5_2:
+  icon: mdi:desk-lamp
+switch.22686832bcddc29151b5_5:
+  icon: mdi:usb-port
+  friendly_name: USB Power (*4)
+switch.plug_158d000163bd78:
+  icon: mdi:shield-home
+  friendly_name: Zapper
+light.lightbulb_01:
+  friendly_name: Globe
+  google_assistant: true
+  google_assistant_name: Globle Light
+light.lightbulb_02:
+  friendly_name: Lamp
+  icon: mdi:floor-lamp
+light.lightbulb_03:
+  friendly_name: Ceiling
+  icon: mdi:ceiling-light
+light.lightbulb_04:
+  friendly_name: Ceiling
+  icon: mdi:ceiling-light
+light.lightbulb_05:
+  friendly_name: Panty
+  icon: mdi:ceiling-light
+light.lightbulb_06:
+  friendly_name: Lee's Lamp
+  icon: mdi:lamp
+light.lightbulb_07:
+  friendly_name: Caroline's Lamp
+  icon: mdi:lamp
+light.lightbulb_08:
+  friendly_name: Ceiling
+  icon: mdi:ceiling-light
+light.542300058caab5e14c9a:
+  friendly_name: Toilet
+  supported_features: 63
+  icon: mdi:ceiling-light
+light.lightbulb_09:
+  friendly_name: Toilet
+  icon: mdi:ceiling-light
+light.lightbulb_10:
+  friendly_name: Ceiling
+  icon: mdi:ceiling-light
+light.lightbulb_11:
+  friendly_name: Walk in
+  icon: mdi:ceiling-light
+light.lightbulb_12:
+  friendly_name: Front Door
+  icon: mdi:ceiling-light
+light.lightbulb_15:
+  friendly_name: Living Room Ceiling
+  icon: mdi:ceiling-light
+light.lightbulb_13:
+  friendly_name: Garage Light
+  icon: mdi:ceiling-light
+light.kittbulb:
+  friendly_name: Kitt Light 2
+  icon: mdi:ceiling-light
+light.kittlight:
+  friendly_name: Kitt Light
+  icon: mdi:ceiling-light
+light.6135078584f3eb0b3b30:
+  friendly_name: Kitchen Light
+  icon: mdi:ceiling-light
+light.7808263084f3eb808d91:
+  friendly_name: Kitchen Light
+  icon: mdi:ceiling-light
+light.6135078584f3eb0b3e0b:
+  friendly_name: Dining Light
+  icon: mdi:ceiling-light
+light.7808263084f3eb8092bc:
+  friendly_name: Dining Light
+  icon: mdi:ceiling-light
+light.dinning_lights:
+  friendly_name: Dining Light
+  icon: mdi:ceiling-light
+light.kitchen_lights:
+  friendly_name: Kitchen Light
+  icon: mdi:ceiling-light
+light.yeelight_rgb_7811dca5f7c7:
+  friendly_name: Theater Light
+  icon: mdi:ceiling-light
+light.yeelight_rgb_7811dcd930d0:
+  friendly_name: Aimee Light
+  icon: mdi:ceiling-light
+light.jayden_light:
+  friendly_name: Dinning Lamp
+  icon: mdi:floor-lamp
+sensor.studymove:
+  friendly_name: Study Movement
+  icon: mdi:run
+sensor.loungemove:
+  friendly_name: Family Room Movement
+  icon: mdi:run
+switch.wire_light:
+  icon: mdi:lightbulb
+switch.cabinet_light:
+  icon: mdi:lightbulb
+light.07054573ecfabc1de6a7:
+  friendly_name: Ceiling
+  icon: mdi:ceiling-light
+light.yeelight_white_34ce00880a33:
+  friendly_name: Theater Light
+light.gateway_light_286c07fa38f0:
+  friendly_name: Study light 2
+binary_sensor.motion_sensor_158d00016d5813:
+  friendly_name: Study
+binary_sensor.motion_sensor_158d00015e95e1:
+  friendly_name: Shed
+binary_sensor.motion_sensor_158d000171cce3:
+  friendly_name: Family (TV)
+binary_sensor.motion_sensor_158d000164362d:
+  friendly_name: Study Desk
+  icon: mdi:table-chair
+binary_sensor.switch_158d00018b37f8:
+  friendly_name: Door Bell
+  icon: mdi:bell-ring
+sensor.temperature_158d0001a2c316:
+  friendly_name: Lounge Temp
+sensor.humidity_158d0001a2c316:
+  friendly_name: Lounge Humid
+sensor.temperature_158d0001a2de84:
+  friendly_name: Master Temp
+sensor.temperature_158d000170d531:
+  friendly_name: Blake Temp
+sensor.humidity_158d0001a2de84:
+  fiendly_name: Master Humid
+sensor.temperature_158d000170b5c3:
+  friendly_name: Activity Temp
+binary_sensor.door_window_sensor_158d00014d20b8:
+  friendly_name: Front Door
+  icon: mdi:door-closed
+binary_sensor.door_window_sensor_158d00016cdcad:
+  friendly_name: Garage Door
+  icon: mdi:garage
+binary_sensor.door_window_sensor_158d0001d682cc:
+  friendly_name: Lanudry Door
+  icon: mdi:door-closed
+binary_sensor.switch_158d00019de727:
+  friendly_name: Garage Door Opener 1
+input_boolean.alarm_mode:
+  friendly_name: House Alarm
+  icon: mdi:secuirty
+binary_sensor.motion_sensor_158d00015da5fd:
+  friendly_name: Theater
+binary_sensor.motion_sensor_158d00015a8b14:
+  friendly_name: Dinning Area
+binary_sensor.motion_sensor_158d0001231c9b:
+  friendly_name: Garage
+binary_sensor.motion_sensor_158d00016be379:
+  friendly_name: Kitchen
+binary_sensor.motion_sensor_158d000171cc81:
+  friendly_name: Porch
+binary_sensor.motion_sensor_158d0001db087a:
+  friendly_name: Activity Room
+Binary_sensor.motion_sensor_158d0001db52e8:
+  friendly_name: Patio
+switch.fountain:
+  icon: mdi:fountain
+switch.garden_lights:
+  icon: mdi:spotlight-beam
+switch.garden_fire:
+  icon: mdi:fire
+sensor.illumination_286c07fa38f0:
+  friendly_name: Light Sensor
+light.63850120d8bfc0ed33f3:
+  supported_features: 63
+  

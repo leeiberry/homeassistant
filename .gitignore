@@ -1,15 +1,1 @@
-*
-!*.yam
-!*.conf
-!scenes
-!automation
-!customized
-!notify
-!script
-!sensor
-!groups
-!sensor
-!tts
-!.gitignore
-secrets.yaml
-known_devices.yaml
+home-assistant.log

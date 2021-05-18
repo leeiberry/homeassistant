@@ -1,0 +1,59 @@
+title: Master Bedroom
+visible: 
+      - user: 5c4082cf03ff4a4e943c4b4d7309044f #lee
+      - user: 97c47cbaa2ca46d8b4efca2ecc946c50 # caroline
+icon: mdi:bed-king
+id: masterbedroom
+cards:
+    # The filter card will filter entities for their state
+    - id: masterbedroom1
+      type: vertical-stack
+      title: Master
+      cards:             
+         
+      - type: glance
+        title: Lights
+        entities:
+          - light.lightbulb_10
+          - entity: light.lightbulb_06
+            name: Lee
+          - entity: light.lightbulb_07
+            name: Caroline
+          - light.bathroom
+          #- light.lightbulb_09
+      - type: glance
+        title: Blankets
+        entities:
+          - entity: switch.lee_blanket
+            name: Lee
+          - entity: switch.caroline_blanket
+            name: Caroline
+
+      - type: custom:mini-graph-card
+        name: Temp
+        align_header: left
+        labels: true
+        height: 60
+        entities: 
+          - entity: sensor.temperature_158d0001a2de84
+          - entity: sensor.humidity_158d0001a2de84
+            show_graph: false
+            Name: hum
+            show_state: true
+            aggregate_func: min
+     
+      - type: custom:mini-media-player
+        entity: media_player.master
+        artwork_border: true
+        artwork: cover
+      - type: custom:mini-media-player
+        entity: media_player.bedroom_speaker
+        artwork_border: true
+        artwork: cover
+        show_tts: google
+        power_color: true
+
+        
+      
+        
+

@@ -1,571 +1,94 @@
-- id: '5001'
-  alias: Pantry light auto off yes
+- id: IFTTT garage door
+  alias: IFTTT garage door
   trigger:
-    platform: state
-    entity_id: light.lightbulb_05
-    to: 'on'
-    for:
-      minutes: 7
-  action:
-    - service: light.turn_off
-      entity_id: light.lightbulb_05
-
-
-- id: '5004'
-  alias: Someone is in the panty
-  trigger:
-    platform: state
-    entity_id: binary_sensor.motion_sensor_158d00015a8b14
-    to: 'on'
-  condition:
-  - condition: state
-    entity_id:  light.lightbulb_05
-    state: 'off'
-  action:
-    - service: homeassistant.turn_on
-      entity_id: light.lightbulb_05
-###  fountain
-- id: '5060'
-  alias: Turn fountain on at 11am
-  trigger:
-        platform: time
-        at: '11:00:00'
-  action:
-    - service: homeassistant.turn_on
-      entity_id: switch.fountain
-
-- id: '5062'
-  alias: Turn fountain off at 2 pm
-  trigger:
-        platform: time
-        at: '14:00:00'
-  action:
-    - service: homeassistant.turn_off
-      entity_id: switch.fountain
-
-#### smas lights !
-- id: '2001'
-  alias: Turn family room lights on just before sunset
-  trigger:
-    platform: sun
-    event: sunset
-    offset: -00:15:00
-  action:
-  - service: homeassistant.turn_on
-    entity_id: light.lightbulb_01
-    data:
-      brightness: '180'
-  - service: homeassistant.turn_on
-    entity_id: light.lightbulb_02
-    data:
-      brightness: '180'
-  - service: homeassistant.turn_on
-    entity_id: switch.garden_lights
-  - service: homeassistant.turn_on
-    entity_id : switch.wire_light
-
-
-- id: '2002'
-  alias: Turn family room lights off at 22:30 on mon - thu
-  trigger:
-    platform: time
-    at: '22:30:00'
-  condition:
-  - condition: time
-    weekday:
-    - mon
-    - tue
-    - wed
-    - thu
-  action:
-  - service: homeassistant.turn_off
-    entity_id: light.lightbulb_01
-    data:
-      transition: 300
-  - service: homeassistant.turn_off
-    entity_id: light.lightbulb_02
-    data:
-      transition: 300
-  - service: homeassistant.turn_off
-    entity_id: switch.wire_light
-  - service: homeassistant.turn_off
-    entity_id: switch.garden_lights
-
-
-- id: '2003'
-  alias: Turn family room lights off at 23:30 on fri - sun
-  trigger:
-    platform: time
-    at: '23:30:00'
-  condition:
-  - condition: time
-    weekday:
-    - fri
-    - sat
-    - sun
-  action:
-  - service: homeassistant.turn_off
-    entity_id: light.lightbulb_01
-    data:
-      transition: 600
-  - service: homeassistant.turn_off
-    entity_id: light.lightbulb_02
-    data:
-      transition: 600
-  - service: homeassistant.turn_off
-    entity_id : switch.wire_light
-  - service: homeassistant.turn_off
-    entity_id: switch.garden_lights
-
-
-
-- id: '2004'
-  alias: Turn family room lights on just before sunrise ***
-  trigger:
-    platform: sun
-    event: sunrise
-    offset: -00:45:00
-  condition:
-    condition: time
-    before: '06:15:00'
-  action:
-  - service: homeassistant.turn_on
-    entity_id: light.lightbulb_01
-    data:
-      brightness: '100'
-  - service: homeassistant.turn_on
-    entity_id: light.lightbulb_02
-    data:
-      brightness: '100'
-
-
-- id: '2005'
-  alias: Turn family room lights off 15 mins after sunrise
-  trigger:
-    platform: sun
-    event: sunrise
-    offset: 00:15:00
-  action:
-  - service: homeassistant.turn_off
-    entity_id: light.lightbulb_01
-    data:
-      transition: 180
-  - service: homeassistant.turn_off
-    entity_id: light.lightbulb_02
-    data:
-      transition: 180
-
-
-- id: '2010'
-  alias: Movement detected in Family Room
-  trigger:
-    platform: state
-    entity_id: binary_sensor.motion_sensor_158d00015e95e1
-    to: 'on'
-  condition:
-  - condition: state
-    entity_id:  input_select.alarm_mode
-    state: 'on'
-  action:
-  - service: notify.HASSpushbullet
-    data_template:
-      title: "HOUSE ALARM"
-      message:  "Someone is in the family room"
-
-- id: '2015'
-  alias: no one home for 15 mins set on alarm
-  trigger:
-    platform: state
-    entity_id: group.family
-    to: 'not_home'
-    for:
-        minutes: 15
-  condition:
-    - condition: time
-      after: '07:00:00'
-    - condition: time
-      before: '21:30:00'
-  action:
-  - service: notify.HASSpushbullet
-    data_template:
-      title: "HOUSE ALARM"
-      message:  "Alarm system set after 15 mins away "
-  - service: input_select.select_option
-    data:
-        entity_id: input_select.alarm_mode
-        option: "on"
-
-- id: '2017'
-  alias: someone is home and the alarm is on - disalarm
-  trigger:
-    platform: state
-    entity_id: group.family
-    to: 'home'
-  condition:
-    - condition: state
-      entity_id:  input_select.alarm_mode
-      state: 'on'
-  action:
-  - service: notify.HASSpushbullet
-    data_template:
-      title: "HOUSE ALARM"
-      message:  "someone is home turn alarm off"
-  - service: input_select.select_option
-    data:
-        entity_id: input_select.alarm_mode
-        option: "off"
-
-- id: '2020'
-  alias: Someone is in the house !
-  trigger:
-    platform: state
-    entity_id: group.motionpanel
-    to: 'on'
-  condition:
-    - condition: state
-      entity_id:  input_select.alarm_mode
-      state: 'on'
-  action:
-    - service: notify.HASSpushbullet
-      data_template:
-        title: "HOUSE ALARM"
-        message:  ">> Someone is in the house "
-
-
-
-- id: '2035'
-  alias: Garage door left open for 30 minutes
-  trigger:
-    platform: state
-    entity_id: binary_sensor.door_window_sensor_158d00016cdcad
-    to: 'on'
-    for:
-        minutes: 30
-  action:
-  - service: notify.SMSLB
-    data_template:
-      title: "HOUSE ALARM"
-      message:  "Garage Door has been left open for more than 30 minutes"
-
-- id: '2036'
-  alias: Garage door left open for 60 minutes
-  trigger:
-    platform: state
-    entity_id: binary_sensor.door_window_sensor_158d00016cdcad
-    to: 'on'
-    for:
-        minutes: 60
-  action:
-  - service: notify.HASSpushbullet
-    data_template:
-      title: "HOUSE ALARM"
-      message:  ">> Garage Door has been left open for more than 60 minutes"
-
-
-- id: '2040'
-  alias: Open garage door for caroline before work
-  trigger:
-    platform:  state
-    entity_id: binary_sensor.motion_sensor_158d0001231c9b
-    to: 'on'
-  condition:
-      condition: and
-      conditions:
-          - condition: state
-            entity_id: binary_sensor.door_window_sensor_158d00016cdcad
-            state: 'off'
-          - condition: time
-            after: '06:30:00'
-            before: '06:50:00'
-          - condition: time
-            weekday:
-            - mon
-            - tue
-            - wed
-            - thu
-            - fri
-  action:
-    - service: homeassistant.turn_on
-      entity_id: switch.garage_door_control
-
-- id: '2045'
-  alias: car sensor is connected and the garage door is closed
-  trigger:
-    platform: state
-    entity_id: binary_sensor.request_to_open_garage_door
-    to: 'on'
-  condition:
-  - condition: state
-    entity_id: binary_sensor.door_window_sensor_158d00016cdcad
-    state: 'off'
-  action:
-  - service: homeassistant.turn_on
-    entity_id: switch.garage_door_control
-
-- id: '2046'
-  alias: car sensor is disconnected for one minute and the garage door is open
-  trigger:
-    platform: state
-    entity_id: binary_sensor.request_to_open_garage_door
-    to: 'off'
-    for:
-        minutes: 1
-  condition:
-    - condition: state
-      entity_id: binary_sensor.door_window_sensor_158d00016cdcad
-      state: 'on'
-  action:
-  - service: homeassistant.turn_on
-    entity_id: switch.garage_door_control
-
-
-
-
-
-- id: '3001'
-  alias: Turn bedside lights on just before sunset
-  trigger:
-    platform: sun
-    event: sunset
-    offset: -00:10:00
-  action:
-  - service: homeassistant.turn_on
-    entity_id: light.lightbulb_06
-    data:
-      brightness: '180'
-  - service: homeassistant.turn_on
-    entity_id: light.lightbulb_07
-    data:
-      brightness: '180'
-
-
-
-- id: '3002'
-  alias: Turn Bedside Lighs off at 21:00
-  trigger:
-    platform: time
-    at: '21:00:00'
-  condition:
-    condition: state
-    entity_id: light.lightbulb_06
-    state: 'on'
-  action:
-  - service: light.turn_off
-    entity_id: light.lightbulb_06
-    data:
-      transition: 300
-  - service: light.turn_off
-    entity_id: light.lightbulb_07
-    data:
-      transition: 300
-
-
-- id: '3004'
-  alias: Turn bed blankets off 9:30 am
-  trigger:
-    platform: time
-    at: 09:30:00
-  condition:
-    condition: state
-    entity_id: switch.caroline_blanket
-    state: 'on'
-  action:
-  - service: switch.turn_off
-    entity_id: switch.caroline_blanket
-  - service: switch.turn_off
-    entity_id: switch.lee_blanket
-
-- id: '3010'
-  alias: Walk in light auto off yes
-  trigger:
-    platform: state
-    entity_id: light.lightbulb_11
-    to: 'on'
-    for:
-      minutes: 5
-  action:
-    - service: light.turn_off
-      entity_id: light.lightbulb_11
-
-
-- id: '3015'
-  alias: Someone is in the walk in
-  trigger:
-    platform: state
-    entity_id: binary_sensor.motion_sensor_158d00015da5fd
-    to: 'on'
-  condition:
-  - condition: state
-    entity_id:  light.lightbulb_11
-    state: 'off'
-  action:
-    - service: homeassistant.turn_on
-      entity_id: light.lightbulb_11
-
-- id: '4001'
-  alias: Turn Study lights off after 23:45
-  trigger:
-    platform: time
-    at: '23:45:00'
-  condition:
-  - condition: time
-    weekday:
-    - mon
-    - tue
-    - wed
-    - thu
-    - sun
-  action:
-  - service: homeassistant.turn_off
-    entity_id: light.lightbulb_03
-
-- id: '4010'
-  alias: Turn Study Lamp on , detection and after sun set
-  trigger:
-    platform: state
-    entity_id: binary_sensor.motion_sensor_158d00016d5813
-    to: 'on'
-  condition:
-  - condition: state
-    entity_id:  switch.plug_158d000163bd78
-    state: 'off'
-  - condition: sun
-    after: sunset
-    after_offset: "-00:30:00"
-  action:
-    - service: homeassistant.turn_on
-      entity_id: switch.plug_158d000163bd78
-
-
-
-- id: '4015 '
-  alias: Turn Study Lamp off, if no detection
-  trigger:
-    platform: state
-    entity_id: binary_sensor.motion_sensor_158d00016d5813
-    to: 'off'
-    for:
-         minutes: 5
-  condition:
-  - condition: state
-    entity_id:  switch.plug_158d000163bd78
-    state: 'on'
-  action:
-    - service: homeassistant.turn_off
-      entity_id: switch.plug_158d000163bd78
-
-- id: '5501'
-  alias: Toilet light auto off yes
-  trigger:
-    platform: state
-    entity_id: light.lightbulb_09
-    to: 'on'
-    for:
-      minutes: 15
-  action:
-    service: light.turn_off
-    entity_id: light.lightbulb_09
-    data:
-      transition: 600
-
-
-- id: '5502'
-  alias: Turn hallway lights off 10 mins
-  trigger:
-    platform: state
-    entity_id: light.lightbulb_08
-    to: 'on'
-    for:
-      minutes: 10
-  action:
-    -  service: light.turn_off
-       entity_id: light.lightbulb_08
-       data:
-         transition: 600
-
-- id: '5510'
-  alias: Turn hallway light on after sunset
-  trigger:
-    platform: sun
-    event: sunset
-    offset: 00:05:00
-  action:
-  - service: homeassistant.turn_on
-    entity_id: light.lightbulb_12
-    data:
-      brightness: '180'
-
-- id: '5515'
-  alias: Turn hallway light off 3 hours after  sunset
-  trigger:
-    platform: sun
-    event: sunset
-    offset: 03:00:00
-  action:
-  - service: homeassistant.turn_off
-    entity_id: light.lightbulb_12
-    data:
-      transition: 130
-
-- id: '7005'
-  alias: Garage light auto off yes
-  trigger:
-    platform: state
-    entity_id: light.lightbulb_13
-    to: 'on'
-    for:
-      minutes: 5
-  action:
-    - service: light.turn_off
-      entity_id: light.lightbulb_13
-
-- id: '7007'
-  alias: Garage light auto on #
-  trigger:
-    platform: state
-    entity_id: binary_sensor.motion_sensor_158d0001231c9b
-    to: 'on'
-  action:
-    - service: light.turn_on
-      entity_id: light.lightbulb_13
-
-- id: '7010'
-  alias: Garage Door Opener
-  trigger:
-    platform: state
-    entity_id: binary_sensor.switch_158d00019de727
-    to: 'on'
-  action:
-    - service: mqtt.publish
-      data:
-        topic: 'devices/Garage/switch/on/set'
-        payload: 'Yes'
-
-
-- id: '8001'
-  alias: Front door bell
-  trigger:
-    platform: event
-    event_type: click
+  - platform: event
     event_data:
-      entity_id: binary_sensor.switch_158d00018b37f8
-      click_type: single
-  condition:
-      condition: time
-      after: '07:00:00'
-      before: '21:00:00'
+      action: call_service
+    event_type: ifttt_webhook_received
   action:
-   - service: notify.HASSpushbullet
-     data_template:
-       title: "FRONT DOOR"
-       message:  ">>> DOOR BELL <<<"
-
-- id: '8010'
-  alias: someone near the front door
+    service_template: '{{ trigger.event.data.service }}'
+    data_template:
+      entity_id: '{{ trigger.event.data.entity_id }}'
+- id: theme-setup
+  alias: Set theme at startup
   trigger:
-    platform: state
-    entity_id: binary_sensor.motion_sensor_158d000171cc81
-    to: 'on'
+  - platform: homeassistant
+    event: start
   action:
-    service: script.turn_on
-    entity_id: Script.flashGateWaylight
+    service: frontend.set_theme
+    data:
+      name: Google Dark Theme
+- id: '1602231034971'
+  alias: Tag e1acae59-e38b-422d-b899-6180ee5306ce is scanned
+  description: Test Tag
+  trigger:
+  - platform: tag
+    tag_id: e1acae59-e38b-422d-b899-6180ee5306ce
+  condition: []
+  action:
+  - service: light.toggle
+    data: {}
+    entity_id: light.kitchen_lights
+  mode: single
+- id: '1606117098955'
+  alias: ANDROID - Close garage
+  description: ''
+  trigger:
+  - platform: event
+    event_type: mobile_app_notification_action
+    event_data:
+      action: CLOSE_GARAGE
+  condition: []
+  action:
+  - service: switch.turn_on
+    data: {}
+    entity_id: switch.garage_door_control
+  - service: notify.mobile_app_pixel_5
+    data:
+      title: Garage Closed
+      message: 'Garage door now closing '
+  mode: single
+- id: '1606444835621'
+  alias: Tag Open Garage is scanned
+  description: ''
+  trigger:
+  - platform: tag
+    tag_id: 7b8bd091-c850-4baa-9e45-417109181614
+  condition: []
+  action:
+  - service: switch.turn_on
+    data: {}
+    entity_id: switch.garage_door_control
+  mode: single
+- id: '1606447002311'
+  alias: Tag Open Garage Door Iphone is scanned
+  description: ''
+  trigger:
+  - platform: tag
+    tag_id: 02078992-b81a-478a-9880-5b0f0a529f0d
+  condition: []
+  action:
+  - service: switch.turn_on
+    data: {}
+    entity_id: switch.garage_door_control
+  mode: single
+- id: '1612575255576'
+  alias: someone at front door
+  description: ''
+  trigger:
+  - type: motion
+    platform: device
+    device_id: b5ad1235dc7b4fb9b97ebea910177072
+    entity_id: binary_sensor.motion_sensor_158d000171cc81
+    domain: binary_sensor
+  condition:
+  - condition: state
+    entity_id: binary_sensor.door_window_sensor_158d00014d20b8
+    state: closed
+  action:
+  - service: tts.google_say
+    data:
+      entity_id: media_player.nesthub9608
+      message: Someone is at the door
+    entity_id: media_player.family_room_speaker
+  mode: single

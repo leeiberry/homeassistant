@@ -1,0 +1,89 @@
+title: Cast
+panel: true
+icon: mdi:cast
+id: cast
+cards:
+    # The filter card will filter entities for their state
+    - id: Cast1
+      type: vertical-stack
+      cards:
+        - type: horizontal-stack
+          cards:
+          - type: custom:mini-media-player
+            entity: media_player.lounge_tv
+            artwork_border: true
+            artwork: cover
+            show_source: true 
+          - type: custom:mini-media-player
+            entity: media_player.theater_tv
+            icon: mdi:cast
+            artwork_border: true
+            artwork: cover
+            show_source: true 
+         
+        - type: horizontal-stack
+          cards:
+          - type: custom:mini-media-player
+            entity: media_player.kitts_speaker
+            #icon: mdi:television
+            show_tts: google
+            artwork_border: true
+            artwork: cover
+            show_source: true 
+            power_color: true
+         
+          - type: custom:mini-media-player
+            entity: media_player.family_room_speaker
+            show_tts: google
+            icon: mdi:google-home
+            artwork_border: true
+            artwork: cover
+            show_source: true 
+            power_color: true
+        - type: horizontal-stack
+          cards:
+          - type: custom:mini-media-player
+            entity: media_player.master_speaker
+            artwork_border: true
+            artwork: cover
+          - type: custom:mini-media-player
+            entity: media_player.bedroom_speaker
+            artwork_border: true
+            artwork: cover
+            show_tts: google
+            power_color: true
+        - type: horizontal-stack
+          cards:
+          - type: custom:mini-media-player
+            entity: media_player.house_sound
+            artwork_border: true
+            artwork: cover
+            show_tts: google
+            power_color: true
+          - type: custom:mini-media-player
+            name: Shared Speaker
+            entity: media_player.jayden_s_speaker
+            show_tts: google
+            artwork: cover
+            icon: mdi:television
+            artwork_border: true
+            show_source: true 
+            power_color: true
+        - type: horizontal-stack
+          cards:
+          - type: custom:mini-media-player
+            entity: media_player.lg_tv
+            icon: mdi:television
+            power_color: true
+            artwork_border: true
+            show_source: true 
+          - type: custom:mini-media-player
+            entity: media_player.googlehome1658
+            artwork_border: true
+            artwork: cover
+            show_tts: google
+            power_color: true
+
+
+
+            

@@ -1,0 +1,26 @@
+phones:
+  #aspect_ratio: 1/1
+  #size: 100%
+  styles:
+    - border-radius: 10%
+    - color: state-icon-color
+  tap_action:
+    action: more-info
+  state: 
+    - value: "home"
+      color: var(--state-icon-active-color)
+  
+  show_label: true
+  #show_last_changed: true 
+tumbler:
+  styles:
+    - border-radius: 10%
+    - color: state-icon-active-color
+  tap_action:
+    action: more-info
+  state: 
+    - value: ==0
+      color: var(--state-icon-color)  
+  show_label: true
+  show_name: false
+  label: 1111

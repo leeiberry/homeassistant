@@ -1,0 +1,24 @@
+type: "custom:button-card"
+entity: sensor.power_cost
+icon : mdi:transmission-tower
+show_state: true
+show_icon: true
+show_name: false
+name: Power
+color: rgb(28, 128, 199)
+state:
+- color: LawnGreen
+  operator: '>'
+  value: 0
+  icon: mdi:solar-power
+- color: Crimson
+  operator: '<'
+  value: -.30
+- color: red
+  operator: '<'
+  value: -.40
+- color: DarkSalmon
+  operator: '<'
+  value: -.15
+tap_action:
+  action: more-info

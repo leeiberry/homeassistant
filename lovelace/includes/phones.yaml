@@ -1,0 +1,32 @@
+# display who is home
+type: horizontal-stack              
+cards: 
+- type: "custom:button-card"
+  entity: device_tracker.aimees_iphone_2
+  name: Aimee
+  icon: mdi:cellphone-iphone
+  template: phones 
+              
+- type: "custom:button-card"
+  name: Lee
+  entity: device_tracker.pixel_5
+  template: phones 
+  icon: mdi:cellphone-android
+  
+- type: "custom:button-card"
+  entity: device_tracker.phonecaroline
+  name: Caroline
+  icon: mdi:cellphone-iphone
+  template: phones   
+              
+- type: "custom:button-card"
+  entity: device_tracker.blakephone
+  name: Blake
+  icon: mdi:cellphone-iphone
+  template: phones   
+                    
+  styles:
+    grid:
+      - grid-template-areas: ' "i" "n" "s" "l"'
+      - grid-template-rows: min-content 1fr min-content min-content
+      - grid-template-columns: 1fr

@@ -1,0 +1,437 @@
+
+
+- platform: fronius
+  resource: http://10.0.0.200
+  monitored_conditions:
+    - sensor_type: inverter
+      device: 1
+    - sensor_type: meter
+      scope: system
+    - sensor_type: meter
+      device: 3
+    - sensor_type: storage
+      device: 0
+    - sensor_type: power_flow
+
+
+- platform: rest
+  resource: http://10.0.0.200/solar_api/v1/GetPowerFlowRealtimeData.fcgi
+  name: "PV"
+  value_template: >-
+    {% if value_json.Body.Data.Site.P_PV != null %}  {{value_json.Body.Data.Site.P_PV | multiply(0.001) | float(0) | round (2) }}
+    {% else %} 0
+    {% endif %}
+  unit_of_measurement: kWh
+  
+- platform: rest
+  resource: http://10.0.0.200/solar_api/v1/GetPowerFlowRealtimeData.fcgi
+  name: "Grid power"
+  value_template: '{{value_json.Body.Data.Site.P_Grid | multiply(-0.001) | float(2) | round (2) }} '
+  unit_of_measurement: kWh
+
+- platform: rest
+  resource: http://10.0.0.200/solar_api/v1/GetPowerFlowRealtimeData.fcgi
+  name: "Load"
+  value_template: '{{value_json.Body.Data.Site.P_Load | multiply(0.001) | float(2) | round (2) }} '
+  unit_of_measurement: kWh
+
+- platform: plex
+  name: Plex
+  token: !secret PlexToken
+  host: !secret PlexHost
+
+
+- platform: plex_recently_added
+  name: Recently Added TV  # will create sensor.recently_added_tv
+  token: !secret PlexToken
+  host: !secret PlexHost
+  port: 32400
+  section_types:
+    - show
+
+- platform: mqtt
+  name: "Plug 1 Power"
+  state_topic: "devices/plug1"
+  #friendly_name: "Watts"
+  value_template: "{{ value_json.data['dps']['5'] | multiply(0.1) | float(2) | round (2) }}"
+  unit_of_measurement: W
+ 
+- platform: mqtt
+  name: "Plug 1 Current"
+  state_topic: "devices/plug1"
+  #friendly_name: "milli Amps"
+  value_template: "{{ value_json.data['dps']['4']  }}"
+  unit_of_measurement: mA
+
+- platform: mqtt
+  name: "Power Rate"
+  state_topic: "devices/power/rate"
+  unit_of_measurement: $ per KW/H
+
+- platform: mqtt
+  name: "Power Supply Rate"
+  state_topic: "devices/power/supply"
+  unit_of_measurement: $ $ / Hr
+
+
+- platform: mqtt
+  name: "Power Cost"
+  state_topic: "devices/power/gridcost"
+  #value_template: “{{ ( states(‘sensor.tussenstekkercomputer_power’)|float * 24 / 1000|float * 0.22 ) | round(2)}}”
+  unit_of_measurement: $ / Hr
+
+# {"Time":"2020-04-23T03:29:07","ENERGY":{"TotalStartTime":"2020-04-23T02:42:56","Total":0.014,"Yesterday":0.000,"Today":0.014,"Period":3,"Power":0,"ApparentPower":0,"ReactivePower":0,"Factor":0.00,"Voltage":0,"Current":0.000}}
+- platform: mqtt
+  name: "Tumble Dryer - Power"
+  state_topic: "tele/koganp1/SENSOR"
+  value_template:  '{{ value_json["ENERGY"]["Power"] }}'
+  unit_of_measurement: Watts
+  icon: mdi:tumble-dryer
+  
+- platform: mqtt
+  name: "Washing Machine - Power"
+  state_topic: "tele/koganp2/SENSOR"
+  value_template:  '{{ value_json["ENERGY"]["Power"] }}'
+  unit_of_measurement: Watts
+  icon: mdi:washing-machine
+
+- platform: mqtt
+  name: "Dish Washer - Power"
+  state_topic: "tele/koganp3/SENSOR"
+  value_template:  '{{ value_json["ENERGY"]["Power"] }}'
+  unit_of_measurement: Watts
+  icon: mdi:dishwasher
+
+- platform: mqtt
+  name: "Lee Blanket - Voltage"
+  state_topic: "tele/koganp5/SENSOR"
+  value_template:  '{{ value_json["ENERGY"]["Voltage"] }}'
+  unit_of_measurement: Volts
+  icon: mdi:bed-empty
+
+
+- platform: mqtt
+  name: "Caroline Blanket - Voltage"
+  state_topic: "tele/koganp6/SENSOR"
+  value_template:  '{{ value_json["ENERGY"]["Voltage"] }}'
+  unit_of_measurement: Volts
+  icon: mdi:bed-empty
+
+
+- platform: template
+  sensors: 
+    leedd:
+      friendly_name: "lee phone change"
+      device_class: timestamp
+      value_template: "{{ as_timestamp(states.device_tracker.phonelee.last_changed) | timestamp_custom('%H %M',True)  }}"
+
+
+
+
+
+#- platform: qbittorrent
+#  url: 'http://10.0.0.150:8080'
+#  username: 'admin'
+#  password: 'test1234'
+
+
+- platform: mqtt
+  name: "My Computer - Boot Time"
+  state_topic: "iotlink/berrys/saturn/windows-monitor/stats/system/boot-time"
+  icon: mdi:timer
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/saturn/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+- platform: mqtt
+  name: "My Computer - Up Time"
+  state_topic: "iotlink/berrys/saturn/windows-monitor/stats/system/uptime"
+  unit_of_measurement: 'seconds'
+  icon: mdi:timer
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/saturn/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+- platform: mqtt
+  name: "My Computer - Current User"
+  state_topic: "iotlink/berrys/saturn/windows-monitor/stats/system/current-user"
+  unit_of_measurement: ''
+  icon: mdi:account
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/saturn/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+
+
+- platform: mqtt
+  name: "My Computer - CPU Usage"
+  state_topic: "iotlink/berrys/saturn/windows-monitor/stats/cpu/usage" 
+  unit_of_measurement: '%'
+  icon: mdi:speedometer
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/saturn/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+- platform: mqtt
+  name: "My Computer - RAM Usage"
+  state_topic: "iotlink/berrys/saturn/windows-monitor/stats/memory/usage"
+  unit_of_measurement: '%'
+  icon: mdi:memory
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/saturn/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+- platform: mqtt
+  name: "My Computer - HDD Total Free Space (C)"
+  state_topic: "iotlink/berrys/saturn/windows-monitor/stats/hard-drive/c/drive-usage"
+  unit_of_measurement: '%'
+  icon: mdi:harddisk
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/saturn/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+- platform: mqtt
+  name: "My Computer - HDD Total Free Space (G)"
+  state_topic: "iotlink/berrys/saturn/windows-monitor/stats/hard-drive/g/drive-usage"
+  unit_of_measurement: '%'
+  icon: mdi:harddisk
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/saturn/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+- platform: mqtt
+  name: "My Computer - HDD Total Free Space (h)"
+  state_topic: "iotlink/berrys/saturn/windows-monitor/stats/hard-drive/h/drive-usage"
+  unit_of_measurement: '%'
+  icon: mdi:harddisk
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/saturn/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+- platform: mqtt
+  name: "My Computer - HDD Total Free Space (D)"
+  state_topic: "iotlink/berrys/saturn/windows-monitor/stats/hard-drive/d/drive-usage"
+  unit_of_measurement: '%'
+  icon: mdi:harddisk
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/saturn/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+- platform: mqtt
+  name: "My Computer - HDD Total Free Space (J)"
+  state_topic: "iotlink/berrys/saturn/windows-monitor/stats/hard-drive/j/drive-usage"
+  unit_of_measurement: '%'
+  icon: mdi:harddisk
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/saturn/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+- platform: mqtt
+  name: "My Computer - HDD Total Free Space (K)"
+  state_topic: "iotlink/berrys/saturn/windows-monitor/stats/hard-drive/k/drive-usage"
+  unit_of_measurement: '%'
+  icon: mdi:harddisk
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/saturn/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+- platform: mqtt
+  name: "My Computer - HDD Total Free Space (l)"
+  state_topic: "iotlink/berrys/saturn/windows-monitor/stats/hard-drive/l/drive-usage"
+  unit_of_measurement: '%'
+  icon: mdi:harddisk
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/saturn/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+
+
+
+- platform: mqtt
+  name: "Mercury - CPU Usage"
+  state_topic: "iotlink/berrys/mercury/windows-monitor/stats/cpu/usage" 
+  unit_of_measurement: '%'
+  icon: mdi:speedometer
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/mercury/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+
+- platform: mqtt
+  name: "Mercury - Current User"
+  state_topic: "iotlink/berrys/mercury/windows-monitor/stats/system/current-user"
+  unit_of_measurement: ''
+  icon: mdi:account
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/mercury/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+- platform: mqtt
+  name: "Mercury - RAM Usage"
+  state_topic: "iotlink/berrys/mercury/windows-monitor/stats/memory/usage"
+  unit_of_measurement: '%'
+  icon: mdi:memory
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/mercury/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+- platform: mqtt
+  name: "Mercury - HDD Total Free Space (C)"
+  state_topic: "iotlink/berrys/mercury/windows-monitor/stats/hard-drive/c/drive-usage"
+  unit_of_measurement: '%'
+  icon: mdi:harddisk
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/mercury/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+
+- platform: mqtt
+  name: "Mercury - Up Time"
+  state_topic: "iotlink/berrys/mercury/windows-monitor/stats/system/uptime"
+  unit_of_measurement: 'seconds'
+  icon: mdi:timer
+  value_template: "{{ value }}"
+  availability_topic: "iotlink/berrys/mercury/lwt"
+  payload_available: "ON"
+  payload_not_available: "OFF"
+  qos: 1
+
+#- platform: sonarr
+#  host: 10.0.0.180
+#  port: 8889  
+#  api_key: ffc71dadcd934565b0655c9a76bb2c31
+#  monitored_conditions:
+ #   - upcoming
+ # days: 2
+
+- platform: sonarr_upcoming_media
+  api_key: ffc71dadcd934565b0655c9a76bb2c31
+  host: 10.0.0.180
+  port: 8889
+  days: 2
+  ssl: false
+  max: 10
+
+#- platform: fronius_inverter
+#  name: fronius
+#  ip_address: 10.0.0.200
+#  powerflow: True
+#  power_units: kW
+
+# - platform: plex_recently_added
+ # name: recently added TV
+ # token: "USpXtszQWrweGQ95qfNX" 
+ # host: 10.0.0.180
+ # port: 32400
+ # section_types:
+ #   - show
+
+#- platform: plex_recently_added
+#  name: recently added movie
+#  token: "USpXtszQWrweGQ95qfNX" 
+#  host: 10.0.0.180
+#  port: 32400
+#  section_types:
+#    - movie
+
+
+
+#- platform: fitbit
+#  clock_format: 12H
+#  monitored_resources:
+#    - devices/battery
+#    - sleep/awakeningsCount
+#    - sleep/efficiency
+#    - sleep/minutesAfterWakeup
+#    - sleep/minutesAsleep
+#    - sleep/minutesAwake
+#    - sleep/minutesToFallAsleep
+#    - sleep/startTime
+#    - sleep/timeInBed
+
+
+- platform: bom_forecast
+  product_id: !secret my_bom_product_id
+  name: !secret my_bom_name
+  forecast_days: 6
+  rest_of_today: true
+  friendly: false
+  friendly_state_format: '{max}, {summary}'
+  monitored_conditions:
+    - 'max'
+    - 'min'
+    - 'chance_of_rain'
+    - 'possible_rainfall'
+    - 'summary'
+    - 'detailed_summary'
+    - 'icon'
+
+- platform: feedparser
+  name: RSS Fuel Watch ULP
+  feed_url: 'http://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS?Product=1&Suburb=Canning%20Vale&Surrounding=yes'
+  show_topn: 5
+  date_format: '%a, %b %d %I:%M %p'
+  inclusions:
+    - title
+    - description
+    - price
+    - link
+    - item
+    - brand
+    - date
+    - trading-name
+    - location
+    - address
+  exclusions:
+    - language
+
+- platform: feedparser
+  name: RSS Fuel Watch ULP Tomorrow
+  feed_url: 'http://www.fuelwatch.wa.gov.au/fuelwatch/fuelWatchRSS?Product=1&Suburb=Canning%20Vale&Day=Tomorrow&Surrounding=yes'
+  show_topn: 5
+  date_format: '%a, %b %d %I:%M %p'
+  inclusions:
+    - title
+    - description
+    - price
+    - link
+    - item
+    - brand
+    - date
+    - trading-name
+    - location
+    - address
+  exclusions:
+    - language

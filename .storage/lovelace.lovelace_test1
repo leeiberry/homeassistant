@@ -1,0 +1,391 @@
+{
+    "version": 1,
+    "key": "lovelace.lovelace_test1",
+    "data": {
+        "config": {
+            "title": "Home",
+            "views": [
+                {
+                    "title": "Kitchen",
+                    "path": "kitchen",
+                    "theme": "Dark-Nightz",
+                    "icon": "mdi:pot-steam",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "button",
+                            "tap_action": {
+                                "action": "toggle"
+                            },
+                            "entity": "light.63850120d8bfc0ed33f3"
+                        }
+                    ]
+                },
+                {
+                    "path": "default_view",
+                    "title": "Testing",
+                    "cards": [
+                        {
+                            "type": "media-control",
+                            "entity": "media_player.bedroom_speaker"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "device_tracker.phonelee"
+                                },
+                                {
+                                    "entity": "device_tracker.carolinephone"
+                                }
+                            ],
+                            "title": "Parents",
+                            "show_header_toggle": true
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "device_tracker.phonelee"
+                                },
+                                {
+                                    "entity": "device_tracker.phonecaroline"
+                                },
+                                {
+                                    "entity": "device_tracker.phoneblake"
+                                },
+                                {
+                                    "entity": "device_tracker.phoneaimee"
+                                }
+                            ],
+                            "title": "Family",
+                            "show_header_toggle": true
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "binary_sensor.motion_sensor_158d00016d5813",
+                                "binary_sensor.motion_sensor_158d0001231c9b",
+                                "binary_sensor.motion_sensor_158d00016be379",
+                                "binary_sensor.motion_sensor_158d00015da5fd",
+                                "binary_sensor.motion_sensor_158d000171cce3",
+                                "binary_sensor.motion_sensor_158d0001db087a",
+                                "binary_sensor.motion_sensor_158d00016bff3e",
+                                "binary_sensor.door_window_sensor_158d00014d20b8",
+                                "binary_sensor.door_window_sensor_158d0001d682cc"
+                            ],
+                            "title": "Motion",
+                            "show_header_toggle": true
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "light.lightbulb_01",
+                                "light.lightbulb_02",
+                                "switch.wire_light",
+                                "switch.cupboard_light"
+                            ],
+                            "title": "LoungeLamps",
+                            "show_header_toggle": true
+                        },
+                        {
+                            "type": "gauge",
+                            "entity": "sensor.octoprint_job_percentage",
+                            "min": 0,
+                            "max": 100
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "switch.77817862600194fad77a"
+                                },
+                                {
+                                    "entity": "switch.87877511cc50e3e1f876_1"
+                                },
+                                {
+                                    "entity": "switch.87877511cc50e3e1f876_2"
+                                },
+                                {
+                                    "entity": "switch.87877511cc50e3e1f876_3"
+                                },
+                                {
+                                    "entity": "switch.87877511cc50e3e1f876_4"
+                                },
+                                {
+                                    "entity": "switch.87877511cc50e3e1f876_5"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "light",
+                            "entity": "light.63850120d8bfc0ed33f3"
+                        },
+                        {
+                            "type": "custom:simple-weather-card",
+                            "entity": "weather.smhi",
+                            "name": "Harrisdale",
+                            "custom": [
+                                {
+                                    "temp": "sensor.jandakot_temperature"
+                                },
+                                {
+                                    "high": "sensor.harrisdale_max_0"
+                                },
+                                {
+                                    "low": "sensor.harrisdale_min_0"
+                                },
+                                {
+                                    "humidity": "sensor.jandakot_humidity"
+                                },
+                                {
+                                    "wind_speed": "sensor.jandakot_wind_speed"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "custom:rgb-light-card",
+                            "entity": "light.63850120d8bfc0ed33f3",
+                            "justify": "center",
+                            "colors": [
+                                {
+                                    "color_name": "white",
+                                    "brightness": 255
+                                },
+                                {
+                                    "color_name": "wheat",
+                                    "brightness": 128
+                                },
+                                {
+                                    "color_name": "blue",
+                                    "brightness": 180
+                                },
+                                {
+                                    "color_name": "red",
+                                    "brightness": 128
+                                },
+                                {
+                                    "color_name": "gold",
+                                    "brightness": 128
+                                }
+                            ]
+                        },
+                        {
+                            "type": "custom:simple-weather-card",
+                            "entity": "sensor.harrisdale",
+                            "name": "Harrisdale",
+                            "custom": [
+                                {
+                                    "temp": "sensor.jandakot_temperature"
+                                },
+                                {
+                                    "high": "sensor.harrisdale_max_0"
+                                },
+                                {
+                                    "low": "sensor.harrisdale_min_0"
+                                },
+                                {
+                                    "humidity": "sensor.jandakot_humidity"
+                                },
+                                {
+                                    "wind_speed": "sensor.jandakot_wind_speedtype"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "custom:slider-entity-row",
+                            "entity": "light.63850120d8bfc0ed33f3",
+                            "name": "LED Strip",
+                            "icon": "mdi:ceiling-light"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "switch.87877511cc50e3e1f876_1"
+                            ]
+                        },
+                        {
+                            "type": "button",
+                            "tap_action": {
+                                "action": "toggle"
+                            },
+                            "entity": "light.studt_light_lt"
+                        }
+                    ]
+                },
+                {
+                    "title": "Player",
+                    "path": "player",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "custom:mini-media-player",
+                            "entity": "media_player.ytube_music_player",
+                            "hide": {
+                                "shuffle": false,
+                                "icon_state": false
+                            },
+                            "shortcuts": {
+                                "columns": 3,
+                                "buttons": [
+                                    {
+                                        "name": "Lounge",
+                                        "type": "source",
+                                        "id": "nesthub9608"
+                                    },
+                                    {
+                                        "name": "Joy",
+                                        "type": "album",
+                                        "id": "MPREb_vnTyBOkHcTZ"
+                                    },
+                                    {
+                                        "image": "https://lh3.googleusercontent.com/8ahFudkqWS7NBVZIGxv5kI3xJA8E6KFk7PnvGIak2E10Q63uhC2hVHC69HU6J4xSk6a3SbZlEx8=s576",
+                                        "type": "playlist",
+                                        "id": "PL4fGSI1pDJn7xvYy-bP6UFeG5tITQgScd"
+                                    }
+                                ]
+                            },
+                            "volume_stateless": false,
+                            "artwork": "full-cover"
+                        },
+                        {
+                            "type": "custom:tesla-style-solar-power-card",
+                            "entities": {
+                                "house_consumption_entity": "sensor.load",
+                                "grid_consumption_entity": "sensor.grid_power",
+                                "grid_feed_in_entity": "sensor.grid_power",
+                                "solar_consumption_entity": "sensor.pv",
+                                "solar_yield_entity": "sensor.fronius_panel_status"
+                            }
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "device_tracker.google_nest_hub_google_nest_hub",
+                                "switch.google_nest_hub_google_nest_hub"
+                            ]
+                        },
+                        {
+                            "type": "button",
+                            "tap_action": {
+                                "action": "toggle"
+                            },
+                            "entity": "light.542300058caab5e14c9a"
+                        }
+                    ]
+                },
+                {
+                    "title": "Fuel",
+                    "path": "fuel",
+                    "icon": "mdi:gas-station",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "vertical-stack",
+                            "title": "Fuelwatch - Unleaded",
+                            "mode": "vertical",
+                            "cards": [
+                                {
+                                    "type": "custom:list-card",
+                                    "columns": [
+                                        {
+                                            "field": "title",
+                                            "title": "Today"
+                                        }
+                                    ],
+                                    "entity": "sensor.rss_fuel_watch_ulp",
+                                    "feed_attribute": "entries"
+                                },
+                                {
+                                    "type": "custom:list-card",
+                                    "columns": [
+                                        {
+                                            "field": "title",
+                                            "title": "Tomorrow"
+                                        }
+                                    ],
+                                    "entity": "sensor.rss_fuel_watch_ulp_tomorrow",
+                                    "feed_attribute": "entries"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "picture-entity",
+                            "entity": "camera.garage_camera_cam",
+                            "name": "Garage",
+                            "show_state": false,
+                            "camera_view": "live"
+                        }
+                    ]
+                },
+                {
+                    "title": "bedroom",
+                    "path": "bedroom",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "vertical-stack",
+                            "cards": [
+                                {
+                                    "type": "horizontal-stack",
+                                    "cards": [
+                                        {
+                                            "type": "custom:button-card",
+                                            "entity": "device_tracker.aimees_iphone_2",
+                                            "name": "Aimee",
+                                            "icon": "mdi:cellphone-iphone",
+                                            "state": [
+                                                {
+                                                    "value": "home",
+                                                    "color": "var(--state-icon-active-color)"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "custom:button-card",
+                                            "entity": "device_tracker.phonelee",
+                                            "state": [
+                                                {
+                                                    "value": "home",
+                                                    "color": "var(--state-icon-active-color)"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "custom:button-card",
+                                            "entity": "device_tracker.phonecaroline",
+                                            "name": "Caroline",
+                                            "state": [
+                                                {
+                                                    "value": "home",
+                                                    "color": "var(--state-icon-active-color)"
+                                                }
+                                            ],
+                                            "icon": "mdi:cellphone-iphone"
+                                        },
+                                        {
+                                            "type": "custom:button-card",
+                                            "entity": "device_tracker.blakephone",
+                                            "name": "Blake",
+                                            "icon": "mdi:cellphone-iphone",
+                                            "state": [
+                                                {
+                                                    "value": "home",
+                                                    "color": "var(--state-icon-active-color)"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "entity",
+                            "entity": "sensor.bom_harrisdale_max_temp_c_0"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

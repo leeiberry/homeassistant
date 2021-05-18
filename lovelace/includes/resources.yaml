@@ -1,0 +1,48 @@
+  - url: /local/custom_ui/lg-remote-control.js
+    type: module
+  - url: /local/card-tools.js
+    type: module
+  - url: /local/button-card.js
+    type: module
+  - url: /local/custom_ui/bom-weather-card.js?v=0.85c
+    type: module
+  - url: /local/light-entity-card.js
+    type: js
+  - url: /local/bignumber-card.js?v=0.0.1
+    type: js
+  - url: /local/custom_ui/card-mod.js
+    type: module
+  #- url: /local/custom_ui/custom-header.js?v=1.3.2
+  #  type: module
+  - url: /local/custom-lovelace/my-custom-card.js?v=1
+    type: js
+  - url: /local/custom_ui/tesla-style-solar-power-card.js
+    type: module
+  - url: /local/my-webfont.css
+    type: css
+  - url: /local/custom_ui/weather-card.js?v=6
+    type: js
+  - url: /local/custom_ui/mini-graph-card.js?v=0.0.6
+    type: module
+  - url: /local/custom_ui/mini-graph-card-bundle.js?v=0.9.4
+    type: module
+  - url: /local/simple-weather-card-bundle.js?v=0.8.1
+    type: module
+  - url: /local/custom_ui/upcoming-media-card.js?v=0.1.1
+    type: js
+  - url: /local/custom_ui/slider-entity-row.js?v=1
+    type: js
+  #- url: /local/custom_ui/dark-sky-weather-card.js?v=7.1
+  #  type: module
+  - url: /local/custom_ui/popup-backdrop-filter.js
+    type: module
+  - url: https://cdn.jsdelivr.net/npm/rgb-light-card
+    type: js
+  - url: /local/custom_ui/multiple-entity-row.js?v=3.0.0
+    type: module
+  - url: /local/custom_ui/mini-media-player-bundle.js?v=1.12.0
+    type: module
+  - url: /local/community/stack-in-card.js
+    type: module
+  - url: /local/custom_ui/list-card.js
+    type: module

@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "key": "tag",
+    "data": {
+        "items": [
+            {
+                "tag_id": "e1acae59-e38b-422d-b899-6180ee5306ce",
+                "last_scanned": "2020-10-09T13:10:25.550222+00:00",
+                "id": "e1acae59-e38b-422d-b899-6180ee5306ce",
+                "name": "Test Tag 1"
+            },
+            {
+                "tag_id": "7b8bd091-c850-4baa-9e45-417109181614",
+                "last_scanned": "2020-11-27T03:09:19.131801+00:00",
+                "id": "7b8bd091-c850-4baa-9e45-417109181614",
+                "name": "Open Garage Lee"
+            },
+            {
+                "tag_id": "02078992-b81a-478a-9880-5b0f0a529f0d",
+                "last_scanned": "2020-11-27T03:37:09.096350+00:00",
+                "id": "02078992-b81a-478a-9880-5b0f0a529f0d",
+                "name": "Open Garage Door Iphone"
+            }
+        ]
+    }
+}

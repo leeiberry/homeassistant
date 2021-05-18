@@ -1,0 +1,2757 @@
+{
+    "version": 1,
+    "key": "core.restore_state",
+    "data": [
+        {
+            "state": {
+                "entity_id": "person.lee",
+                "state": "not_home",
+                "attributes": {
+                    "editable": false,
+                    "id": "lee",
+                    "source": "device_tracker.phonelee",
+                    "user_id": "5c4082cf03ff4a4e943c4b4d7309044f",
+                    "friendly_name": "lee"
+                },
+                "last_changed": "2021-05-17T00:49:34.752494+00:00",
+                "last_updated": "2021-05-17T00:50:12.482785+00:00",
+                "context": {
+                    "id": "7787b8fb1f26de9c3379a9c486bd4550",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "person.aimee",
+                "state": "not_home",
+                "attributes": {
+                    "editable": false,
+                    "id": "aimee",
+                    "source": "device_tracker.phoneaimee",
+                    "user_id": "b64397dfcdcc416eb54c4480c2032709",
+                    "friendly_name": "Aimee"
+                },
+                "last_changed": "2021-05-17T00:49:34.752799+00:00",
+                "last_updated": "2021-05-17T00:50:12.483026+00:00",
+                "context": {
+                    "id": "342fef06f6c4d252b77133bfa857324e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "person.caroline",
+                "state": "home",
+                "attributes": {
+                    "editable": false,
+                    "id": "caroline",
+                    "latitude": -32.1160888671875,
+                    "longitude": 115.92178756922014,
+                    "gps_accuracy": 65,
+                    "source": "device_tracker.carolines_iphone_2",
+                    "user_id": "97c47cbaa2ca46d8b4efca2ecc946c50",
+                    "friendly_name": "Caroline"
+                },
+                "last_changed": "2021-05-17T00:49:34.752992+00:00",
+                "last_updated": "2021-05-17T00:50:12.483196+00:00",
+                "context": {
+                    "id": "661bad5c00ee190f69fd8863cf5fa6eb",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "person.blake",
+                "state": "not_home",
+                "attributes": {
+                    "editable": false,
+                    "id": "blake",
+                    "source": "device_tracker.blakephone",
+                    "friendly_name": "blake"
+                },
+                "last_changed": "2021-05-17T00:56:35.003554+00:00",
+                "last_updated": "2021-05-17T00:56:35.003554+00:00",
+                "context": {
+                    "id": "c75ddd98ac6f83a3192d74aef4faca1d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "person.kitt",
+                "state": "unknown",
+                "attributes": {
+                    "editable": false,
+                    "id": "kitt",
+                    "user_id": "b5b9970eec8c46639dc5a842db1bdab8",
+                    "friendly_name": "Kitt"
+                },
+                "last_changed": "2021-05-17T00:49:34.753344+00:00",
+                "last_updated": "2021-05-17T00:50:12.483500+00:00",
+                "context": {
+                    "id": "48d547730512e0b289c5fd901a81162d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_select.alarm_mode",
+                "state": "off",
+                "attributes": {
+                    "options": [
+                        "off",
+                        "on",
+                        "away"
+                    ],
+                    "editable": false,
+                    "friendly_name": "Alarm Mode",
+                    "icon": "mdi:alarm-light"
+                },
+                "last_changed": "2021-05-17T00:49:40.880753+00:00",
+                "last_updated": "2021-05-17T00:49:40.880753+00:00",
+                "context": {
+                    "id": "688e05d0aa4615c56cb9e11b17857232",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_select.auto_mode",
+                "state": "on",
+                "attributes": {
+                    "options": [
+                        "on",
+                        "off",
+                        "part"
+                    ],
+                    "editable": false,
+                    "friendly_name": "Auto Mode",
+                    "icon": "mdi:auto-fix"
+                },
+                "last_changed": "2021-05-17T00:49:40.881010+00:00",
+                "last_updated": "2021-05-17T00:49:40.881010+00:00",
+                "context": {
+                    "id": "b0506ed3badb4f2a3c226c28d3611b70",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_select.ytube_music_player_source",
+                "state": "Playlist",
+                "attributes": {
+                    "options": [
+                        "Playlist Radio",
+                        "Playlist"
+                    ],
+                    "editable": false,
+                    "friendly_name": "Source",
+                    "icon": "mdi:music-box-multiple"
+                },
+                "last_changed": "2021-05-17T00:49:40.881177+00:00",
+                "last_updated": "2021-05-17T00:49:40.881177+00:00",
+                "context": {
+                    "id": "27aa781c16c8995ce9e3242ec0117c86",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_select.ytube_music_player_speakers",
+                "state": "",
+                "attributes": {
+                    "options": [
+                        "",
+                        "family_room_max",
+                        "family_room_speaker",
+                        "house_sound",
+                        "lg_tv_2",
+                        "theater_bar",
+                        "master_tv",
+                        "theater_speaker",
+                        "theater_tv",
+                        "jayden_s_speaker",
+                        "googlehome5131",
+                        "nesthub9608",
+                        "galaxy_tab_s2_9_7",
+                        "bedroom_speaker",
+                        "lounge_tv",
+                        "master",
+                        "kitts_speaker",
+                        "theatre_speaker",
+                        "galaxy_tab_s2_9_7_2",
+                        "unnamed_device",
+                        "chrome",
+                        "chrome_2",
+                        "plex_plex_3nnwpox3oc8uyfbl4bhnloa6",
+                        "plex_plex_lyocrhhl2vstjd6qtersdx28",
+                        "plex_plex_i90y82ua27ii8gzog6c239e3",
+                        "plex_plex_4pg6tjdkpc52lihgh69otqml",
+                        "plex_plex_e40607b068225005_com_plexapp_android",
+                        "plex_plex_3dr0neye4y1dnaee8ldc64w5",
+                        "plex_plex_83bc5c3aefb4958f_com_plexapp_android",
+                        "chrome_3",
+                        "plex_plex_qq4ovwfqtuma3zlb3v1ua1jf",
+                        "house_sound_2",
+                        "plex_plex_be806524_7393_4e51_bd2c_53a2c182df84",
+                        "plex_plex_rs8kycbkhjak93y59ri1egbc",
+                        "plex_plex_n4b1xy7qngv6omro21seqa50",
+                        "plex_plex_p3jqg2s89unx3r14uclylrqs",
+                        "house_sound_3",
+                        "galaxy_tab_s2",
+                        "plex_plex_648rd29ouvpsgj950gm1qapc",
+                        "plex_chrome",
+                        "plex_plex_saturn",
+                        "plex_pixel",
+                        "plex_firefox",
+                        "plex_chrome_2",
+                        "plex_plex_tv_ua65mu7000",
+                        "plex_plex_ipad",
+                        "plex_plex_chromecast",
+                        "plex_plex_chrome",
+                        "plex_plex_chrome_2",
+                        "plex_plex_lg_70uj657t_ta",
+                        "aimees_room_speaker",
+                        "plex_pixel_3",
+                        "plex_plex_aimees_iphone",
+                        "plex_plex_playstation_4",
+                        "plex_chrome_3",
+                        "plex_chrome_4",
+                        "plex_lee_s_tablet",
+                        "plex_chrome_5",
+                        "apple_tv",
+                        "plex_chrome_6",
+                        "plex_chrome_7",
+                        "plex_chrome_8",
+                        "plex_firefox_2",
+                        "plex_chrome_9",
+                        "plex_plex_for_ios_jaydens_iphone",
+                        "master_speaker",
+                        "googlehome5203",
+                        "googlehome5655",
+                        "theatre_speaker_2",
+                        "googlehome1658",
+                        "chromecast0344",
+                        "plex_plex_web_chrome",
+                        "plex_plex_for_android_tv_chromecast",
+                        "plex_blake_plex_web_chrome_osx",
+                        "plex_plex_for_android_mobile_galaxy_tab_s2",
+                        "plex_aimee_plex_web_chrome_osx",
+                        "plex_plex_for_android_mobile_pixel_5",
+                        "plex_plex_web_chrome_2",
+                        "plex_guest_plex_for_samsung_tv_2017"
+                    ],
+                    "editable": false,
+                    "friendly_name": "Speakers",
+                    "icon": "mdi:speaker"
+                },
+                "last_changed": "2021-05-17T00:50:17.399534+00:00",
+                "last_updated": "2021-05-17T00:50:17.399534+00:00",
+                "context": {
+                    "id": "9f2e06f840c76c3c301cbe2d5c13036d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_select.ytube_music_player_playlist",
+                "state": "loading",
+                "attributes": {
+                    "options": [
+                        "loading"
+                    ],
+                    "editable": false,
+                    "friendly_name": "Playlist",
+                    "icon": "mdi:playlist-music"
+                },
+                "last_changed": "2021-05-17T00:49:40.881702+00:00",
+                "last_updated": "2021-05-17T00:49:40.881702+00:00",
+                "context": {
+                    "id": "50c49cab4eec8e4eeaad0a6c0fd96364",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_select.ytube_music_player_playmode",
+                "state": "Shuffle",
+                "attributes": {
+                    "options": [
+                        "Shuffle",
+                        "Random",
+                        "Shuffle Random",
+                        "Direct"
+                    ],
+                    "editable": false,
+                    "friendly_name": "Playmode",
+                    "icon": "mdi:playlist-music"
+                },
+                "last_changed": "2021-05-17T00:49:40.881886+00:00",
+                "last_updated": "2021-05-17T00:49:40.881886+00:00",
+                "context": {
+                    "id": "de11f966778cf76643d1625f980c3add",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "input_boolean.ytube_music_player_playcontinuous",
+                "state": "on",
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "Countinuous playback"
+                },
+                "last_changed": "2021-05-17T00:49:40.909391+00:00",
+                "last_updated": "2021-05-17T00:49:40.909391+00:00",
+                "context": {
+                    "id": "37e4b48125178bd8f16d2307ade219fc",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.ifttt_garage_door",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-05-17T07:41:23.376847+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "IFTTT garage door",
+                    "friendly_name": "IFTTT garage door"
+                },
+                "last_changed": "2021-05-17T00:49:42.034493+00:00",
+                "last_updated": "2021-05-17T07:41:23.389147+00:00",
+                "context": {
+                    "id": "0dd788055caee1b10c1a656a54fe79fc",
+                    "parent_id": "67f4818045f985c783042c83c158c0e4",
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.set_theme_at_startup",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-05-17T00:50:12.649535+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "theme-setup",
+                    "friendly_name": "Set theme at startup"
+                },
+                "last_changed": "2021-05-17T00:49:42.034979+00:00",
+                "last_updated": "2021-05-17T00:50:12.910266+00:00",
+                "context": {
+                    "id": "3dd9233192816e2f8939ab5d19aa8c17",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.tag_e1acae59_e38b_422d_b899_6180ee5306ce_is_scanned",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-10-09T13:10:25.551358+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1602231034971",
+                    "friendly_name": "Tag e1acae59-e38b-422d-b899-6180ee5306ce is scanned"
+                },
+                "last_changed": "2021-05-17T00:49:42.035429+00:00",
+                "last_updated": "2021-05-17T00:49:42.035429+00:00",
+                "context": {
+                    "id": "62b1bf598a5d1669605b87289ac7418e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.android_close_garage",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-12-03T01:16:19.593706+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1606117098955",
+                    "friendly_name": "ANDROID - Close garage"
+                },
+                "last_changed": "2021-05-17T00:49:42.036099+00:00",
+                "last_updated": "2021-05-17T00:49:42.036099+00:00",
+                "context": {
+                    "id": "7b8b9e30caac148aac5990fa76f25e3d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.tag_open_garage_is_scanned",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-11-27T03:09:19.375718+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1606444835621",
+                    "friendly_name": "Tag Open Garage is scanned"
+                },
+                "last_changed": "2021-05-17T00:49:42.036575+00:00",
+                "last_updated": "2021-05-17T00:49:42.036575+00:00",
+                "context": {
+                    "id": "9ff71c8f269ee3a0c99b2b161d8cb53c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.tag_open_garage_door_iphone_is_scanned",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-11-27T03:37:09.097327+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1606447002311",
+                    "friendly_name": "Tag Open Garage Door Iphone is scanned"
+                },
+                "last_changed": "2021-05-17T00:49:42.037191+00:00",
+                "last_updated": "2021-05-17T00:49:42.037191+00:00",
+                "context": {
+                    "id": "b7c4dfe24d3902a095764c1af2b717c7",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.someone_at_front_door",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-04-13T04:51:57.400167+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1612575255576",
+                    "friendly_name": "someone at front door"
+                },
+                "last_changed": "2021-05-17T00:49:42.048835+00:00",
+                "last_updated": "2021-05-17T00:49:42.048835+00:00",
+                "context": {
+                    "id": "162743fe82cdc2d1d10a06dbe1720299",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.update_bom_icons",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2021-05-17T00:50:12.650233+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "friendly_name": "Update BOM Icons"
+                },
+                "last_changed": "2021-05-17T00:49:42.049571+00:00",
+                "last_updated": "2021-05-17T00:50:13.467215+00:00",
+                "context": {
+                    "id": "0f4d09b68097e7926645976f44e36a74",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.speedtest_ping",
+                "state": "37.328",
+                "attributes": {
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "server_name": "Perth",
+                    "server_country": "Australia",
+                    "server_id": "1931",
+                    "unit_of_measurement": "ms",
+                    "friendly_name": "SpeedTest Ping",
+                    "icon": "mdi:speedometer"
+                },
+                "last_changed": "2021-05-17T07:48:17.954661+00:00",
+                "last_updated": "2021-05-17T07:48:17.954661+00:00",
+                "context": {
+                    "id": "423051a9e0d7c5e219b5764d3dece9c4",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.speedtest_download",
+                "state": "24.77",
+                "attributes": {
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "server_name": "Perth",
+                    "server_country": "Australia",
+                    "server_id": "1931",
+                    "bytes_received": 31098352,
+                    "unit_of_measurement": "Mbit/s",
+                    "friendly_name": "SpeedTest Download",
+                    "icon": "mdi:speedometer"
+                },
+                "last_changed": "2021-05-17T07:48:17.954992+00:00",
+                "last_updated": "2021-05-17T07:48:17.954992+00:00",
+                "context": {
+                    "id": "a34a2648889d1939109e99a22ae5efad",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.speedtest_upload",
+                "state": "9.46",
+                "attributes": {
+                    "attribution": "Data retrieved from Speedtest.net by Ookla",
+                    "server_name": "Perth",
+                    "server_country": "Australia",
+                    "server_id": "1931",
+                    "bytes_sent": 11886592,
+                    "unit_of_measurement": "Mbit/s",
+                    "friendly_name": "SpeedTest Upload",
+                    "icon": "mdi:speedometer"
+                },
+                "last_changed": "2021-05-17T07:48:17.955233+00:00",
+                "last_updated": "2021-05-17T07:48:17.955233+00:00",
+                "context": {
+                    "id": "264f7338d3c5df1c3c6ce2f00d984ff7",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.mercuryshutdown",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Mercury Shutdown",
+                    "icon": "mdi:laptop"
+                },
+                "last_changed": "2021-05-17T00:49:42.763603+00:00",
+                "last_updated": "2021-05-17T00:50:12.536214+00:00",
+                "context": {
+                    "id": "81b7f99349a004d0e06bfd0208fd8d2e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.pixel_3_2",
+                "state": "home",
+                "attributes": {
+                    "source_type": "gps",
+                    "latitude": -32.1160903,
+                    "longitude": 115.9218275,
+                    "gps_accuracy": 20,
+                    "altitude": -3.0,
+                    "course": 0,
+                    "speed": 0,
+                    "vertical_accuracy": 3,
+                    "friendly_name": "phonelee"
+                },
+                "last_changed": "2021-05-17T07:46:35.403521+00:00",
+                "last_updated": "2021-05-17T07:46:35.403521+00:00",
+                "context": {
+                    "id": "7f1e51e7110de9dfdcca4975dce6de5a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.aimees_iphone",
+                "state": "home",
+                "attributes": {
+                    "source_type": "gps",
+                    "battery_level": 19,
+                    "latitude": -32.116119384765625,
+                    "longitude": 115.92175466747905,
+                    "gps_accuracy": 65,
+                    "altitude": 30.590000915527348,
+                    "vertical_accuracy": 2,
+                    "friendly_name": "aimee\u2019s iPhone"
+                },
+                "last_changed": "2021-05-17T00:49:44.325229+00:00",
+                "last_updated": "2021-05-17T00:49:44.325229+00:00",
+                "context": {
+                    "id": "4b91d081ab41428ac929d1ce827de7a3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.carolines_iphone",
+                "state": "home",
+                "attributes": {
+                    "source_type": "gps",
+                    "battery_level": 32,
+                    "latitude": -32.116135,
+                    "longitude": 115.921786,
+                    "gps_accuracy": 100,
+                    "friendly_name": "Caroline\u2019s iPhone",
+                    "icon": "mdi:cellphone-iphone"
+                },
+                "last_changed": "2021-05-17T00:49:44.326071+00:00",
+                "last_updated": "2021-05-17T00:49:44.326071+00:00",
+                "context": {
+                    "id": "f2aa98604cd4b1ecab87fe0fe58c5b8a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.sm_t813",
+                "state": "home",
+                "attributes": {
+                    "source_type": "gps",
+                    "latitude": -32.1160814,
+                    "longitude": 115.9218475,
+                    "gps_accuracy": 17,
+                    "altitude": -2.0,
+                    "course": 0,
+                    "speed": 0,
+                    "vertical_accuracy": 0,
+                    "friendly_name": "SM-T813"
+                },
+                "last_changed": "2021-05-17T00:49:44.326978+00:00",
+                "last_updated": "2021-05-17T00:49:44.326978+00:00",
+                "context": {
+                    "id": "a37830a3f4c169fbf769ac7cdde9480c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.sm_t813_2",
+                "state": "home",
+                "attributes": {
+                    "source_type": "gps",
+                    "latitude": -32.1160792,
+                    "longitude": 115.9218631,
+                    "gps_accuracy": 15,
+                    "altitude": -3.0,
+                    "course": 0,
+                    "speed": 0,
+                    "vertical_accuracy": 0,
+                    "friendly_name": "SM-T813"
+                },
+                "last_changed": "2021-05-17T07:49:54.979162+00:00",
+                "last_updated": "2021-05-17T07:49:54.979162+00:00",
+                "context": {
+                    "id": "019909d0015a8225a28aaec2458d1b87",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.carolines_iphone_2",
+                "state": "home",
+                "attributes": {
+                    "source_type": "gps",
+                    "battery_level": 87,
+                    "latitude": -32.1160888671875,
+                    "longitude": 115.92178756922014,
+                    "gps_accuracy": 65,
+                    "altitude": 29.58930778503418,
+                    "vertical_accuracy": 10,
+                    "friendly_name": "Caroline\u2019s iPhone"
+                },
+                "last_changed": "2021-05-17T00:49:44.328736+00:00",
+                "last_updated": "2021-05-17T00:49:44.328736+00:00",
+                "context": {
+                    "id": "fecc096b446a17d12ef3ab2c970f5dc7",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "device_tracker.pixel_3",
+                "state": "unknown",
+                "attributes": {
+                    "source_type": "gps",
+                    "friendly_name": "Pixel_3"
+                },
+                "last_changed": "2021-05-17T00:49:44.330810+00:00",
+                "last_updated": "2021-05-17T00:49:44.330810+00:00",
+                "context": {
+                    "id": "f6981de0d18c996fed269fea48efe3e5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_battery_level",
+                "state": "88",
+                "attributes": {
+                    "unit_of_measurement": "%",
+                    "friendly_name": "phonelee Battery Level",
+                    "icon": "mdi:battery-80",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-05-17T07:42:28.162636+00:00",
+                "last_updated": "2021-05-17T07:42:28.162636+00:00",
+                "context": {
+                    "id": "2add1efa462ef5878b9546de9f551b00",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_wifi_connection",
+                "state": "TelstraFD2598",
+                "attributes": {
+                    "friendly_name": "phonelee Wifi Connection",
+                    "icon": "mdi:wifi"
+                },
+                "last_changed": "2021-05-17T07:42:47.244061+00:00",
+                "last_updated": "2021-05-17T07:42:47.584830+00:00",
+                "context": {
+                    "id": "2a503bdbfc9e42637af285074909406b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_geocoded_location",
+                "state": "16 Oakleigh Pass, Harrisdale WA 6112, Australia",
+                "attributes": {
+                    "Administrative Area": "Western Australia",
+                    "Country": "Australia",
+                    "ISO Country Code": "AU",
+                    "Latitude": -32.116096,
+                    "Locality": "Harrisdale",
+                    "Longitude": 115.92178,
+                    "Postal Code": "6112",
+                    "Sub Administrative Area": "City of Armadale",
+                    "Sub Locality": "null",
+                    "Sub Thoroughfare": "16",
+                    "Thoroughfare": "Oakleigh Pass",
+                    "friendly_name": "phonelee Geocoded Location",
+                    "icon": "mdi:map"
+                },
+                "last_changed": "2021-05-17T07:42:37.277980+00:00",
+                "last_updated": "2021-05-17T07:42:37.277980+00:00",
+                "context": {
+                    "id": "03540de717550afddb5cfe695cb01757",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_battery_state",
+                "state": "discharging",
+                "attributes": {
+                    "friendly_name": "phonelee Battery State",
+                    "icon": "mdi:battery-minus",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-05-17T07:42:28.163424+00:00",
+                "last_updated": "2021-05-17T07:42:28.163424+00:00",
+                "context": {
+                    "id": "4498112cc4b3a3f7d1248cd49b1e7ba5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_bluetooth_connection",
+                "state": "2",
+                "attributes": {
+                    "connected_not_paired_devices": "[E6:FB:94:DD:3B:E4]",
+                    "connected_paired_devices": "[E6:FB:94:DD:3B:E4]",
+                    "paired_devices": "[90:03:B7:A4:E9:22, 8C:DE:52:A5:D8:06, 00:1B:66:C5:4E:90, E6:FB:94:DD:3B:E4, A8:91:3D:D8:9E:9D, B0:1F:81:E3:B2:4E, 13:13:13:23:13:6C]",
+                    "unit_of_measurement": "connection(s)",
+                    "friendly_name": "phonelee Bluetooth Connection",
+                    "icon": "mdi:bluetooth"
+                },
+                "last_changed": "2021-05-17T07:44:02.772853+00:00",
+                "last_updated": "2021-05-17T07:44:02.772853+00:00",
+                "context": {
+                    "id": "9eb43060593ce8394eb7fca3dbfbf7b1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_light_sensor",
+                "state": "0",
+                "attributes": {
+                    "unit_of_measurement": "lx",
+                    "friendly_name": "phonelee Light Sensor",
+                    "icon": "mdi:brightness-5",
+                    "device_class": "illuminance"
+                },
+                "last_changed": "2021-05-17T07:44:30.451318+00:00",
+                "last_updated": "2021-05-17T07:44:30.451318+00:00",
+                "context": {
+                    "id": "a04509864cd390016fb3edc8146cabf4",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_next_alarm",
+                "state": "unavailable",
+                "attributes": {
+                    "Local Time": "",
+                    "Package": "",
+                    "Time in Milliseconds": 0,
+                    "friendly_name": "phonelee Next Alarm",
+                    "icon": "mdi:alarm",
+                    "device_class": "timestamp"
+                },
+                "last_changed": "2021-05-17T00:49:44.345902+00:00",
+                "last_updated": "2021-05-17T00:49:44.345902+00:00",
+                "context": {
+                    "id": "bd11ed97c0a9c436294d3ae053eee746",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_storage_sensor",
+                "state": "48",
+                "attributes": {
+                    "Free internal storage": "52GB",
+                    "Total internal storage": "109GB",
+                    "unit_of_measurement": "%",
+                    "friendly_name": "phonelee Storage Sensor",
+                    "icon": "mdi:harddisk"
+                },
+                "last_changed": "2021-05-17T01:03:09.134482+00:00",
+                "last_updated": "2021-05-17T01:03:09.134482+00:00",
+                "context": {
+                    "id": "c487813b86b80217bf15e1585746bcd4",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_audio_sensor",
+                "state": "normal",
+                "attributes": {
+                    "friendly_name": "phonelee Audio Sensor",
+                    "icon": "mdi:volume-high"
+                },
+                "last_changed": "2021-05-17T07:44:30.450186+00:00",
+                "last_updated": "2021-05-17T07:44:30.450186+00:00",
+                "context": {
+                    "id": "6b90dc621462d94476e9dc7b8e3fc088",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_do_not_disturb_sensor",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "phonelee Do Not Disturb Sensor",
+                    "icon": "mdi:do-not-disturb"
+                },
+                "last_changed": "2021-05-17T07:44:30.450856+00:00",
+                "last_updated": "2021-05-17T07:44:30.450856+00:00",
+                "context": {
+                    "id": "943d6824c29e78ff1e5ce20847db1338",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_last_reboot",
+                "state": "2021-05-13T07:38:40Z",
+                "attributes": {
+                    "Local Time": "Thu May 13 15:38:40 GMT+08:00 2021",
+                    "Time in Milliseconds": 1620891520563,
+                    "friendly_name": "phonelee Last Reboot",
+                    "icon": "mdi:restart",
+                    "device_class": "timestamp"
+                },
+                "last_changed": "2021-05-17T00:49:44.349796+00:00",
+                "last_updated": "2021-05-17T00:49:44.349796+00:00",
+                "context": {
+                    "id": "8d5cd74a5d2191ae1b7bbdabc9bf1311",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_pressure_sensor",
+                "state": "1010.0",
+                "attributes": {
+                    "unit_of_measurement": "hPa",
+                    "friendly_name": "phonelee Pressure Sensor",
+                    "icon": "mdi:gauge",
+                    "device_class": "pressure"
+                },
+                "last_changed": "2021-05-17T07:49:47.835391+00:00",
+                "last_updated": "2021-05-17T07:49:47.835391+00:00",
+                "context": {
+                    "id": "4f4c4b09c04c212f6626b38405196830",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_proximity_sensor",
+                "state": "near",
+                "attributes": {
+                    "friendly_name": "phonelee Proximity Sensor",
+                    "icon": "mdi:leak"
+                },
+                "last_changed": "2021-05-17T07:43:09.400019+00:00",
+                "last_updated": "2021-05-17T07:43:09.400019+00:00",
+                "context": {
+                    "id": "9c9892aa6fcf21949e4f59535fd21468",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_detected_activity",
+                "state": "walking",
+                "attributes": {
+                    "in_vehicle": 8,
+                    "on_bicycle": 4,
+                    "on_foot": 81,
+                    "running": 2,
+                    "unknown": 1,
+                    "walking": 81,
+                    "friendly_name": "phonelee Detected Activity",
+                    "icon": "mdi:walk"
+                },
+                "last_changed": "2021-05-17T07:47:23.106272+00:00",
+                "last_updated": "2021-05-17T07:47:23.106272+00:00",
+                "context": {
+                    "id": "91dcb80464b74d5ff30408e08eb9ce69",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_phone_state",
+                "state": "idle",
+                "attributes": {
+                    "friendly_name": "phonelee Phone State",
+                    "icon": "mdi:phone"
+                },
+                "last_changed": "2021-05-17T00:49:44.351248+00:00",
+                "last_updated": "2021-05-17T00:49:44.351248+00:00",
+                "context": {
+                    "id": "cdc5131ae81eb3ac86f08e634c73baf9",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_charger_type",
+                "state": "none",
+                "attributes": {
+                    "friendly_name": "phonelee Charger Type",
+                    "icon": "mdi:battery"
+                },
+                "last_changed": "2021-05-17T07:42:28.164847+00:00",
+                "last_updated": "2021-05-17T07:42:28.164847+00:00",
+                "context": {
+                    "id": "6baf98866aef5583ea5b827835cadbb3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.pixel_3_battery_health",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "phonelee Battery Health",
+                    "icon": "mdi:battery-charging"
+                },
+                "last_changed": "2021-05-17T00:49:44.352133+00:00",
+                "last_updated": "2021-05-17T00:49:44.352133+00:00",
+                "context": {
+                    "id": "bfef962124fd3f01e18376f772d074ef",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.phonelee_battery_temperature",
+                "state": "30.0",
+                "attributes": {
+                    "unit_of_measurement": "\u00b0C",
+                    "friendly_name": "phonelee Battery Temperature",
+                    "icon": "mdi:battery",
+                    "device_class": "temperature"
+                },
+                "last_changed": "2021-05-17T07:44:02.772282+00:00",
+                "last_updated": "2021-05-17T07:44:02.772282+00:00",
+                "context": {
+                    "id": "20f2942c6fc749bdacf3ef7f79b7ba8d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.pixel_3_is_charging",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "phonelee Is Charging",
+                    "icon": "mdi:power-plug-off",
+                    "device_class": "plug"
+                },
+                "last_changed": "2021-05-17T07:42:28.164183+00:00",
+                "last_updated": "2021-05-17T07:42:28.164183+00:00",
+                "context": {
+                    "id": "e60c78bc1543df10427ae73e6d79cfaf",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.pixel_3_music_active",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "phonelee Music Active",
+                    "icon": "mdi:music-off"
+                },
+                "last_changed": "2021-05-17T07:42:28.161941+00:00",
+                "last_updated": "2021-05-17T07:42:28.161941+00:00",
+                "context": {
+                    "id": "4a804947999e9bc5f5a7edb4898b4a03",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aimees_iphone_connection_type",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "aimee\u2019s iPhone Connection Type",
+                    "icon": "mdi:wifi"
+                },
+                "last_changed": "2021-05-17T00:49:44.354158+00:00",
+                "last_updated": "2021-05-17T00:49:44.354158+00:00",
+                "context": {
+                    "id": "6660b17619cc4eac585b835352bb9cd0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aimees_iphone_bssid",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "aimee\u2019s iPhone BSSID",
+                    "icon": "mdi:wifi-off"
+                },
+                "last_changed": "2021-05-17T00:49:44.356327+00:00",
+                "last_updated": "2021-05-17T00:49:44.356327+00:00",
+                "context": {
+                    "id": "3c5d370a1f6b4009b826685a563926c5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aimees_iphone_battery_level",
+                "state": "unknown",
+                "attributes": {
+                    "unit_of_measurement": "%",
+                    "friendly_name": "aimee\u2019s iPhone Battery Level",
+                    "icon": "mdi:battery-charging-80",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-05-17T00:49:44.358347+00:00",
+                "last_updated": "2021-05-17T00:49:44.358347+00:00",
+                "context": {
+                    "id": "9171eeac4fd3e9c18999d1d18cc8a14c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aimees_iphone_battery_state",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "aimee\u2019s iPhone Battery State",
+                    "icon": "mdi:battery-charging-80",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-05-17T00:49:44.358958+00:00",
+                "last_updated": "2021-05-17T00:49:44.358958+00:00",
+                "context": {
+                    "id": "8909a06e64ce2c4f2b9211ce2e774245",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aimees_iphone_ssid",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "aimee\u2019s iPhone SSID",
+                    "icon": "mdi:wifi-off"
+                },
+                "last_changed": "2021-05-17T00:49:44.359351+00:00",
+                "last_updated": "2021-05-17T00:49:44.359351+00:00",
+                "context": {
+                    "id": "368607fb9aa74b4c652bd93d51ead542",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aimees_iphone_sim_1",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "aimee\u2019s iPhone SIM 1",
+                    "icon": "mdi:sim"
+                },
+                "last_changed": "2021-05-17T00:49:44.359789+00:00",
+                "last_updated": "2021-05-17T00:49:44.359789+00:00",
+                "context": {
+                    "id": "2e4d2e25a020fa29efa1eca31166c6ba",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aimees_iphone_last_update_trigger",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "aimee\u2019s iPhone Last Update Trigger",
+                    "icon": "mdi:cellphone-wireless"
+                },
+                "last_changed": "2021-05-17T00:49:44.360208+00:00",
+                "last_updated": "2021-05-17T00:49:44.360208+00:00",
+                "context": {
+                    "id": "b00622d5465a1b9dcf7650df477eb6e2",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aimees_iphone_geocoded_location",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "aimee\u2019s iPhone Geocoded Location",
+                    "icon": "mdi:map"
+                },
+                "last_changed": "2021-05-17T00:49:44.360571+00:00",
+                "last_updated": "2021-05-17T00:49:44.360571+00:00",
+                "context": {
+                    "id": "c3c74fbca43f14532caedaf75090461c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aimees_iphone_storage",
+                "state": "unknown",
+                "attributes": {
+                    "unit_of_measurement": "% available",
+                    "friendly_name": "aimee\u2019s iPhone Storage",
+                    "icon": "mdi:database"
+                },
+                "last_changed": "2021-05-17T00:49:44.361674+00:00",
+                "last_updated": "2021-05-17T00:49:44.361674+00:00",
+                "context": {
+                    "id": "b31c385fb7d2d3ebb8b3d6b31038bd9a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.aimees_iphone_cellular_provider",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "aimee\u2019s iPhone Cellular Provider",
+                    "icon": "mdi:sim"
+                },
+                "last_changed": "2021-05-17T00:49:44.362210+00:00",
+                "last_updated": "2021-05-17T00:49:44.362210+00:00",
+                "context": {
+                    "id": "3352af3bbbe2ad3b27bebccbc0d9538e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_bssid",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone BSSID",
+                    "icon": "mdi:wifi-off"
+                },
+                "last_changed": "2021-05-17T00:49:44.362634+00:00",
+                "last_updated": "2021-05-17T00:49:44.362634+00:00",
+                "context": {
+                    "id": "6c27154b67e8d4876486163d39433410",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_battery_state",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone Battery State",
+                    "icon": "mdi:battery-80",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-05-17T00:49:44.362994+00:00",
+                "last_updated": "2021-05-17T00:49:44.362994+00:00",
+                "context": {
+                    "id": "0d4f2d5ad1624a8ae01d4cdcde6d59ee",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_battery_level",
+                "state": "unknown",
+                "attributes": {
+                    "unit_of_measurement": "%",
+                    "friendly_name": "Caroline\u2019s iPhone Battery Level",
+                    "icon": "mdi:battery-80",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-05-17T00:49:44.363538+00:00",
+                "last_updated": "2021-05-17T00:49:44.363538+00:00",
+                "context": {
+                    "id": "4354deffc65c9f47093b8c246a8ca2c0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_connection_type",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone Connection Type",
+                    "icon": "mdi:signal"
+                },
+                "last_changed": "2021-05-17T00:49:44.363988+00:00",
+                "last_updated": "2021-05-17T00:49:44.363988+00:00",
+                "context": {
+                    "id": "87a31aa223a016a6beaf4a0c68869e7a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_ssid",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone SSID",
+                    "icon": "mdi:wifi-off"
+                },
+                "last_changed": "2021-05-17T00:49:44.364380+00:00",
+                "last_updated": "2021-05-17T00:49:44.364380+00:00",
+                "context": {
+                    "id": "2295711ecb9375cdcddb6f6fbb5d25cc",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_sim_1",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone SIM 1",
+                    "icon": "mdi:sim"
+                },
+                "last_changed": "2021-05-17T00:49:44.365946+00:00",
+                "last_updated": "2021-05-17T00:49:44.365946+00:00",
+                "context": {
+                    "id": "99c19c218e9c189b3fa9ec1e7abae852",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_sim_2",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone SIM 2",
+                    "icon": "mdi:sim"
+                },
+                "last_changed": "2021-05-17T00:49:44.366452+00:00",
+                "last_updated": "2021-05-17T00:49:44.366452+00:00",
+                "context": {
+                    "id": "ca8dc27245de3429e9cac3b6f5f6d390",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_last_update_trigger",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone Last Update Trigger",
+                    "icon": "mdi:cellphone-wireless"
+                },
+                "last_changed": "2021-05-17T00:49:44.368694+00:00",
+                "last_updated": "2021-05-17T00:49:44.368694+00:00",
+                "context": {
+                    "id": "6cb0428b266fa55c1406ec52a95fc23f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_geocoded_location",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone Geocoded Location",
+                    "icon": "mdi:map"
+                },
+                "last_changed": "2021-05-17T00:49:44.369247+00:00",
+                "last_updated": "2021-05-17T00:49:44.369247+00:00",
+                "context": {
+                    "id": "48989c0960d054845b26c5c81bd2bc62",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_storage",
+                "state": "unknown",
+                "attributes": {
+                    "unit_of_measurement": "% available",
+                    "friendly_name": "Caroline\u2019s iPhone Storage",
+                    "icon": "mdi:database"
+                },
+                "last_changed": "2021-05-17T00:49:44.369742+00:00",
+                "last_updated": "2021-05-17T00:49:44.369742+00:00",
+                "context": {
+                    "id": "acc5b72d69ec5de4846b3bcdfaef2f8f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_battery_level",
+                "state": "unknown",
+                "attributes": {
+                    "unit_of_measurement": "%",
+                    "friendly_name": "SM-T813 Battery Level",
+                    "icon": "mdi:battery-80",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-05-17T00:49:44.370115+00:00",
+                "last_updated": "2021-05-17T00:49:44.370115+00:00",
+                "context": {
+                    "id": "b2017f70452d7c263cd139a64f3b8172",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_battery_state",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "SM-T813 Battery State",
+                    "icon": "mdi:battery-80",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-05-17T00:49:44.371782+00:00",
+                "last_updated": "2021-05-17T00:49:44.371782+00:00",
+                "context": {
+                    "id": "a35d82391b46eb97ffafe74789ea306a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_wifi_connection",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "SM-T813 Wifi Connection",
+                    "icon": "mdi:wifi-strength-2"
+                },
+                "last_changed": "2021-05-17T00:49:44.372224+00:00",
+                "last_updated": "2021-05-17T00:49:44.372224+00:00",
+                "context": {
+                    "id": "ab5325ac065f6f12218c6f3ea981823a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_detected_activity",
+                "state": "still",
+                "attributes": {
+                    "still": 100,
+                    "friendly_name": "SM-T813 Detected Activity",
+                    "icon": "mdi:sleep"
+                },
+                "last_changed": "2021-05-17T00:49:44.372715+00:00",
+                "last_updated": "2021-05-17T00:49:44.372715+00:00",
+                "context": {
+                    "id": "66730c50d0adeb91b513ca235929ff66",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_audio_sensor",
+                "state": "normal",
+                "attributes": {
+                    "friendly_name": "SM-T813 Audio Sensor",
+                    "icon": "mdi:volume-high"
+                },
+                "last_changed": "2021-05-17T00:49:44.373106+00:00",
+                "last_updated": "2021-05-17T00:49:44.373106+00:00",
+                "context": {
+                    "id": "cdf2cf5b4bd688650fa27c0622d32583",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_battery_level_2",
+                "state": "51",
+                "attributes": {
+                    "unit_of_measurement": "%",
+                    "friendly_name": "SM-T813 Battery Level",
+                    "icon": "mdi:battery-50",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-05-17T07:48:36.834905+00:00",
+                "last_updated": "2021-05-17T07:48:36.834905+00:00",
+                "context": {
+                    "id": "5fbac8063cc39e06659887e1b2656ff8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_battery_state_2",
+                "state": "discharging",
+                "attributes": {
+                    "friendly_name": "SM-T813 Battery State",
+                    "icon": "mdi:battery-minus",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-05-17T00:49:44.375718+00:00",
+                "last_updated": "2021-05-17T00:49:44.375718+00:00",
+                "context": {
+                    "id": "9d461449f14c343765176e757b96c954",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_bluetooth_connection",
+                "state": "0",
+                "attributes": {
+                    "connected_not_paired_devices": "[]",
+                    "connected_paired_devices": "[]",
+                    "paired_devices": "[A8:91:3D:D8:9E:9D, 34:88:5D:79:01:4D, 00:1B:66:C5:4E:90]",
+                    "unit_of_measurement": "connection(s)",
+                    "friendly_name": "SM-T813 Bluetooth Connection",
+                    "icon": "mdi:bluetooth"
+                },
+                "last_changed": "2021-05-17T00:49:44.376153+00:00",
+                "last_updated": "2021-05-17T00:49:44.376153+00:00",
+                "context": {
+                    "id": "7252f409991355d9d74b488448b310d2",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_do_not_disturb_sensor",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "SM-T813 Do Not Disturb Sensor",
+                    "icon": "mdi:do-not-disturb"
+                },
+                "last_changed": "2021-05-17T00:49:44.376539+00:00",
+                "last_updated": "2021-05-17T00:49:44.376539+00:00",
+                "context": {
+                    "id": "6020870495c91a183774d7c3803ac7e3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_geocoded_location",
+                "state": "16 Oakleigh Pass, Harrisdale WA 6112, Australia",
+                "attributes": {
+                    "Administrative Area": "Western Australia",
+                    "Country": "Australia",
+                    "ISO Country Code": "AU",
+                    "Latitude": -32.116096,
+                    "Locality": "Harrisdale",
+                    "Longitude": 115.92178,
+                    "Postal Code": "6112",
+                    "Sub Administrative Area": "City of Armadale",
+                    "Sub Locality": "null",
+                    "Sub Thoroughfare": "16",
+                    "Thoroughfare": "Oakleigh Pass",
+                    "friendly_name": "SM-T813 Geocoded Location",
+                    "icon": "mdi:map"
+                },
+                "last_changed": "2021-05-17T07:48:36.836028+00:00",
+                "last_updated": "2021-05-17T07:48:36.836028+00:00",
+                "context": {
+                    "id": "9c163c4abbf16c764daa03499cac7909",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_last_reboot",
+                "state": "2021-05-08T00:38:31Z",
+                "attributes": {
+                    "Local Time": "Sat May 08 08:38:31 GMT+08:00 2021",
+                    "Time in Milliseconds": 1620434311589,
+                    "friendly_name": "SM-T813 Last Reboot",
+                    "icon": "mdi:restart",
+                    "device_class": "timestamp"
+                },
+                "last_changed": "2021-05-17T00:49:44.378188+00:00",
+                "last_updated": "2021-05-17T00:49:44.378188+00:00",
+                "context": {
+                    "id": "d00a4e61108004ee49a08c7afcacfadb",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_light_sensor",
+                "state": "1",
+                "attributes": {
+                    "unit_of_measurement": "lx",
+                    "friendly_name": "SM-T813 Light Sensor",
+                    "icon": "mdi:brightness-5",
+                    "device_class": "illuminance"
+                },
+                "last_changed": "2021-05-17T07:48:36.836529+00:00",
+                "last_updated": "2021-05-17T07:48:36.836529+00:00",
+                "context": {
+                    "id": "5d3d0853e75dae25a72f8c7284bea3a5",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_wifi_connection_2",
+                "state": "TelstraFD2598",
+                "attributes": {
+                    "is_hidden": false,
+                    "friendly_name": "SM-T813 Wifi Connection",
+                    "icon": "mdi:wifi"
+                },
+                "last_changed": "2021-05-17T00:49:44.379036+00:00",
+                "last_updated": "2021-05-17T00:49:44.379036+00:00",
+                "context": {
+                    "id": "c9f43da3db7fdc0ef4ca667418185f56",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_next_alarm",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "SM-T813 Next Alarm",
+                    "icon": "mdi:alarm",
+                    "device_class": "timestamp"
+                },
+                "last_changed": "2021-05-17T00:49:44.379959+00:00",
+                "last_updated": "2021-05-17T00:49:44.379959+00:00",
+                "context": {
+                    "id": "e7c636edf4d6c9866755aa492713bac7",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_storage_sensor",
+                "state": "60",
+                "attributes": {
+                    "Free internal storage": "32GB",
+                    "Total internal storage": "53GB",
+                    "unit_of_measurement": "%",
+                    "friendly_name": "SM-T813 Storage Sensor",
+                    "icon": "mdi:harddisk"
+                },
+                "last_changed": "2021-05-17T00:49:44.380603+00:00",
+                "last_updated": "2021-05-17T00:49:44.380603+00:00",
+                "context": {
+                    "id": "31e8b96dabae2c59524bd94a42bad30c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_charger_type",
+                "state": "none",
+                "attributes": {
+                    "friendly_name": "SM-T813 Charger Type",
+                    "icon": "mdi:battery"
+                },
+                "last_changed": "2021-05-17T00:49:44.381040+00:00",
+                "last_updated": "2021-05-17T00:49:44.381040+00:00",
+                "context": {
+                    "id": "e4fc54b5a78caae3ed24ed955e21d116",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_battery_health",
+                "state": "good",
+                "attributes": {
+                    "friendly_name": "SM-T813 Battery Health",
+                    "icon": "mdi:battery-heart-variant"
+                },
+                "last_changed": "2021-05-17T00:49:44.381386+00:00",
+                "last_updated": "2021-05-17T00:49:44.381386+00:00",
+                "context": {
+                    "id": "e9be884728a81016c39bfc305ea54d52",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.sm_t813_battery_temperature",
+                "state": "23.1",
+                "attributes": {
+                    "unit_of_measurement": "\u00b0C",
+                    "friendly_name": "SM-T813 Battery Temperature",
+                    "icon": "mdi:battery",
+                    "device_class": "temperature"
+                },
+                "last_changed": "2021-05-17T07:48:36.835584+00:00",
+                "last_updated": "2021-05-17T07:48:36.835584+00:00",
+                "context": {
+                    "id": "2e66ecfcead17aaa0b62e3759633b8aa",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "binary_sensor.sm_t813_is_charging",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "SM-T813 Is Charging",
+                    "icon": "mdi:power-plug-off",
+                    "device_class": "plug"
+                },
+                "last_changed": "2021-05-17T00:49:44.382183+00:00",
+                "last_updated": "2021-05-17T00:49:44.382183+00:00",
+                "context": {
+                    "id": "3d36fb06cd860b53545f5ed7cf7bf717",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_battery_level_2",
+                "state": "unknown",
+                "attributes": {
+                    "unit_of_measurement": "%",
+                    "friendly_name": "Caroline\u2019s iPhone Battery Level",
+                    "icon": "mdi:battery-20",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-05-17T00:49:44.382610+00:00",
+                "last_updated": "2021-05-17T00:49:44.382610+00:00",
+                "context": {
+                    "id": "289c9adbce1a24e3c8e8305987247bab",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_battery_state_2",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone Battery State",
+                    "icon": "mdi:battery-20",
+                    "device_class": "battery"
+                },
+                "last_changed": "2021-05-17T00:49:44.383004+00:00",
+                "last_updated": "2021-05-17T00:49:44.383004+00:00",
+                "context": {
+                    "id": "a608c24427a87b786a03c4c8dee517fd",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_storage_2",
+                "state": "unknown",
+                "attributes": {
+                    "unit_of_measurement": "% available",
+                    "friendly_name": "Caroline\u2019s iPhone Storage",
+                    "icon": "mdi:database"
+                },
+                "last_changed": "2021-05-17T00:49:44.383346+00:00",
+                "last_updated": "2021-05-17T00:49:44.383346+00:00",
+                "context": {
+                    "id": "75220db1767ca056ffd5551e1082c524",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_ssid_2",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone SSID",
+                    "icon": "mdi:wifi-off"
+                },
+                "last_changed": "2021-05-17T00:49:44.383908+00:00",
+                "last_updated": "2021-05-17T00:49:44.383908+00:00",
+                "context": {
+                    "id": "1b5047c1577254f865ad5ffe9b715f50",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_bssid_2",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone BSSID",
+                    "icon": "mdi:wifi-off"
+                },
+                "last_changed": "2021-05-17T00:49:44.384599+00:00",
+                "last_updated": "2021-05-17T00:49:44.384599+00:00",
+                "context": {
+                    "id": "db46ba0e126886c3946557ac8c8e97ec",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_connection_type_2",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone Connection Type",
+                    "icon": "mdi:signal"
+                },
+                "last_changed": "2021-05-17T00:49:44.385346+00:00",
+                "last_updated": "2021-05-17T00:49:44.385346+00:00",
+                "context": {
+                    "id": "1cbb7fb5c7f24433bd8f49b70b5556f6",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_sim_1_2",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone SIM 1",
+                    "icon": "mdi:sim"
+                },
+                "last_changed": "2021-05-17T00:49:44.386007+00:00",
+                "last_updated": "2021-05-17T00:49:44.386007+00:00",
+                "context": {
+                    "id": "d44293d95e154db43de232e96dfca82d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_sim_2_2",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone SIM 2",
+                    "icon": "mdi:sim"
+                },
+                "last_changed": "2021-05-17T00:49:44.386547+00:00",
+                "last_updated": "2021-05-17T00:49:44.386547+00:00",
+                "context": {
+                    "id": "3e8dc2a7955bb3cff38b38d516573674",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_geocoded_location_2",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone Geocoded Location",
+                    "icon": "mdi:map"
+                },
+                "last_changed": "2021-05-17T00:49:44.387178+00:00",
+                "last_updated": "2021-05-17T00:49:44.387178+00:00",
+                "context": {
+                    "id": "b156b29b8dd4f0cdf4117a6cf059936f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "sensor.carolines_iphone_last_update_trigger_2",
+                "state": "unknown",
+                "attributes": {
+                    "friendly_name": "Caroline\u2019s iPhone Last Update Trigger",
+                    "icon": "mdi:cellphone-wireless"
+                },
+                "last_changed": "2021-05-17T00:49:44.387697+00:00",
+                "last_updated": "2021-05-17T00:49:44.387697+00:00",
+                "context": {
+                    "id": "f4c36e33d30966441e5b4797c2be1dd9",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.bathroom",
+                "state": "unavailable",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "effect_list": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "supported_color_modes": [
+                        "color_temp",
+                        "hs"
+                    ],
+                    "friendly_name": "Bathroom",
+                    "supported_features": 23
+                },
+                "last_changed": "2021-05-17T00:49:46.218994+00:00",
+                "last_updated": "2021-05-17T00:49:46.218994+00:00",
+                "context": {
+                    "id": "fbcb0f70735365bfbb09b007a81801d2",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.auto_light",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Auto Light"
+                },
+                "last_changed": "2021-05-17T00:49:46.335796+00:00",
+                "last_updated": "2021-05-17T00:49:46.335796+00:00",
+                "context": {
+                    "id": "b7cf8f02732b00efb3c49c7e39efaa28",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.garage_door_control",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Garage Door Control"
+                },
+                "last_changed": "2021-05-17T00:49:46.336605+00:00",
+                "last_updated": "2021-05-17T00:49:46.336605+00:00",
+                "context": {
+                    "id": "29ea245a71d16b6c41ebb2d273ce7ba9",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.fountain",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Fountain",
+                    "icon": "mdi:fountain"
+                },
+                "last_changed": "2021-05-17T00:49:46.353192+00:00",
+                "last_updated": "2021-05-17T00:49:46.353192+00:00",
+                "context": {
+                    "id": "4c648ae27dd2732057a585618982000c",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.garden_lights",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Garden Lights",
+                    "icon": "mdi:spotlight-beam"
+                },
+                "last_changed": "2021-05-17T00:49:46.356534+00:00",
+                "last_updated": "2021-05-17T00:49:46.356534+00:00",
+                "context": {
+                    "id": "8308996b6c5680871e515bcea04898d2",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.garden_fire",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Garden Fire",
+                    "icon": "mdi:fire"
+                },
+                "last_changed": "2021-05-17T00:49:46.399442+00:00",
+                "last_updated": "2021-05-17T00:49:46.399442+00:00",
+                "context": {
+                    "id": "87edc172fb352755e99119bb49e905a0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.cupboard_light",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Cupboard Light",
+                    "icon": "mdi:lightbulb"
+                },
+                "last_changed": "2021-05-17T00:49:46.399874+00:00",
+                "last_updated": "2021-05-17T00:49:46.399874+00:00",
+                "context": {
+                    "id": "906628be125f306e35ad22c024d71173",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.wire_light",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Wire Light",
+                    "icon": "mdi:lightbulb"
+                },
+                "last_changed": "2021-05-17T00:49:46.400217+00:00",
+                "last_updated": "2021-05-17T00:49:46.400217+00:00",
+                "context": {
+                    "id": "65f7aaa7a302a9ee69cc4dda08b3e9b1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.christmas_tree",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Christmas Tree",
+                    "icon": "mdi:pine-tree"
+                },
+                "last_changed": "2021-05-17T00:49:46.401049+00:00",
+                "last_updated": "2021-05-17T00:49:46.401049+00:00",
+                "context": {
+                    "id": "b060a85fc9402181028044338a4cf9b7",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.tv_power",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "TV Power",
+                    "icon": "mdi:monitor"
+                },
+                "last_changed": "2021-05-17T00:49:46.401380+00:00",
+                "last_updated": "2021-05-17T00:49:46.401380+00:00",
+                "context": {
+                    "id": "f669cf6dd69933989a8811d67fc9b0a0",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.desk_lights",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Desk Lights",
+                    "icon": "mdi:desk-lamp"
+                },
+                "last_changed": "2021-05-17T00:49:46.402019+00:00",
+                "last_updated": "2021-05-17T00:49:46.402019+00:00",
+                "context": {
+                    "id": "eac6d0e422fe492d5c8fe68054716116",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.wire_lamp",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Wire Lamp",
+                    "icon": "mdi:lava-lamp"
+                },
+                "last_changed": "2021-05-17T00:49:46.402329+00:00",
+                "last_updated": "2021-05-17T00:49:46.402329+00:00",
+                "context": {
+                    "id": "fd1ba8aacfb7e79d89a39f2ec4ef818a",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.mercury_logoff",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Mercury logoff",
+                    "icon": "mdi:monitor"
+                },
+                "last_changed": "2021-05-17T00:49:46.402671+00:00",
+                "last_updated": "2021-05-17T00:49:46.402671+00:00",
+                "context": {
+                    "id": "5a33f4f9c3d7dc603309cd77f2a84197",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.tumble_dryer",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Tumble Dryer",
+                    "icon": "mdi:tumble-dryer"
+                },
+                "last_changed": "2021-05-17T00:49:46.403494+00:00",
+                "last_updated": "2021-05-17T00:49:46.403494+00:00",
+                "context": {
+                    "id": "2c9173fe5bb2dc7684dc01d4ecc37529",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.washing_machine",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Washing Machine",
+                    "icon": "mdi:washing-machine"
+                },
+                "last_changed": "2021-05-17T00:49:46.415339+00:00",
+                "last_updated": "2021-05-17T00:49:46.415339+00:00",
+                "context": {
+                    "id": "98571ea40d8cafa68d98d2c867107233",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.dish_washer",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Dish Washer",
+                    "icon": "mdi:dishwasher"
+                },
+                "last_changed": "2021-05-17T00:49:46.431584+00:00",
+                "last_updated": "2021-05-17T00:49:46.431584+00:00",
+                "context": {
+                    "id": "d4b63c59f7571b4b040f519720db592b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.kitt_lamp",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Kitt Lamp",
+                    "icon": "mdi:lamp"
+                },
+                "last_changed": "2021-05-17T00:49:46.435206+00:00",
+                "last_updated": "2021-05-17T00:49:46.435206+00:00",
+                "context": {
+                    "id": "504599718edb0aae87d3f9ee89f88f76",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.lee_blanket",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Lee blanket",
+                    "icon": "mdi:bed-empty"
+                },
+                "last_changed": "2021-05-17T00:49:46.438819+00:00",
+                "last_updated": "2021-05-17T00:49:46.438819+00:00",
+                "context": {
+                    "id": "ae076bc1c3942b147de4eaecc8a94b3e",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.caroline_blanket",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Caroline Blanket",
+                    "icon": "mdi:bed-empty"
+                },
+                "last_changed": "2021-05-17T00:49:46.439220+00:00",
+                "last_updated": "2021-05-17T00:49:46.439220+00:00",
+                "context": {
+                    "id": "2012640a6dfefe5b27ac66569a335aa1",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.xmas_tree",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Xmas Tree",
+                    "icon": "mdi:pine-tree"
+                },
+                "last_changed": "2021-05-17T00:49:46.440445+00:00",
+                "last_updated": "2021-05-17T00:49:46.440445+00:00",
+                "context": {
+                    "id": "d46bb1feff834ef5f2a9f42e891846fc",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.koganp8",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "koganp8",
+                    "icon": "mdi:power-plug"
+                },
+                "last_changed": "2021-05-17T00:49:46.445907+00:00",
+                "last_updated": "2021-05-17T00:49:46.445907+00:00",
+                "context": {
+                    "id": "9f9ec3a41fea2965f6e2a1cd9ad7af59",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.power_board_1",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Power Board 1",
+                    "icon": "mdi:power-plug"
+                },
+                "last_changed": "2021-05-17T00:49:46.446382+00:00",
+                "last_updated": "2021-05-17T00:49:46.446382+00:00",
+                "context": {
+                    "id": "00a31899566c52ebdf133e26d2da7995",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.power_board_2",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Power Board 2",
+                    "icon": "mdi:power-plug"
+                },
+                "last_changed": "2021-05-17T00:49:46.446847+00:00",
+                "last_updated": "2021-05-17T00:49:46.446847+00:00",
+                "context": {
+                    "id": "65c620f65739675657a74e9ec3f5b07b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.power_board_3",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Power Board 3",
+                    "icon": "mdi:power-plug"
+                },
+                "last_changed": "2021-05-17T00:49:46.452548+00:00",
+                "last_updated": "2021-05-17T00:49:46.452548+00:00",
+                "context": {
+                    "id": "486ad654c617c3bf21a6fe5cc8f180c4",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.power_board_4",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Power Board 4",
+                    "icon": "mdi:power-plug"
+                },
+                "last_changed": "2021-05-17T00:49:46.484118+00:00",
+                "last_updated": "2021-05-17T00:49:46.484118+00:00",
+                "context": {
+                    "id": "6088378ad530eb27f19be376c231d91f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "switch.power_board_usb",
+                "state": "off",
+                "attributes": {
+                    "friendly_name": "Power Board USB",
+                    "icon": "mdi:usb-port"
+                },
+                "last_changed": "2021-05-17T00:49:46.484589+00:00",
+                "last_updated": "2021-05-17T00:49:46.484589+00:00",
+                "context": {
+                    "id": "cecc205377bd827e2583bd41cae83bae",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.kitt_light_old_1",
+                "state": "unavailable",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "effect_list": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "supported_color_modes": [
+                        "color_temp",
+                        "hs"
+                    ],
+                    "friendly_name": "Kitt Light old 1",
+                    "supported_features": 23
+                },
+                "last_changed": "2021-05-17T00:49:49.843288+00:00",
+                "last_updated": "2021-05-17T00:49:49.843288+00:00",
+                "context": {
+                    "id": "f22338f39518719222be61004d34d124",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.kogan_light_7",
+                "state": "unavailable",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "effect_list": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "supported_color_modes": [
+                        "color_temp",
+                        "hs"
+                    ],
+                    "friendly_name": "kogan Light 7",
+                    "supported_features": 23
+                },
+                "last_changed": "2021-05-17T00:49:49.848348+00:00",
+                "last_updated": "2021-05-17T00:49:49.848348+00:00",
+                "context": {
+                    "id": "b6f956f98268eb0196aceca50bb62ed3",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.kogan_light_8",
+                "state": "unavailable",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "effect_list": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "supported_color_modes": [
+                        "color_temp",
+                        "hs"
+                    ],
+                    "friendly_name": "kogan Light 8",
+                    "supported_features": 23
+                },
+                "last_changed": "2021-05-17T00:49:49.854206+00:00",
+                "last_updated": "2021-05-17T00:49:49.854206+00:00",
+                "context": {
+                    "id": "ecc82a8af97405a2dbd316e4f654197f",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.kogan_light_9",
+                "state": "unavailable",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "effect_list": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "supported_color_modes": [
+                        "color_temp",
+                        "hs"
+                    ],
+                    "friendly_name": "kogan Light 9",
+                    "supported_features": 23
+                },
+                "last_changed": "2021-05-17T00:49:49.864630+00:00",
+                "last_updated": "2021-05-17T00:49:49.864630+00:00",
+                "context": {
+                    "id": "0de907fa1801155d378dca9abd6f431b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.kitt_s_light",
+                "state": "unavailable",
+                "attributes": {
+                    "min_mireds": 153,
+                    "max_mireds": 500,
+                    "effect_list": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4"
+                    ],
+                    "supported_color_modes": [
+                        "color_temp",
+                        "hs"
+                    ],
+                    "friendly_name": "Kitt's Light",
+                    "supported_features": 23
+                },
+                "last_changed": "2021-05-17T00:49:49.904473+00:00",
+                "last_updated": "2021-05-17T00:49:49.904473+00:00",
+                "context": {
+                    "id": "c1e810fc6021c66aa9ad9a56f01044a4",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "light.studt_light_lt",
+                "state": "unavailable",
+                "attributes": {
+                    "min_mireds": 154,
+                    "max_mireds": 370,
+                    "effect_list": [],
+                    "supported_color_modes": [
+                        "color_temp",
+                        "hs"
+                    ],
+                    "friendly_name": "Studt Light LT",
+                    "supported_features": 23
+                },
+                "last_changed": "2021-05-17T02:05:26.150223+00:00",
+                "last_updated": "2021-05-17T02:05:26.150223+00:00",
+                "context": {
+                    "id": "b855d17df7866285da8423619a04c496",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-05-17T07:50:12.420310+00:00"
+        }
+    ]
+}

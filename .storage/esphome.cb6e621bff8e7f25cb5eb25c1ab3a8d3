@@ -1,0 +1,62 @@
+{
+    "version": 1,
+    "key": "esphome.cb6e621bff8e7f25cb5eb25c1ab3a8d3",
+    "data": {
+        "device_info": {
+            "uses_password": true,
+            "name": "cam3",
+            "mac_address": "24:0A:C4:F0:1D:40",
+            "compilation_time": "Mar 25 2021, 02:01:06",
+            "model": "Espressif ESP32 Dev Module",
+            "has_deep_sleep": false,
+            "esphome_version": "1.16.2"
+        },
+        "services": [],
+        "light": [
+            {
+                "object_id": "cam3_light",
+                "key": 562182988,
+                "name": "cam3 light",
+                "unique_id": "cam3lightcam3_light",
+                "supports_brightness": false,
+                "supports_rgb": false,
+                "supports_white_value": false,
+                "supports_color_temperature": false,
+                "min_mireds": 0.0,
+                "max_mireds": 0.0,
+                "effects": []
+            }
+        ],
+        "sensor": [
+            {
+                "object_id": "cam3_wifi_signal",
+                "key": 897898970,
+                "name": "cam3 wifi signal",
+                "unique_id": "240ac4f01d40-wifisignal",
+                "icon": "mdi:wifi",
+                "unit_of_measurement": "dB",
+                "accuracy_decimals": 0,
+                "force_update": false
+            },
+            {
+                "object_id": "cam3_uptime",
+                "key": 2373106708,
+                "name": "cam3 uptime",
+                "unique_id": "240ac4f01d40-uptime",
+                "icon": "mdi:timer-outline",
+                "unit_of_measurement": "s",
+                "accuracy_decimals": 0,
+                "force_update": false
+            }
+        ],
+        "text_sensor": [],
+        "camera": [
+            {
+                "object_id": "cam3_cam",
+                "key": 165737301,
+                "name": "cam3 cam",
+                "unique_id": "cam3cameracam3_cam"
+            }
+        ]
+    }
+}

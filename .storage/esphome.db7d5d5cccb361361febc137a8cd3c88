@@ -1,0 +1,62 @@
+{
+    "version": 1,
+    "key": "esphome.db7d5d5cccb361361febc137a8cd3c88",
+    "data": {
+        "device_info": {
+            "uses_password": true,
+            "name": "garage_camera",
+            "mac_address": "F0:08:D1:77:7B:48",
+            "compilation_time": "Mar 24 2021, 23:12:30",
+            "model": "Espressif ESP32 Dev Module",
+            "has_deep_sleep": false,
+            "esphome_version": "1.16.2"
+        },
+        "services": [],
+        "camera": [
+            {
+                "object_id": "garage_camera_cam",
+                "key": 2518532828,
+                "name": "garage_camera cam",
+                "unique_id": "garage_cameracameragarage_camera_cam"
+            }
+        ],
+        "sensor": [
+            {
+                "object_id": "garage_camera_wifi_signal",
+                "key": 103591947,
+                "name": "garage_camera wifi signal",
+                "unique_id": "f008d1777b48-wifisignal",
+                "icon": "mdi:wifi",
+                "unit_of_measurement": "dB",
+                "accuracy_decimals": 0,
+                "force_update": false
+            },
+            {
+                "object_id": "garage_camera_uptime",
+                "key": 3953566331,
+                "name": "garage_camera uptime",
+                "unique_id": "f008d1777b48-uptime",
+                "icon": "mdi:timer-outline",
+                "unit_of_measurement": "s",
+                "accuracy_decimals": 0,
+                "force_update": false
+            }
+        ],
+        "text_sensor": [],
+        "light": [
+            {
+                "object_id": "garage_camera_light",
+                "key": 3442281901,
+                "name": "garage_camera light",
+                "unique_id": "garage_cameralightgarage_camera_light",
+                "supports_brightness": false,
+                "supports_rgb": false,
+                "supports_white_value": false,
+                "supports_color_temperature": false,
+                "min_mireds": 0.0,
+                "max_mireds": 0.0,
+                "effects": []
+            }
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+platform: synologydsm
+name: NAS
+host: 10.0.0.180
+username: lee
+password: lightbus8944
+monitored_conditions:
+      - cpu_total_load
+      - memory_real_usage
+      - network_up

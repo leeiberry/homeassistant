@@ -1,0 +1,64 @@
+{
+    "version": 1,
+    "key": "esphome.7d35794ec1d8d76698612a59d29f5158",
+    "data": {
+        "device_info": {
+            "uses_password": true,
+            "name": "study_camera",
+            "mac_address": "E8:DB:84:0C:74:38",
+            "compilation_time": "Mar 29 2021, 04:03:25",
+            "model": "Espressif ESP32 Dev Module",
+            "has_deep_sleep": false,
+            "esphome_version": "1.16.2"
+        },
+        "services": [],
+        "light": [
+            {
+                "object_id": "study_camera_light",
+                "key": 4176694863,
+                "name": "study_camera light",
+                "unique_id": "study_cameralightstudy_camera_light",
+                "supports_brightness": false,
+                "supports_rgb": false,
+                "supports_white_value": false,
+                "supports_color_temperature": false,
+                "min_mireds": 0.0,
+                "max_mireds": 0.0,
+                "effects": []
+            }
+        ],
+        "camera": [
+            {
+                "object_id": "study_camera_cam",
+                "key": 2937793326,
+                "name": "study_camera cam",
+                "unique_id": "study_cameracamerastudy_camera_cam"
+            }
+        ],
+        "sensor": [
+            {
+                "object_id": "study_camera_wifi_signal",
+                "key": 3021474201,
+                "name": "study_camera wifi signal",
+                "unique_id": "e8db840c7438-wifisignal",
+                "icon": "mdi:wifi",
+                "device_class": "",
+                "unit_of_measurement": "dB",
+                "accuracy_decimals": 0,
+                "force_update": false
+            },
+            {
+                "object_id": "study_camera_uptime",
+                "key": 1780636197,
+                "name": "study_camera uptime",
+                "unique_id": "e8db840c7438-uptime",
+                "icon": "mdi:timer-outline",
+                "device_class": "",
+                "unit_of_measurement": "s",
+                "accuracy_decimals": 0,
+                "force_update": false
+            }
+        ],
+        "text_sensor": []
+    }
+}

@@ -1,0 +1,71 @@
+title: Main T
+panel: true
+# Optional unique id for direct access /lovelace/${id}
+id: example2
+icon: mdi:home
+cards:
+  - type: horizontal-stack
+    cards: 
+    - type: vertical-stack
+      cards:   
+        
+        
+        - type: entity-filter 
+          entities:
+              - device_tracker.phonelee
+              #- device_tracker.phonejayden
+              - device_tracker.phonecaroline
+              - device_tracker.phoneaimee
+              - device_tracker.phoneblake
+
+          state_filter:
+              - 'home'
+          
+          card: 
+          - type: entities
+            title: Who's Home 
+            show_header_toggle: false
+
+          - type: button
+            name: Congo.fm Ofi
+            tap_action:
+              action: call-service
+              service: media_extractor.play_media
+              service_data:
+                entity_id: media_player.oficina
+                media_content_id: 'http://cdn2.instream.audio:9243/stream'
+                media_content_type: music
+
+        - type: custom:upcoming-media-card
+          entity: sensor.sonarr_upcoming_media
+          title: test 
+          image_style: fanart
+
+        - entity: media_player.master_speaker
+          type: custom:mini-media-player
+          artwork: cover
+          source: icon
+          hide:
+            volume: true
+          shortcuts:
+            columns: 4 # Max buttons per row
+            buttons:
+              # Start predefined playlist
+              - icon: mdi:cat
+                type: playlist
+                id: https://music.youtube.com/playlist?list=OLAK5uy_kp0MEk7SbW1gXD8PSJmO2cHPPAv-VzLgU
+              # Change the source to bathroom
+              - icon: mdi:dog
+                type: source
+                id: Bathroom
+              # Trigger script
+              - icon: mdi:dog
+                type: script
+                id: script.script_name
+              # Trigger custom service
+              - name: Crooners Playlist
+                type: service
+                id: spotcast.start
+                data:
+                  entity_id: media_player.googlehome1234
+                  uri: spotify:playlist:37i9dQZF1DX9XiAcF7t1s5

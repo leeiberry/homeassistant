@@ -1,0 +1,119 @@
+title: Family Area
+panel: false
+icon: mdi:sofa
+id: lounge
+cards:
+    - type: horizontal-stack
+      title: Lounge
+      cards: 
+      - type: vertical-stack
+        cards: 
+        - type: entities
+          title: Lights
+          show_header_toggle: false
+          entities:
+            
+
+
+            - type: custom:slider-entity-row
+              entity: light.kitchen_lights
+              name: Kitchen
+              toggle: true   
+              hide_when_off: true       
+      
+            - type: custom:slider-entity-row
+              entity: light.lightbulb_05 
+              name: Pantry 
+              toggle: true   
+              min: 90  
+              hide_when_off: true
+                            
+            - type: custom:slider-entity-row
+              entity: light.living_lights
+              toggle: true   
+              min: 50 
+              hide_when_off: true
+
+            - type: custom:slider-entity-row
+              entity: light.jayden_light
+              toggle: true   
+              min: 25 
+              hide_when_off: true
+             
+
+            - type: custom:slider-entity-row
+              entity: light.dinning_lights
+              toggle: true   
+              hide_when_off: true
+
+            - type: custom:slider-entity-row
+              entity: light.lightbulb_12 
+              toggle: true   
+              hide_when_off: true
+
+
+                    
+        - type: glance
+          title: Lights
+          entities:             
+            - light.lightbulb_12             
+            - light.lightbulb_08
+            - light.lightbulb_09
+            - switch.xmas_tree
+      
+        - type: glance
+          title: Sensors
+          entities:
+            - binary_sensor.motion_sensor_158d00016be379
+            - binary_sensor.motion_sensor_158d00015a8b14
+            - binary_sensor.motion_sensor_158d000171cc81
+            - binary_sensor.door_window_sensor_158d00014d20b8    
+            - binary_sensor.switch_158d00018b37f8
+
+        - type: horizontal-stack
+          name: Laundry
+          cards:
+            - type: "custom:button-card"
+              entity: sensor.washing_machine_power
+              color: var(--state-icon-color) 
+              state:
+              - value: 3
+                operator: '>='
+                color: var(--state-icon-active-color)
+              show_label: true
+              show_name: false
+              show_state: true
+              tap_action:
+                action: more-info
+            - type: "custom:button-card"
+              entity: sensor.dish_washer_power
+              color: var(--state-icon-color) 
+              state:
+              - value: 3
+                operator: '>='
+                color: var(--state-icon-active-color)
+              show_label: true
+              show_name: false
+              show_state: true
+              tap_action:
+                action: more-info
+            - type: "custom:button-card"
+              name: Laundry Door
+              entity: binary_sensor.door_window_sensor_158d0001d682cc
+              color: var(--state-icon-color) 
+            - type: "custom:button-card"
+              name: Porch
+              entity: binary_sensor.motion_sensor_158d000171cc81
+              color: var(--state-icon-color) 
+
+              
+             
+              show_name: true
+             
+              tap_action:
+                action: more-info
+
+
+
+
+       

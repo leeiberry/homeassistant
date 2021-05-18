@@ -1,5 +1,9 @@
 platform: rest
-resource: http://10.0.0.106/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData
-name: "Day Total"
-value_template: '{{ value_json.Body.Data.DAY_ENERGY.Value /1000 | int }}'
-unit_of_measurement: “kWh”
+resource: http://10.0.0.200/solar_api/v1/GetPowerFlowRealtimeData.fcgi
+name: "PV"
+value_template: >-
+  {% if value_json.Body.Data.Site.P_PV != null %}  {{value_json.Body.Data.Site.P_PV | multiply(0.001) | float(0) | round (2) }}
+  {% else %} 0
+  {% endif %}
+unit_of_measurement: kWh
+

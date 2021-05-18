@@ -1,0 +1,355 @@
+{
+    "version": 1,
+    "key": "cloud",
+    "data": {
+        "alexa_enabled": false,
+        "cloud_user": "9623569cc70b453ea67152fb8007676e",
+        "cloudhooks": {
+            "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889": {
+                "cloudhook_id": "32fee1360d104eb5af4902f774f2a8bf",
+                "cloudhook_url": "https://hooks.nabu.casa/gAAAAABebJ5FvCzhT72hjvTJ26Wv8JJOswngOwMX36DqZAZtDEUSJHQxcJNpFDP0OPSMCughZVi2m8_4jj9pPoOldj0ZglYAFmDHwEBs5yMGEEIZAEQOLYCclDZgP3J8k6lW-bAP3lGm1sP139dNVeYif9gMEKWUcXtOiMg0yZwJ3rzCe-t5yU0=",
+                "managed": true,
+                "webhook_id": "416dd92fa1b8c0d516087001b12a1553d1a676b10a30492b14c2ff9980133889"
+            },
+            "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4": {
+                "cloudhook_id": "d4ab299fbf7147b19d3cb0f2dedff194",
+                "cloudhook_url": "https://hooks.nabu.casa/gAAAAABe6a9E8F8mRaHCEgDSUW69LmRcn9QF0pKNAJuXk7JEDS48zyOpnpqGH-jorSHTd_sN6Uz1Z-81e1X42r2ZvZzYa7C0o0XpY9UgeQ94q3b4zz9sfdtWKlCkZ9wen5rNdjNnEtC3MF4VhsbYc997cYzDwqDGEy62K-4UFyB28NOJhFRnZ9w=",
+                "managed": true,
+                "webhook_id": "8e498e4e0ab0b0b7737034b08efcfab13433ac0f5f78e20cc609d5b49e1676f4"
+            },
+            "bfd4f558f1e3d4d475c076f928a23d5d4f737377b0af887d9d24640d08f727eb": {
+                "cloudhook_id": "f06d4b0943834aa9899c82fa7b188e2b",
+                "cloudhook_url": "https://hooks.nabu.casa/gAAAAABeEDsBXWMioeFnCdSr_Os45p3kI99-k1bwhbIvqDc_0_D-pmSZPu-x0_faoa5OxoKfRv65rn0j1CyeAXqZQiYC9dQTashWWwGpIG3h1okUtNV58MR5zNjO-lapS13blKtJ_hihBxIckMiDiIBtXsgdjUFrk4sP_KEzje2fkAl7t-Ye8-8=",
+                "managed": true,
+                "webhook_id": "bfd4f558f1e3d4d475c076f928a23d5d4f737377b0af887d9d24640d08f727eb"
+            },
+            "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f": {
+                "cloudhook_id": "0696933b2e1a40fd8c9c9a9ab271aad8",
+                "cloudhook_url": "https://hooks.nabu.casa/gAAAAABe80InXPYLf0i1U8lAEgZCCoBHl7xIO3JclSBJi7gEI_Yr0OFF-aMSYgyGjttewAA-MlljJnV4Es4rWbhcj27NKl-3dTf4x4rFZ133FsAZK-xzwadwa09hkYZR-uyaI9P2-XJBqh5GNW-dXey0ZGlwctJQRrcYxlpQgkdamrdZqbToZv8=",
+                "managed": true,
+                "webhook_id": "e00648230301bdc785c95aea78d2d311d9fdf7777ffabd3ac78718e0f7abb08f"
+            },
+            "f899c5e2b9c32a81385252251b10f40b6e2a3ef849fec330ba799fa800a1df9f": {
+                "cloudhook_id": "5ca38eff93cc4a9f98acb52c19430af7",
+                "cloudhook_url": "https://hooks.nabu.casa/gAAAAABe-Gq64yiQZPTaUHw1xXPtQsh7HOaJMJLn17eQVDdppMS8MCFMecTW_ZWtgQ200ngO2nFCsFjK8JozSBvdRHRyawnkq8j5aqRrvGcJNfxFTcAlFptg9Q_dEEU0CadC4y_RZJRgqOeS0DxKm6nmfGktPYsvAhUTGUkIm8GxezyLuRaEmks=",
+                "managed": true,
+                "webhook_id": "f899c5e2b9c32a81385252251b10f40b6e2a3ef849fec330ba799fa800a1df9f"
+            },
+            "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5": {
+                "cloudhook_id": "bc11e198f6214edbace6f7e17161641d",
+                "cloudhook_url": "https://hooks.nabu.casa/gAAAAABfS0zE4usmD0gC98-KE8piR_T3ExCXNoT2V-Js0i_Arzao27frohNiuqrJmt4beivLmcMag41mu8LwXWbKYnnRjxY2fHQxzjYWsy9yw52CqYc3g6kJioFTECwdL5ERWMr7qhL21EfRmJA13TAHuLXg0edcvsuZLq-tds_1CriHT4c3Sss=",
+                "managed": true,
+                "webhook_id": "fa675f6aad75e25cb7c04262da8b329e74f42e20a6581255192a61c8974afee5"
+            },
+            "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73": {
+                "webhook_id": "93cf8118a07af4817de4ed3c270a2a676e5a5a2e00553bb658f395c12288ae73",
+                "cloudhook_id": "1b82c5b3d02f4fac8782196b7f192b42",
+                "cloudhook_url": "https://hooks.nabu.casa/gAAAAABfgCKzLFitO-ALRfcZMELUCHHb3Ih0vVAIjmQZS2PkI0jXgTEXFRAnZGl7P8Hg_Lj6BgjYZY0-o-Sf_N0fPcvaP_5WlKPhJC6IySCJ4uqOyKEtFhd1GrE8sg3gPOcMRf5UPQgiQpru72wgSjyF1ruh3zEZDXHGNiJXfAdhszTNkxXvhc4=",
+                "managed": true
+            },
+            "0df32f25b23e724f97c97609bd0b37ded4e17406c5a3ac567d42eb39701cd94e": {
+                "webhook_id": "0df32f25b23e724f97c97609bd0b37ded4e17406c5a3ac567d42eb39701cd94e",
+                "cloudhook_id": "bd8153ff69c94e83924ecf6f011b4820",
+                "cloudhook_url": "https://hooks.nabu.casa/gAAAAABfj_ynRrvEEsRa-xowX0CZUygGdzU6zOoOH_nZMLyZyTB9cTeh_hGQxZoQmH2uYVa3x36hbHDzGanbNfP1u-nI8c79wdYgyFMqc1r4sEzxukEEz-X2QuqlIdHdpvb_ZtphadxumJpCvZbeE_3SNbjMkV7idHWQVRzhAgGveefdGQX2Z30=",
+                "managed": true
+            }
+        },
+        "google_allow_unlock": false,
+        "google_enabled": true,
+        "google_entity_configs": {
+            "binary_sensor.door_window_sensor_158d0001d682cc": {
+                "should_expose": true
+            },
+            "camera.dinning": {
+                "should_expose": true
+            },
+            "group.all_devices": {
+                "should_expose": false
+            },
+            "group.all_lights": {
+                "should_expose": false
+            },
+            "group.all_switches": {
+                "should_expose": false
+            },
+            "group.familyroom": {
+                "should_expose": false
+            },
+            "group.otherrooms": {
+                "should_expose": false
+            },
+            "group.otherroomsvw": {
+                "should_expose": false
+            },
+            "group.theatervw": {
+                "should_expose": false
+            },
+            "group.vwgarage": {
+                "should_expose": false
+            },
+            "group.weathermain": {
+                "should_expose": false
+            },
+            "group.weatherreport": {
+                "should_expose": false
+            },
+            "input_select.auto_mode": {
+                "should_expose": false
+            },
+            "media_player.apple_tv": {
+                "should_expose": false
+            },
+            "media_player.chrome_3": {
+                "should_expose": false
+            },
+            "media_player.galaxy_tab_s2": {
+                "should_expose": false
+            },
+            "media_player.galaxy_tab_s2_9_7": {
+                "should_expose": false
+            },
+            "media_player.galaxy_tab_s2_9_7_2": {
+                "should_expose": false
+            },
+            "media_player.plex_chrome": {
+                "should_expose": false
+            },
+            "media_player.plex_chrome_2": {
+                "should_expose": false
+            },
+            "media_player.plex_chrome_3": {
+                "should_expose": false
+            },
+            "media_player.plex_chrome_4": {
+                "should_expose": false
+            },
+            "media_player.plex_chrome_5": {
+                "should_expose": false
+            },
+            "media_player.plex_chrome_6": {
+                "should_expose": false
+            },
+            "media_player.plex_chrome_7": {
+                "should_expose": false
+            },
+            "media_player.plex_chrome_8": {
+                "should_expose": false
+            },
+            "media_player.plex_chrome_9": {
+                "should_expose": false
+            },
+            "media_player.plex_firefox": {
+                "should_expose": false
+            },
+            "media_player.plex_firefox_2": {
+                "should_expose": false
+            },
+            "media_player.plex_lee_s_tablet": {
+                "should_expose": false
+            },
+            "media_player.plex_pixel": {
+                "should_expose": false
+            },
+            "media_player.plex_pixel_3": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_3dr0neye4y1dnaee8ldc64w5": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_4pg6tjdkpc52lihgh69otqml": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_648rd29ouvpsgj950gm1qapc": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_83bc5c3aefb4958f_com_plexapp_android": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_aimees_iphone": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_be806524_7393_4e51_bd2c_53a2c182df84": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_chrome": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_chrome_2": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_chromecast": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_e40607b068225005_com_plexapp_android": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_for_ios_jaydens_iphone": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_i90y82ua27ii8gzog6c239e3": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_ipad": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_lg_70uj657t_ta": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_lyocrhhl2vstjd6qtersdx28": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_n4b1xy7qngv6omro21seqa50": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_p3jqg2s89unx3r14uclylrqs": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_playstation_4": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_qq4ovwfqtuma3zlb3v1ua1jf": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_rs8kycbkhjak93y59ri1egbc": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_saturn": {
+                "should_expose": false
+            },
+            "media_player.plex_plex_tv_ua65mu7000": {
+                "should_expose": false
+            },
+            "media_player.theatre_speaker": {
+                "should_expose": true
+            },
+            "media_player.unnamed_device": {
+                "should_expose": false
+            },
+            "script.mercury_shutdown": {
+                "should_expose": false
+            },
+            "script.saturn_shutdown": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_apparent_temperature": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_daytime_high_apparent_temperature_1d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_daytime_high_apparent_temperature_2d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_daytime_high_apparent_temperature_3d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_daytime_high_apparent_temperature_4d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_daytime_high_apparent_temperature_5d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_daytime_high_temperature_1d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_daytime_high_temperature_2d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_daytime_high_temperature_3d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_daytime_high_temperature_4d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_daytime_high_temperature_5d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_overnight_low_apparent_temperature_1d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_overnight_low_apparent_temperature_2d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_overnight_low_apparent_temperature_3d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_overnight_low_apparent_temperature_4d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_overnight_low_apparent_temperature_5d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_overnight_low_temperature_1d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_overnight_low_temperature_2d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_overnight_low_temperature_4d": {
+                "should_expose": false
+            },
+            "sensor.dark_sky_overnight_low_temperature_5d": {
+                "should_expose": false
+            },
+            "sensor.humidity_158d00015cbc22": {
+                "should_expose": false
+            },
+            "sensor.humidity_158d000170b5c3": {
+                "should_expose": false
+            },
+            "sensor.humidity_158d000170d531": {
+                "should_expose": false
+            },
+            "sensor.humidity_158d0001a2c316": {
+                "should_expose": false
+            },
+            "sensor.synology_average_disk_temp_volume_1": {
+                "should_expose": false
+            },
+            "sensor.synology_maximum_disk_temp_volume_1": {
+                "should_expose": false
+            },
+            "sensor.synology_temperature_sda": {
+                "should_expose": false
+            },
+            "sensor.synology_temperature_sdb": {
+                "should_expose": false
+            },
+            "sensor.synology_temperature_sdc": {
+                "should_expose": false
+            },
+            "sensor.synology_temperature_sdd": {
+                "should_expose": false
+            },
+            "sensor.temperature_158d00015cbc22": {
+                "should_expose": false
+            },
+            "sensor.temperature_158d000170b5c3": {
+                "should_expose": false
+            },
+            "sensor.temperature_158d000170d531": {
+                "should_expose": false
+            },
+            "sensor.temperature_158d0001a2c316": {
+                "should_expose": false
+            },
+            "sensor.temperature_158d0001a2de84": {
+                "should_expose": true
+            },
+            "switch.living_room_dehumidifier": {
+                "should_expose": false
+            },
+            "switch.xmas_tree": {
+                "should_expose": false
+            }
+        },
+        "google_local_webhook_id": "e514ed5da8e2b6851f5c8978b6d11b2af8c11b229fc131e1fc428ceba8b0d99e",
+        "google_report_state": true,
+        "remote_enabled": true,
+        "username": "04138b60-e2da-4c29-89e9-a9095e2ef2dd",
+        "tts_default_voice": [
+            "en-AU",
+            "female"
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "version": 1,
+    "key": "core.area_registry",
+    "data": {
+        "areas": [
+            {
+                "name": "Master Bedroom",
+                "id": "4191c6fed3b44cbe9588fcbb41984af7"
+            },
+            {
+                "name": "Kitchen",
+                "id": "bb7b2911a73844b688630eab74f1bd39"
+            },
+            {
+                "name": "Theater",
+                "id": "cf8d6db5aa4b45b4955c1b7966a8d453"
+            },
+            {
+                "name": "Study",
+                "id": "144fb1bb42a82076df40648f20b127d2"
+            },
+            {
+                "name": "Garden",
+                "id": "b9b846c0dbf0f34f79334b8f03c20c80"
+            },
+            {
+                "name": "Activity",
+                "id": "7e147a3f814637dec73de29935f990e4"
+            },
+            {
+                "name": "Garage",
+                "id": "garage"
+            }
+        ]
+    }
+}

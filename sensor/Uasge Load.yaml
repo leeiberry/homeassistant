@@ -1,0 +1,5 @@
+platform: rest
+resource: http://10.0.0.200/solar_api/v1/GetPowerFlowRealtimeData.fcgi
+name: "Load"
+value_template: '{{value_json.Body.Data.Site.P_Load | multiply(0.001) | float(2) | round (2) }} '
+unit_of_measurement: kWh
